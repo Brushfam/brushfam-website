@@ -1,0 +1,80 @@
+.navbarContainer {
+    /*position: fixed;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /*background: rgb(0, 0, 0, .7);*/
+    padding-bottom: 315px;
+    height: 80px;
+    width: 100%;
+}
+
+.navbarDiv {
+    /*position: static;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 20px;
+    /*margin-left: 320px;*/
+}
+
+.navbarNavigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    font-size: 14px;
+    list-style: none;
+    font-weight: 600;
+    margin-right: 80px;
+}
+
+.button {
+    width: 150px;
+    height: 37px;
+    padding: 8px 32px;
+    background: transparent;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 40px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+@media (max-width: 1530px) {
+
+    .navbarDiv {
+        /*margin-left: 100px;*/
+        align-items: normal;
+    }
+
+    .navbarContainer {
+        padding-bottom: 215px;
+    }
+}
+
+@media (max-width: 1260px) {
+    .navbarNavigation {
+        visibility: hidden;
+    }
+}
+
+
+/*@media (max-width: 1060px) {*/
+/*    */
+/*}*/
+
+/*@media (max-width: 760px) {*/
+
+/*}*/
+
+/*@media (max-width: 460px) {*/
+
+/*}*/
