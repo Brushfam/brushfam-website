@@ -1,7 +1,6 @@
 import styles from "@/styles/Web3Projects.module.css";
 import { web3ProjectsData } from "@/data/web3ProjectsData";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Web3Projects() {
   return (
@@ -25,7 +24,6 @@ export default function Web3Projects() {
       </div>
         <div className={styles.centeredDiv}>
             <div className={styles.portfolio}>
-                {/*<Image alt={"brushfam mini logo"} src={"/logos/brushfam-mini-logo.svg"} className={styles.brushfamMiniLogo} />*/}
                 <img alt={"brushfam mini logo"} src={"logos/brushfam-mini-logo.svg"} className={styles.brushfamMiniLogo}/>
                 <p style={{marginRight: 20, marginLeft: 20}}>is a portfolio company of</p>
                 <Link href="https://727.ventures/">
