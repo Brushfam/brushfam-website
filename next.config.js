@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   basePath: '/brushfam-website',
   assetPrefix: '/brushfam-website/',
-  imagesPublicPath: '/brushfam-website/public/',
+  imagesPublicPath: '/brushfam-website/public',
 }
 
 module.exports = nextConfig
