@@ -25,8 +25,8 @@ export default function Web3Projects() {
       </div>
         <div className={styles.centeredDiv}>
             <div className={styles.portfolio}>
-                <Image alt={"brushfam mini logo"} src={"/logos/brushfam-mini-logo.svg"} className={styles.brushfamMiniLogo} />
-                {/*<img alt={"brushfam mini logo"} src={"/logos/brushfam-mini-logo.svg"} className={styles.brushfamMiniLogo}/>*/}
+                {/*<Image alt={"brushfam mini logo"} src={"/logos/brushfam-mini-logo.svg"} className={styles.brushfamMiniLogo} />*/}
+                <img alt={"brushfam mini logo"} src={"logos/brushfam-mini-logo.svg"} className={styles.brushfamMiniLogo}/>
                 <p style={{marginRight: 20, marginLeft: 20}}>is a portfolio company of</p>
                 <Link href="https://727.ventures/">
                     <p style={{color: "white", fontSize: 14, fontWeight: 600}}>727 Ventures</p>
