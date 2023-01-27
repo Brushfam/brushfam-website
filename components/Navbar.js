@@ -13,7 +13,7 @@ const Navbar = () => {
         <div style={{ marginTop: 4, marginRight: 180 }}>
           <Link href="/">
             <div>
-              <img src="/logos/navbar-logo.svg" alt="brushfam logo" />
+              <img src="/public/logos/navbar-logo.svg" alt="brushfam logo" />
             </div>
           </Link>
         </div>
