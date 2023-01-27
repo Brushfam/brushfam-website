@@ -19,7 +19,7 @@ export default function Services() {
           </p>
           <div className={styles.block1}>
             <div className={styles.serviceHeader}>
-              <img src={"/icons/search-icon.svg"} />
+              <img src={"icons/search-icon.svg"} />
               <p>Onboard in Polkadot</p>
             </div>
             <p>
@@ -50,7 +50,7 @@ export default function Services() {
           <div>
             <div className={styles.block2}>
               <div className={styles.serviceHeader}>
-                <img src={"/icons/comment-icon.svg"} />
+                <img src={"icons/comment-icon.svg"} />
                 <p>Ink! Advisory subscription</p>
               </div>
               <p>
@@ -75,7 +75,7 @@ export default function Services() {
           <div>
             <div className={styles.block3}>
               <div className={styles.serviceHeader}>
-                <img src={"/icons/search-icon.svg"} />
+                <img src={"icons/search-icon.svg"} />
                 <p>Security Audits</p>
               </div>
               <p style={{ marginBottom: 24 }}>
@@ -99,7 +99,7 @@ export default function Services() {
             <p className={styles.serviceTitle}>For VC/angel investors:</p>
             <div className={styles.block4}>
               <div className={styles.serviceHeader}>
-                <img src={"/icons/comment-icon.svg"} />
+                <img src={"icons/comment-icon.svg"} />
                 <p>Investment tech diligence</p>
               </div>
               <p>
@@ -131,7 +131,7 @@ export default function Services() {
             </p>
             <div className={styles.block5}>
               <div className={styles.serviceHeader}>
-                <img src={"/icons/comment-icon.svg"} />
+                <img src={"icons/comment-icon.svg"} />
                 <p>Onboard in Polkadot</p>
               </div>
               <p>

@@ -9,25 +9,25 @@ const Footer = () => {
           <img className={styles.brushfamLogo} src={"/logos/brushfam-logo.svg"} />
           <div className={styles.socialDiv}>
             <a href={"https://www.linkedin.com/company/727-ventures-vs/"}>
-              <img src={"/icons/in.svg"} />
+              <img src={"icons/in.svg"} />
             </a>
             <a href={"https://instagram.com/727_ventures?igshid=ZmVmZTY5ZGE="}>
-              <img src={"/icons/inst.svg"} />
+              <img src={"icons/inst.svg"} />
             </a>
             <a href={"https://twitter.com/Brushfam_io"}>
-              <img src={"/icons/twitter.svg"} />
+              <img src={"icons/twitter.svg"} />
             </a>
             <a href={"https://t.me/openbrush"}>
-              <img src={"/icons/telegram.svg"} />
+              <img src={"icons/telegram.svg"} />
             </a>
             <a href={"https://discord.gg/EARg6RCThP"}>
-              <img src={"/icons/discord.svg"} />
+              <img src={"icons/discord.svg"} />
             </a>
             <a href={"https://medium.com/727-ventures"}>
-              <img src={"/icons/medium.svg"} />
+              <img src={"icons/medium.svg"} />
             </a>
               <a href={"mailto:contact@727.ventures"}>
-                  <img src={"/icons/mail.svg"} />
+                  <img src={"icons/mail.svg"} />
               </a>
           </div>
         </div>
