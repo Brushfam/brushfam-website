@@ -18,14 +18,14 @@ export default function Products() {
             </div>
             <div className={styles.centeredRowDiv}>
                 <div className={styles.codeDiv}>
-                    <img src={"/bar.svg"}/>
-                    <img src={"/code1.svg"} className={styles.codeImg}/>
-                    <img src={"/code2.svg"} className={styles.codeImg}/>
+                    <img src={"bar.svg"}/>
+                    <img src={"code1.svg"} className={styles.codeImg}/>
+                    <img src={"code2.svg"} className={styles.codeImg}/>
                 </div>
                 <div className={styles.productsDiv}>
                     <div className={styles.product}>
                         <div className={styles.productLinkPart}>
-                            <img src={"/logos/openbrush-logo.svg"}/>
+                            <img src={"logos/openbrush-logo.svg"}/>
                             <div className={styles.productButtonPart}>
                                     <Link href={"https://openbrush.io/"} style={{marginRight: 12}}>
                                         <div className={styles.siteLink}>
@@ -47,7 +47,7 @@ export default function Products() {
                     </div>
                     <div className={styles.product}>
                         <div className={styles.productLinkPart}>
-                            <img src={"/logos/sol2Ink-logo.svg"}/>
+                            <img src={"logos/sol2Ink-logo.svg"}/>
                             <div className={styles.productButtonPart}>
                                 <Link href={"https://github.com/727-Ventures/sol2ink"} style={{marginRight: 12}}>
                                     <div className={styles.siteLink}>
@@ -69,7 +69,7 @@ export default function Products() {
                     </div>
                     <div className={styles.product}>
                         <div className={styles.productLinkPart}>
-                            <img src={"/logos/typechain-logo.svg"}/>
+                            <img src={"logos/typechain-logo.svg"}/>
                             <div className={styles.productButtonPart}>
                                 <Link href={"https://github.com/727-Ventures/typechain-polkadot"} style={{marginRight: 12}}>
                                     <div className={styles.siteLink}>

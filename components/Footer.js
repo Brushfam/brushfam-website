@@ -6,7 +6,7 @@ const Footer = () => {
     <section className={styles.footerSection}>
       <div className={styles.footerDiv}>
         <div className={styles.footerSocial}>
-          <img className={styles.brushfamLogo} src={"/logos/brushfam-logo.svg"} />
+          <img className={styles.brushfamLogo} src={"logos/brushfam-logo.svg"} />
           <div className={styles.socialDiv}>
             <a href={"https://www.linkedin.com/company/727-ventures-vs/"}>
               <img src={"icons/in.svg"} />
