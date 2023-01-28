@@ -1,0 +1,260 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 600px;
+    margin-left: 320px;
+}
+
+.contactDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.leftDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 106px;
+}
+
+.titleText {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    margin-bottom: 9px;
+
+    background: linear-gradient(133.96deg, #1945E1 10.01%, #206DE1 93.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.headerText {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    color: #FFFFFF;
+    max-width: 480px;
+    margin-bottom: 24px;
+}
+
+.contactDescription {
+    font-size: 12px;
+    max-width: 360px;
+    margin-bottom: 88px;
+}
+
+.socialTitle, .socialTitleMobile {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.socialTitleMobile {
+    margin-top: 28px;
+}
+
+.contactSocialDiv, .contactSocialDivMobile {
+    display: flex;
+    flex-direction: row;
+    width: 493px;
+    height: 66px;
+    padding: 14px;
+    margin-top: 16px;
+
+    background: linear-gradient(110.11deg, rgba(144, 151, 170, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+
+.contactSocialDivMobile {}
+
+.formDiv {
+    width: 400px;
+    height: 347px;
+    padding: 64px 40px;
+
+    background: linear-gradient(110.11deg, rgba(144, 151, 170, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+
+.label {
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.input {
+    width: 320px;
+    margin-bottom: 32px;
+    background: transparent;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.input::placeholder {
+    color: #9097AA;
+}
+
+.button {
+    width: 121px;
+    height: 45px;
+    background: #0C42CD;
+    box-shadow: 0 5px 40px rgba(30, 68, 248, 0.4);
+    border-radius: 30px;
+    border: none;
+}
+
+.button:hover {
+    filter: brightness(170%);
+    cursor: pointer;
+}
+
+.socialNetwork {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.lastSocialNetwork, .socialNetwork {
+    width: 118px;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.lastSocialNetwork a, .socialNetwork a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socialNetworkTitle {
+    font-size: 12px;
+    margin-left: 8px;
+    color: #FFFFFF;
+}
+
+.socialMobile {
+    display: none;
+}
+
+
+@media (max-width: 1700px) {
+    .section {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 1530px) {
+    .section {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .section {
+        height: 700px;
+    }
+
+    .socialTitle {
+        display: none;
+    }
+    .contactSocialDiv {
+        display: none;
+    }
+    .leftDiv {
+        margin-right: 0;
+    }
+    .socialMobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactDiv {
+        flex-direction: column;
+    }
+
+    .contactDescription {
+        margin-bottom: 28px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .section {
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 760px) {
+    .section {
+        margin-left: 40px;
+    }
+
+    .titleText {
+        font-size: 12px;
+    }
+    .headerText {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 460px) {
+    .section {
+        margin-top: 160px;
+        margin-left: 20px;
+    }
+    .headerText {
+        max-width: 260px;
+    }
+    .contactDescription {
+        max-width: 320px;
+    }
+
+    .formDiv {
+        width: 320px;
+        height: 300px;
+        padding: 40px 26px;
+    }
+
+    .input {
+        width: 260px;
+    }
+
+    .button {
+        width: 109px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .contactSocialDivMobile {
+        width: auto;
+        height: auto;
+        padding: 6px;
+    }
+
+    .lastSocialNetwork, .socialNetwork {
+        width: 80px;
+        height: 30px;
+    }
+
+    .socialNetworkTitle {
+        font-size: 10px;
+    }
+}
