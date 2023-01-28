@@ -71,7 +71,7 @@
 
 @media (max-width: 460px) {
     .letsBuildDiv {
-        margin-left: 0px;
+        margin-left: 0;
         align-items: center;
         height: 100px;
     }
