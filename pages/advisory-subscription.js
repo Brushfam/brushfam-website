@@ -1,7 +1,7 @@
 import TitleSection from "sections/advisory-subscription/TitleSection"
 import HowItWork from "sections/advisory-subscription/HowItWork"
 import Challenges from "sections/advisory-subscription/Challenges"
-import Packages from "sections/advisory-subscription/Packages"
+// import Packages from "sections/advisory-subscription/Packages"
 
 export default function advisorySubscription() {
     return(
@@ -9,7 +9,7 @@ export default function advisorySubscription() {
             <TitleSection></TitleSection>
             <HowItWork></HowItWork>
             <Challenges></Challenges>
-            <Packages></Packages>
+            {/*<Packages></Packages>*/}
         </div>
     )
 }

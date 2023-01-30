@@ -6,7 +6,12 @@ export default function TitleSection() {
             <p className={styles.titleText}>Services</p>
             <h1 className={styles.headerText}>Advisory subscription</h1>
             <p className={styles.descriptionText}>
-                </p>
+                Service for teams developing on ink! looking to function on their maximum performance level.
+                Brushfam allows you to move faster(by making right technical decisions), cut down expenses(by)
+                and optimize your tech team performance(by growing engineer). By providing daily mentorship,
+                doing code-review we help you avoid fatal mistakes and grow the team’s performance.
+                Receive guidance from the team that leads the ink! WASM ecosystem. </p>
+            <button type="button" className={styles.button}>Connect with our experts</button>
         </section>
     )
 }
