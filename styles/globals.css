@@ -13,10 +13,12 @@ body {
   font-weight: 400;
   color: #FFFFFF;
   background-color: #000000;
-  background-image: url("/main-page-bg.jpg");
+  scroll-behavior: smooth;
+}
+
+div {
   background-repeat: no-repeat;
   background-size: cover;
-  scroll-behavior: smooth;
 }
 
 p {

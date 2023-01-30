@@ -1,4 +1,4 @@
-import styles from "@/styles/Products.module.css";
+import styles from "@/styles/Home/Products.module.css";
 import Link from "next/link";
 
 export default function Products() {

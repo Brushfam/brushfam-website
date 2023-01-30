@@ -1,4 +1,4 @@
-import styles from "@/styles/Home.module.css";
+import styles from "@/styles/Home/Home.module.css";
 import Navbar from "@/components/Navbar";
 
 export default function Banner() {

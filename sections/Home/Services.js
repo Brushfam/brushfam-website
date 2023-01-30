@@ -1,4 +1,4 @@
-import styles from "@/styles/Services.module.css";
+import styles from "@/styles/Home/Services.module.css";
 
 export default function Services() {
   const handleClick = () => {
