@@ -136,6 +136,12 @@
     margin-bottom: 40px;
 }
 
+@media (max-width: 1700px) {
+    .mainDiv {
+        margin-left: 200px;
+    }
+}
+
 @media (max-width: 1530px) {
     .mainDiv {
         margin-left: 100px;
