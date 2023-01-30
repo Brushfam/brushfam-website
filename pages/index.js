@@ -6,6 +6,7 @@ import Services from "@/sections/Home/Services";
 import LetsBuild from "@/sections/Home/LetsBuild";
 import Footer from "@/components/Footer";
 import Contact from "@/sections/Home/Contact";
+import Blog from "@/sections/Home/Blog";
 
 export default function Home() {
   return (
@@ -18,7 +19,8 @@ export default function Home() {
       <Products></Products>
       <Services></Services>
       <LetsBuild></LetsBuild>
-        <Contact></Contact>
+      <Contact></Contact>
+      <Blog></Blog>
       <Footer></Footer>
     </>
   );

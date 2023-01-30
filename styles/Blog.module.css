@@ -1,0 +1,122 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+}
+
+.titleText {
+    margin-top: 120px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    background: linear-gradient(133.96deg, #1945E1 10.01%, #206DE1 93.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.headerText {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 100px;
+}
+
+.articlesDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.article {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    height: 251px;
+    padding: 64px 40px;
+
+    background: linear-gradient(110.11deg, rgba(144, 151, 170, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+
+.articleTitleBlock {
+    width: 280px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+}
+
+.articleTitleText {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.button {
+    width: 158px;
+    height: 45px;
+    position: absolute;
+    top: 228px;
+
+    background: #0C42CD;
+    box-shadow: 0px 5px 40px rgba(30, 68, 248, 0.4);
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    filter: brightness(170%);
+}
+
+@media (max-width: 1380px) {
+    .section {
+       height: 1200px;
+    }
+
+    .articlesDiv {
+        display: flex;
+        flex-direction: column;
+        /*align-items: flex-start;*/
+        /*width: 80%;*/
+    }
+
+    .article {
+        margin-bottom: 60px;
+    }
+
+    .headerText {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 760px) {
+    .titleText {
+        font-size: 12px;
+    }
+    .headerText {
+        font-size: 30px;
+    }
+    .articleTitleText {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 460px) {
+.button {
+    width: 142px;
+    height: 40px;
+    font-size: 12px;
+}
+}
