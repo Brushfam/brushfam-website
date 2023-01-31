@@ -6,6 +6,7 @@ export default function Contact() {
       <p className={styles.titleText}>Get in touch</p>
       <div className={styles.contactDiv}>
         <div className={styles.leftDiv}>
+          <p className={styles.titleTextMobile}>Get in touch</p>
           <h1 className={styles.headerText}>
             Work with tech experts to win the battle
           </h1>

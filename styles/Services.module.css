@@ -2,7 +2,7 @@
     position: static;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     height: 1500px;
 }
 
@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding-bottom: 40px;
-    margin-left: 320px;
+    width: 1000px;
 }
 
 .textTitle {
@@ -30,18 +30,25 @@
 }
 
 .textHeader {
-    max-width: 500px;
+    /*max-width: 500px;*/
     font-weight: 700;
     font-size: 40px;
     line-height: 120%;
-    margin-bottom: 64px;
 }
 
-.serviceTitle {
+.serviceTitle, .serviceTitle4, .serviceTitle5 {
     font-weight: 600;
     font-size: 20px;
     line-height: 120%;
     color: #FFFFFF;
+}
+
+.serviceTitle4 {
+    max-width: 145px;
+}
+
+.serviceTitle5 {
+    max-width: 220px;
 }
 
 .service, .block1, .block2, .block3, .block4, .block5 {
@@ -50,40 +57,39 @@
     align-items: flex-start;
     padding: 40px 42px;
 
-    /*width: 684px;*/
-    /*height: 280px;*/
-
     background: linear-gradient(110.11deg, rgba(144, 151, 170, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 6px;
 
     margin-top: 24px;
-    margin-right: 24px;
 }
 
 .block1 {
-    height: 280px;
-    width: 684px;
+    height: 250px;
+    width: 1000px;
 }
 
 .block2 {
-    height: 258px;
-    width: 622px;
+    height: 246px;
+    width: 354px;
+    margin-right: 24px;
 }
 
 .block3 {
-    height: 240px;
-    width: 354px;
+    height: 246px;
+    width: 622px;
 }
 
 .block4 {
-    height: 312px;
-    width: 576px;
+    height: 282px;
+    width: 681px;
+    margin-right: 24px;
 }
 
 .block5 {
-    height: 258px;
-    width: 400px;
+    height: 282px;
+    width: 295px;
+    padding: 40px;
 }
 
 .serviceHeader {
@@ -136,21 +142,43 @@
     margin-bottom: 40px;
 }
 
-@media (max-width: 1700px) {
+.wrapper {
+
+}
+
+@media (max-width: 1440px) {
     .mainDiv {
-        margin-left: 200px;
+        width: 70%;
     }
 }
 
-@media (max-width: 1530px) {
-    .mainDiv {
-        margin-left: 100px;
+@media (max-width: 1380px) {
+    .block1 {
+        height: 268px;
+        width: 900px;
     }
-}
 
-@media (max-width: 1260px) {
-    .mainDiv {
-        margin-left: 60px;
+    .block2 {
+        height: 264px;
+        width: 319px;
+        margin-right: 24px;
+    }
+
+    .block3 {
+        height: 264px;
+        width: 560px;
+    }
+
+    .block4 {
+        height: 300px;
+        width: 613px;
+        margin-right: 24px;
+    }
+
+    .block5 {
+        height: 300px;
+        width: 266px;
+        padding-right: 32px;
     }
 }
 
@@ -160,19 +188,42 @@
     }
 
     .section {
-        height: 2100px;
+        height: 2200px;
+    }
+
+    .block2 {
+        margin-right: 0;
+    }
+    .block4 {
+        margin-right: 0;
+    }
+    .serviceTitle, .serviceTitle4, .serviceTitle5 {
+        text-align: center;
+        max-width: none;
     }
 
     .mainDiv {
-        margin-left: 60px;
+        justify-content: center;
+        width: auto;
+    }
+
+    .textTitle {
+        justify-content: center;
+    }
+    .textHeader {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 @media (max-width: 760px) {
-    .mainDiv {
-        margin-left: 40px;
-    }
-
     .textTitle {
         font-size: 12px;
     }
@@ -181,32 +232,12 @@
         max-width: 400px;
     }
 
-    .serviceTitle {
+    .serviceTitle, .serviceTitle4, .serviceTitle5 {
         font-size: 16px;
     }
 
     .block1, .block2, .block3, .block4, .block5 {
         width: 500px;
-    }
-
-    .block1 {
-        height: 286px;
-    }
-
-    .block2 {
-        height: 240px;
-    }
-
-    .block3 {
-        height: 210px;
-    }
-
-    .block4 {
-        height: 286px;
-    }
-
-    .block5 {
-        height: 210px;
     }
 
     .button {
@@ -218,10 +249,6 @@
 @media (max-width: 460px) {
     .section {
         height: 1900px;
-    }
-
-    .mainDiv {
-        margin-left: 20px;
     }
 
     .textHeader {
@@ -238,11 +265,11 @@
     }
 
     .block2 {
-        height: 238px;
+        height: 190px;
     }
 
     .block3 {
-        height: 190px;
+        height: 226px;
     }
 
     .block4 {
@@ -250,6 +277,6 @@
     }
 
     .block5 {
-        height: 214px;
+        height: 204px;
     }
 }
