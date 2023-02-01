@@ -26,16 +26,16 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /*padding: 12px 40px;*/
+  padding: 12px 0px;
+  font-size: 14px;
 
-  width: 224px;
+  width: 226px;
   height: 45px;
 
   background: #0c42cd;
   box-shadow: 0px 5px 40px rgba(30, 68, 248, 0.4);
   border-radius: 30px;
   border: none;
-
   cursor: pointer;
 }
 
@@ -58,10 +58,6 @@
 }
 
 @media (max-width: 1090px) {
-  .mainText {
-    font-size: 40px;
-  }
-
   .mainDiv p {
     font-size: 16px;
   }
@@ -69,32 +65,33 @@
 
 @media (max-width: 760px) {
   .mainText {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .mainDiv p {
     max-width: 500px;
     font-size: 14px;
   }
-
-  .button {
-      width: 200px;
-      height: 40px;
-  }
 }
 
 @media (max-width: 460px) {
     .section {
-        height: 820px;
+        height: 828px;
     }
+  .mainDiv {
+    width: 89%;
+  }
+  .mainDiv p {
+    margin-bottom: 64px;
+  }
 
   .mainText {
-    font-size: 30px;
-    max-width: 340px;
+    font-size: 36px;
+    max-width: 380px;
   }
 
   .mainDiv p {
-    max-width: 340px;
+    max-width: 380px;
     font-size: 14px;
   }
 }

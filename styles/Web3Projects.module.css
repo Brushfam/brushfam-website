@@ -55,9 +55,12 @@
     margin-left: 20px;
 }
 
-.brushfam-mini-logo {
+.brushfamMiniLogo {
     width: 89px;
     height: 15px;
+}
+
+.venturesMiniLogo {
 }
 
 @media (max-width: 890px) {
@@ -102,19 +105,26 @@
     }
 
     .ul img {
-        transform: scale(0.7);
+        transform: scale(0.6);
     }
     .ul {
-        padding-left: 14%;
+        padding-left: 15%;
     }
     .ul {
         row-gap: 20px;
+        column-gap: 14px;
     }
     .portfolio p {
-        margin-left: 1px;
+        margin-left: 7px;
         margin-right: 1px;
+        font-size: 10px;
     }
-    .portfolio img {
-        transform: scale(0.8);
+    .venturesMiniLogo {
+        transform: scale(0.9);
+    }
+
+    .brushfamMiniLogo {
+        width: 92px;
+        height: 16px;
     }
 }
