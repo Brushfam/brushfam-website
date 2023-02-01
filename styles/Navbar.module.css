@@ -9,6 +9,10 @@
     width: 100%;
 }
 
+.navbarContainer li {
+    margin-right: 40px;
+}
+
 .navbarDiv {
     /*position: static;*/
     position: relative;

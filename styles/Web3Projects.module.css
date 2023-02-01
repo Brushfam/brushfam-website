@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .titleText {
@@ -35,13 +36,23 @@
     padding-left: 20px;
 }
 
+.ul li {
+    margin-right: 40px;
+}
+
 .portfolio {
     display: flex;
     flex-direction: row;
     /*justify-content: space-between;*/
     align-content: center;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 34px;
+    filter: opacity(70%);
+}
+
+.portfolio p {
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .brushfam-mini-logo {
@@ -49,7 +60,7 @@
     height: 15px;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 890px) {
     .ul {
         justify-content: space-evenly;
     }
@@ -57,21 +68,57 @@
 
 @media (max-width: 760px) {
     .section {
-        height: 390px;
-    }
-    .titleText {
-        font-size: 12px;
+        height: 350px;
     }
 
     .ul {
-        flex-direction: column;
-        align-content: center;
-        row-gap: 30px;
+        padding-left: 10%;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(24, 1fr);
+        row-gap: 32px;
+        width: 96%;
+    }
+    .ul li:nth-child(1) {
+        grid-row: 1;
+        grid-column-start: 4;
+        grid-column-end: 10;
+    }
+    .ul li:nth-child(2) {
+        grid-row: 1;
+        grid-column-start: 14;
+        grid-column-end: 20;
+    }
+    .ul li:nth-child(3) {
+        grid-row: 2;
+        grid-column-start: 9;
+        grid-column-end: 15;
     }
 }
 
 @media (max-width: 460px) {
+    .section {
+        height: 330px;
+    }
+
+    .titleText {
+        font-size: 12px;
+    }
+
     .ul img {
+        transform: scale(0.7);
+    }
+    .ul {
+        padding-left: 14%;
+    }
+    .ul {
+        row-gap: 20px;
+    }
+    .portfolio p {
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    .portfolio img {
         transform: scale(0.8);
     }
 }
