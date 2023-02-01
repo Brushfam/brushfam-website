@@ -188,6 +188,12 @@
     }
 }
 
+@media (max-width: 1260px) {
+    .mainDiv {
+        margin-top: 200px
+    }
+}
+
 @media (max-width: 1100px) {
     .twoServices {
         flex-direction: column;
