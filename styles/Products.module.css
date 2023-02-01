@@ -161,56 +161,36 @@
 
 @media (max-width: 460px) {
     .section {
-        height: 1300px;
+        height: 1100px;
+    }
+
+    .productsDiv {
+        padding-top: 2px;
+    }
+
+    .productsTitle {
+        text-align: start;
     }
 
     .productsTitleDescription {
         font-size: 12px;
         max-width: 300px;
+        text-align: start;
     }
 
-    .productLinkPart {
-        flex-direction: column;
+    .centeredDiv {
+        width: 89%
     }
 
-    .productButtonPart {
-        justify-content: flex-start;
+    .centeredRowDiv {
+        width: 89%
     }
 
-    .productsDiv {
-        width: 340px;
-        align-content: center;
+    .centeredRowDiv p {
+        font-size: 12px;
     }
 
     .productsDiv img {
-        transform: scale(0.5) translateX(-50%);
-        margin-bottom: 10px;
-    }
-
-    .productsDiv p {
-        max-width: 200px;
-        font-size: 12px;
-    }
-
-    .product {
-        height: 120px;
-        margin-bottom: 180px;
-        align-items: center;
-    }
-
-    .siteLink {
-        width: 67px;
-        height: 33px;
-        font-size: 12px;
-    }
-
-    .docsLink {
-        width: 76px;
-        height: 33px;
-        font-size: 12px;
-    }
-
-    .productsTitleDescription {
-        margin-bottom: 20px;
+        transform: scale(0.9) translateX(-5%);
     }
 }
