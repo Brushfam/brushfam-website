@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1200px;
+    /*height: 1200px;*/
     width: 100%;
 }
 
@@ -137,79 +137,55 @@
     filter: brightness(170%);
 }
 
-@media (max-width: 1260px) {
-    .codeDiv {
-        transform: scale(0.8);
-        margin-right: -20px;
-    }
-}
+/*@media (max-width: 1440px) {*/
+/*    .codeDiv {*/
+/*        transform: scale(0.8);*/
+/*        margin-right: -20px;*/
+/*    }*/
+/*}*/
 
-@media (max-width: 1140px) {
+@media (max-width: 1260px) {
     .codeDiv {
         display: none;
     }
 }
 
-@media (max-width: 760px) {
-    .titleText {
-        font-size: 12px;
-    }
-    .productsTitle {
-        font-size: 30px;
-    }
-}
-
 @media (max-width: 460px) {
     .section {
-        height: 1300px;
+        height: 910px;
+    }
+
+    .productsDiv {
+        padding-top: 2px;
+    }
+
+    .productsTitle {
+        text-align: start;
+    }
+
+    .titleText {
+        margin-top: 120px;
     }
 
     .productsTitleDescription {
         font-size: 12px;
         max-width: 300px;
+        text-align: start;
     }
 
-    .productLinkPart {
-        flex-direction: column;
+    .centeredDiv {
+        width: 89%
     }
 
-    .productButtonPart {
-        justify-content: flex-start;
+    .centeredRowDiv {
+        width: 89%
     }
 
-    .productsDiv {
-        width: 340px;
-        align-content: center;
+    .centeredRowDiv p {
+        font-size: 12px;
     }
 
     .productsDiv img {
-        transform: scale(0.5) translateX(-50%);
-        margin-bottom: 10px;
-    }
-
-    .productsDiv p {
-        max-width: 200px;
-        font-size: 12px;
-    }
-
-    .product {
-        height: 120px;
-        margin-bottom: 180px;
-    }
-
-    .siteLink {
-        width: 67px;
-        height: 33px;
-        font-size: 12px;
-    }
-
-    .docsLink {
-        width: 76px;
-        height: 33px;
-        font-size: 12px;
-    }
-
-    .productsTitleDescription {
-        margin-bottom: 20px;
+        transform: scale(0.9) translateX(-5%);
     }
 }

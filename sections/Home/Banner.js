@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 
 export default function Banner() {
     const handleClick = () => {
-        // implementation details
+        document.getElementById('products').scrollIntoView()
     };
 
   return (
@@ -18,7 +18,7 @@ export default function Banner() {
             <p>
                 Brushfam onboards businesses into Polkadot by creating the necessary
                 development infrastructure, auditing, and giving advisory to the
-                development teams. With Openbrush, Sol2ink and our suite of web3
+                development teams. With OpenBrush, Sol2ink and our suite of web3
                 products and services we make it easy to resolve real world problems
                 using Polkadot tech.
             </p>

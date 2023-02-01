@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className={navStyles.navbarContainer}>
       <div className={navStyles.navbarDiv}>
-        <div style={{ marginTop: 4, marginRight: 180 }}>
+        <div className={navStyles.logoDiv}>
           <Link href="/">
             <div>
               <img src="logos/navbar-logo.svg" alt="brushfam logo" />

@@ -1,14 +1,14 @@
 .section {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    height: 600px;
-    margin-left: 320px;
+    align-items: center;
+    /*height: 600px;*/
 }
 
 .contactDiv {
     display: flex;
     flex-direction: row;
+    width: 1000px
 }
 
 .leftDiv {
@@ -18,16 +18,21 @@
     margin-right: 106px;
 }
 
-.titleText {
+.titleText, .titleTextMobile {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 120%;
     margin-bottom: 9px;
+    width: 1000px;
 
     background: linear-gradient(133.96deg, #1945E1 10.01%, #206DE1 93.46%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.titleTextMobile {
+    display: none;
 }
 
 .headerText {
@@ -87,6 +92,7 @@
     font-size: 12px;
     line-height: 150%;
     color: #FFFFFF;
+    width: 79%;
 }
 
 .input {
@@ -106,10 +112,12 @@
 }
 
 .button {
-    width: 121px;
+    width: 122px;
     height: 45px;
+    font-size: 14px;
+    font-weight: 600;
     background: #0C42CD;
-    box-shadow: 0 5px 40px rgba(30, 68, 248, 0.4);
+    box-shadow: 0px 5px 40px rgba(30, 68, 248, 0.4);
     border-radius: 30px;
     border: none;
 }
@@ -155,22 +163,52 @@
     display: none;
 }
 
-
-@media (max-width: 1700px) {
-    .section {
-        margin-left: 200px;
+@media (max-width: 1440px) {
+    .contactDiv {
+        width:70%
+    }
+    .titleText {
+        width:70%
     }
 }
 
-@media (max-width: 1530px) {
-    .section {
-        margin-left: 100px;
+@media (max-width: 1380px) {
+    .leftDiv {
+        margin-right: 6px;
+    }
+    .contactSocialDiv {
+        width: 476px;
+    }
+    .socialNetwork, .lastSocialNetwork {
+        width: 110px;
     }
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1300px) {
     .section {
         height: 700px;
+    }
+
+    .contactDiv {
+        width:66%;
+        align-items: center;
+    }
+    .titleText {
+        display: none;
+    }
+
+    .titleTextMobile {
+        display: block;
+        text-align: center;
+    }
+    .headerText {
+        text-align: center;
+    }
+    .contactDescription {
+        text-align: center;
+    }
+    .socialTitleMobile {
+        text-align: center;
     }
 
     .socialTitle {
@@ -180,6 +218,7 @@
         display: none;
     }
     .leftDiv {
+        align-items: center;
         margin-right: 0;
     }
     .socialMobile {
@@ -189,6 +228,7 @@
 
     .contactDiv {
         flex-direction: column;
+        /*align-items: center;*/
     }
 
     .contactDescription {
@@ -196,45 +236,32 @@
     }
 }
 
-@media (max-width: 1060px) {
-    .section {
-        margin-left: 60px;
-    }
-}
-
-@media (max-width: 760px) {
-    .section {
-        margin-left: 40px;
-    }
-
-    .titleText {
-        font-size: 12px;
-    }
-    .headerText {
-        font-size: 30px;
-    }
-}
-
 @media (max-width: 460px) {
-    .section {
-        margin-top: 160px;
-        margin-left: 20px;
+    .contactDiv {
+        width:89%
     }
+    .titleTextMobile {
+        width:100%;
+        text-align: start;
+    }
+
     .headerText {
-        max-width: 260px;
+        width:100%;
+        text-align: start;
     }
     .contactDescription {
-        max-width: 320px;
+        width:100%;
+        text-align: start;
     }
 
     .formDiv {
-        width: 320px;
-        height: 300px;
-        padding: 40px 26px;
+        width: 100%;
+        height: auto;
+        padding: 40px 32px;
     }
 
     .input {
-        width: 260px;
+        width: 100%;
     }
 
     .button {
