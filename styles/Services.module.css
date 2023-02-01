@@ -188,14 +188,28 @@
     }
 
     .section {
-        height: 2200px;
+        height: 2420px;
     }
 
+    .block1, .block2, .block3, .block4, .block5 {
+        width: 380px
+    }
+    .block1 {
+        height: 394px;
+    }
     .block2 {
+        height: 246px;
         margin-right: 0;
     }
+    .block3 {
+        height: 318px;
+    }
     .block4 {
+        height: 408px;
         margin-right: 0;
+    }
+    .block5 {
+        height: 264px;
     }
     .serviceTitle, .serviceTitle4, .serviceTitle5 {
         text-align: center;
@@ -229,7 +243,6 @@
     }
     .textHeader {
         font-size: 30px;
-        max-width: 400px;
     }
 
     .serviceTitle, .serviceTitle4, .serviceTitle5 {
@@ -244,39 +257,48 @@
         width: 104px;
         height: 31px;
     }
+
+    .wrapper p {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 460px) {
     .section {
-        height: 1900px;
+        height: 2200px;
+    }
+    .mainDiv {
+        width: 89%;
+    }
+    .textTitle {
+        justify-content: flex-start;
     }
 
     .textHeader {
         max-width: 340px;
+        text-align: start;
+    }
+
+    .wrapper {
+        align-items: center;
+    }
+    .wrapper p {
+        font-size: 12px;
+    }
+    .serviceTitle, .serviceTitle4, .serviceTitle5 {
+        text-align: start;
+        max-width: none;
     }
 
     .block1, .block2, .block3, .block4, .block5 {
-        width: 300px;
+        height: auto;
+        width: 100%;
         padding: 30px 31px;
     }
 
-    .block1 {
-        height: 276px;
-    }
-
-    .block2 {
-        height: 190px;
-    }
-
-    .block3 {
-        height: 226px;
-    }
-
-    .block4 {
-        height: 276px;
-    }
-
-    .block5 {
-        height: 204px;
+    .serviceTitle, .serviceTitle4, .serviceTitle5 {
+        width: 100%;
+        font-size: 14px;
+        text-align: start;
     }
 }
