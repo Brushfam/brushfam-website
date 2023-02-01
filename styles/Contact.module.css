@@ -92,6 +92,7 @@
     font-size: 12px;
     line-height: 150%;
     color: #FFFFFF;
+    width: 79%;
 }
 
 .input {
@@ -245,30 +246,33 @@
 
 @media (max-width: 460px) {
     .contactDiv {
-        width:82%
+        width:89%
     }
-    .titleText {
-        width:82%;
+    .titleTextMobile {
+        width:100%;
+        text-align: start;
     }
 
     .section {
         margin-top: 160px;
     }
     .headerText {
-        max-width: 260px;
+        width:100%;
+        text-align: start;
     }
     .contactDescription {
-        max-width: 320px;
+        width:100%;
+        text-align: start;
     }
 
     .formDiv {
-        width: 320px;
-        height: 300px;
-        padding: 40px 26px;
+        width: 100%;
+        height: auto;
+        padding: 40px 32px;
     }
 
     .input {
-        width: 260px;
+        width: 100%;
     }
 
     .button {

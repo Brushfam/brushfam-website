@@ -74,7 +74,9 @@ export default function Contact() {
         </div>
 
         <div className={styles.socialMobile}>
-          <p className={styles.socialTitleMobile}>Also you can contact us via:</p>
+          <p className={styles.socialTitleMobile}>
+            Also you can contact us via:
+          </p>
           <div className={styles.contactSocialDivMobile}>
             <div className={styles.socialNetwork}>
               <a href={"https://twitter.com/Brushfam_io"}>
@@ -90,9 +92,9 @@ export default function Contact() {
             </div>
             <div className={styles.socialNetwork}>
               <a
-                  href={
-                    "https://matrix.to/#/!utTuYglskDvqRRMQta:matrix.org?via=matrix.org&via=t2bot.io&via=web3.foundation"
-                  }
+                href={
+                  "https://matrix.to/#/!utTuYglskDvqRRMQta:matrix.org?via=matrix.org&via=t2bot.io&via=web3.foundation"
+                }
               >
                 <img src={"icons/element-blue.svg"} />
                 <p className={styles.socialNetworkTitle}>Element</p>
