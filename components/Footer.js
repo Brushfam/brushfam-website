@@ -73,7 +73,7 @@ const Footer = () => {
             {productsData &&
                 productsData.map((item, i) => {
                   return <p key={i.toString()} className={styles.item}>
-                    <Link href="/">
+                    <Link href={item.link}>
                       {item.label}
                     </Link>
                   </p>;
@@ -84,7 +84,7 @@ const Footer = () => {
             {servicesData &&
                 servicesData.map((item, i) => {
                   return <p key={i.toString()} className={styles.item}>
-                    <Link href="/">
+                    <Link href={item.link} scroll={false}>
                       {item.label}
                     </Link>
                   </p>;
@@ -101,12 +101,12 @@ const Footer = () => {
                   </p>;
                 })}
           </div>
-          <div className={styles.itemsColumn}>
-            <p className={styles.itemsTitle}>Company</p>
-            <p className={styles.item}>About us</p>
-            <p className={styles.item}>Hiring</p>
-          </div>
-          <div className={styles.itemsColumn} style={{gap: 6}}>
+          {/*<div className={styles.itemsColumn}>*/}
+          {/*  <p className={styles.itemsTitle}>Company</p>*/}
+          {/*  <p className={styles.item}>About us</p>*/}
+          {/*  <p className={styles.item}>Hiring</p>*/}
+          {/*</div>*/}
+          <div className={styles.itemsColumnLast}>
             <p className={styles.itemsTitle}>Contact us</p>
             <p className={styles.item}>contact@727.ventures</p>
           </div>

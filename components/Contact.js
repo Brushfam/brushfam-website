@@ -64,7 +64,7 @@ export default function Contact() {
             <input
               type={"text"}
               name={"message"}
-              placeholder={"What do you wanna say for us"}
+              placeholder={"What do you wanna say to us"}
               className={styles.input}
             />
             <button type="button" className={styles.button}>

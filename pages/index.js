@@ -20,7 +20,7 @@ export default function Home() {
             <Products></Products>
             <Services></Services>
             <LetsBuild></LetsBuild>
-            <Contact></Contact>
+            {/*<Contact></Contact>*/}
             {/*<Blog></Blog>*/}
             <Footer></Footer>
         </div>

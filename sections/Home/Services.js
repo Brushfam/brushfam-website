@@ -18,7 +18,7 @@ export default function Services() {
           <p className={styles.serviceTitle}>
             For businesses looking to grow using web3:
           </p>
-          <div className={styles.block1}>
+          <div className={styles.block1} id={"onboard-in-web3"}>
             <div className={styles.serviceHeader}>
               <img src={"icons/search-icon.svg"} />
               <p>Onboard in web3</p>
@@ -48,7 +48,7 @@ export default function Services() {
 
         <p className={styles.serviceTitle}>For Polkadot native companies:</p>
         <div className={styles.twoServices}>
-          <div className={styles.wrapper}>
+          <div className={styles.wrapper} id={"security-audits"}>
             <div className={styles.block2}>
               <div className={styles.serviceHeader}>
                 <img src={"icons/search-icon.svg"} />
@@ -68,7 +68,7 @@ export default function Services() {
               </button>
             </div>
           </div>
-          <div className={styles.wrapper}>
+          <div className={styles.wrapper} id={"ink-advisory"}>
             <div className={styles.block3}>
               <div className={styles.serviceHeader}>
                 <img src={"icons/comment-icon.svg"} />
@@ -96,7 +96,7 @@ export default function Services() {
         <div className={styles.twoServices}>
           <div className={styles.wrapper} style={{ marginBottom: 40 }}>
             <p className={styles.serviceTitle4}>For VC/angel investors:</p>
-            <div className={styles.block4}>
+            <div className={styles.block4} id={"investment-diligence"}>
               <div className={styles.serviceHeader}>
                 <img src={"icons/comment-icon.svg"} />
                 <p>Investment tech diligence</p>
@@ -125,7 +125,7 @@ export default function Services() {
             <p className={styles.serviceTitle5}>
               For those onboarding from Ethereum:
             </p>
-            <div className={styles.block5}>
+            <div className={styles.block5} id={"onboard-in-polkadot"}>
               <div className={styles.serviceHeader}>
                 <img src={"icons/comment-icon.svg"} />
                 <p>Onboard in Polkadot</p>

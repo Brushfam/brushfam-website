@@ -1,30 +1,38 @@
 export const productsData = [
     {
-        label: "OpenBrush"
+        label: "OpenBrush",
+        link: "https://openbrush.io/"
     },
     {
-        label: "Sol2ink"
+        label: "Sol2ink",
+        link: "https://github.com/727-Ventures/sol2ink"
     },
     {
-        label: "TypeChain"
+        label: "TypeChain",
+        link: "https://github.com/727-Ventures/typechain-polkadot"
     }
 ]
 
 export const servicesData = [
     {
-        label: "Advisory Subscription"
+        label: "Advisory Subscription",
+        link: "#ink-advisory"
     },
     {
-        label: "Security Audits"
+        label: "Security Audits",
+        link: "#security-audits"
     },
     {
-        label: "Investment Diligence"
+        label: "Investment Diligence",
+        link: "#investment-diligence"
     },
     {
-        label: "Onboard in Polkadot"
+        label: "Onboard in Polkadot",
+        link: "#onboard-in-polkadot"
     },
     {
-        label: "Onboard in web3"
+        label: "Onboard in web3",
+        link: "#onboard-in-web3"
     }
 ]
 
@@ -43,6 +51,6 @@ export const learnData = [
     },
     {
         label: "Docs",
-        link: "/"
+        link: "https://docs.openbrush.io/"
     }
 ]
