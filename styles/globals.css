@@ -49,8 +49,8 @@ li {
   }
 }
 
-@media (max-width: 460px) {
-  p {
-    font-size: 8px;
-  }
-}
+/*@media (max-width: 460px) {*/
+/*  p {*/
+/*    font-size: 8px;*/
+/*  }*/
+/*}*/

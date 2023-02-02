@@ -21,7 +21,7 @@ export default function Home() {
             <Services></Services>
             <LetsBuild></LetsBuild>
             <Contact></Contact>
-            <Blog></Blog>
+            {/*<Blog></Blog>*/}
             <Footer></Footer>
         </div>
     </>

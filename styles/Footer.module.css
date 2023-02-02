@@ -1,71 +1,102 @@
 .footerSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 540px;
-    padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 380px;
+  margin-top: 120px;
 }
 
 .footerDiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 1100px;
-    padding-top: 120px;
-    border-top: 1px solid #9097AA;
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  padding-top: 120px;
+  border-top: 1px solid #9097aa;
 }
 
 .socialDiv a {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .footerSocial {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    left: 0;
-}
-
-.footerNavigation {
-    display: grid;
-    grid-template-columns: 100px 120px 100px;
-    grid-template-rows: 60px 60px;
-    column-gap: 60px;
-    right: 0;
-}
-
-.footerNavigation p {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 150%;
-    color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 69px;
+  float: left;
 }
 
 .socialDiv {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 38px;
-    column-gap: 30px;
-    /*padding-left: 10px;*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 38px;
+  column-gap: 30px;
 }
 
-.footerTextDiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    width: 1100px;
-    margin-top: 40px;
+.socialDivMobile {
+  display: none;
+}
+
+.footerLastText {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  width: 1200px;
+  margin-top: 20px;
 }
 
 .brushfamLogo {
+}
 
+.footerNavigation {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.itemsColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.itemsTitle {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.item {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.itemsTitle,
+.item {
+  line-height: 150%;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.products {
+}
+
+.services {
+}
+
+.learn {
+}
+
+.company {
+}
+
+.contactUs {
 }
 
 /*@media (min-width: 1930px) {*/
@@ -75,63 +106,105 @@
 /*}*/
 
 @media (max-width: 1440px) {
-    .footerDiv, .footerTextDiv {
-        width: 76%;
-    }
+  .footerDiv,
+  .footerLastText {
+    width: 84%;
+  }
 }
 
-@media (max-width: 1060px) {
-    .footerNavigation {
-        grid-template-columns: 80px 100px 80px;
-        column-gap: 40px;
-    }
-
-    .footerSection {
-        height: 400px;
-        padding-top: 60px
-    }
+@media (max-width: 1300px) {
+  .brushfamLogo {
+    width: 224px;
+  }
+  .socialDiv {
+    column-gap: 17px;
+  }
+  .footerSocial {
+    margin-right: 34px;
+  }
+  .footerDiv {
+    padding-top: 90px;
+  }
 }
 
-@media (max-width: 900px) {
-    .footerNavigation {
-        display: none;
-    }
+@media (max-width: 1160px) {
+  .itemsTitle {
+    font-size: 13px;
+  }
 
-    .brushfamLogo {
-        display: none;
-    }
+  .item {
+    font-size: 11px;
+  }
+}
 
-    .footerSocial {
-        align-items: center;
-    }
+@media (max-width: 955px) {
+  .footerSection {
+    height: 1470px;
+  }
+  .socialDiv {
+    display: none;
+  }
+  .socialDivMobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 47px;
+  }
 
-    .footerDiv {
-        display: block;
-        padding-top: 10px;
-    }
+  .footerDiv {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+  }
+  .footerSocial {
+    align-items: center;
+  }
 
-    .footerSection {
-        height: 280px;
-        padding-top: 60px
-    }
+  .brushfamLogo {
+    width: 320px;
+    margin-bottom: 71px;
+  }
 
-    .footerTextDiv {
-        justify-content: center;
-    }
+  .footerSocial {
+    margin-right: 0;
+  }
+  .socialDiv {
+    column-gap: 30px;
+  }
+
+  .footerNavigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .itemsColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    gap: 16px
+  }
+
+  .itemsTitle {
+    font-size: 20px;
+    padding-bottom: 4px;
+    margin-bottom: 0;
+  }
+
+  .item {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .footerLastText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 460px) {
-    .footerSection {
-        height: 260px;
-        padding-top: 120px
-    }
-
-    .footerSection img {
-        transform: scale(0.8);
-    }
-
-    .socialDiv {
-        margin-top: 18px;
-        column-gap: 20px;
-    }
 }
