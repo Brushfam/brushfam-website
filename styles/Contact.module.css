@@ -237,6 +237,10 @@
 }
 
 @media (max-width: 460px) {
+    .section {
+        height: 654px;
+    }
+
     .contactDiv {
         width:89%
     }

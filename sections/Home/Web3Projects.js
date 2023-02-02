@@ -1,4 +1,4 @@
-import styles from "@/styles/Web3Projects.module.css";
+import styles from "@/styles/Home/Web3Projects.module.css";
 import { web3ProjectsData } from "@/data/web3ProjectsData";
 import Link from "next/link";
 

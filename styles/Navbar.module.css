@@ -29,7 +29,8 @@
 }
 
 .navbarNavigation {
-    display: flex;
+    visibility: hidden;
+    /*display: flex;*/
     flex-direction: row;
     align-items: center;
 }

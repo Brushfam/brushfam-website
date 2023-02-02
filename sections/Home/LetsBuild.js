@@ -1,4 +1,4 @@
-import styles from "@/styles/LetsBuild.module.css";
+import styles from "@/styles/Home/LetsBuild.module.css";
 
 export default function LetsBuild() {
     return(

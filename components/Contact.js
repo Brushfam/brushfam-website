@@ -2,7 +2,7 @@ import styles from "@/styles/Contact.module.css";
 
 export default function Contact() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id={"get-in-touch"}>
       <p className={styles.titleText}>Get in touch</p>
       <div className={styles.contactDiv}>
         <div className={styles.leftDiv}>
@@ -64,7 +64,7 @@ export default function Contact() {
             <input
               type={"text"}
               name={"message"}
-              placeholder={"What do you wanna say for us"}
+              placeholder={"What do you wanna say to us"}
               className={styles.input}
             />
             <button type="button" className={styles.button}>
