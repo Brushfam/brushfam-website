@@ -16,7 +16,7 @@ export default function Services() {
 
         <div className={styles.wrapper} style={{ marginBottom: 40 }}>
           <p className={styles.serviceTitle}>
-            For businesses looking to grow using web3:
+            For businesses looking to grow with using web3:
           </p>
           <div className={styles.block1} id={"onboard-in-web3"}>
             <div className={styles.serviceHeader}>
@@ -102,7 +102,7 @@ export default function Services() {
                 <p>Investment tech diligence</p>
               </div>
               <p className={styles.serviceText} style={{ marginBottom: 24 }}>
-                Not every great idea will be converted into a working company.
+                Not every business idea results in successful company.
                 With Brushfam we want to make sure the ideas you are investing
                 your money in, are possible to be implemented and the startup’s
                 team knows how to do it. We will be analyze startup’s documents,

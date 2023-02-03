@@ -7,6 +7,7 @@ import LetsBuild from "@/sections/Home/LetsBuild";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 import Blog from "@/sections/Home/Blog";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
@@ -15,12 +16,13 @@ export default function Home() {
             <Head>
                 <title>Brushfam</title>
             </Head>
+            <Navbar></Navbar>
             <Banner></Banner>
             <Web3Projects></Web3Projects>
             <Products></Products>
             <Services></Services>
             <LetsBuild></LetsBuild>
-            {/*<Contact></Contact>*/}
+            <Contact></Contact>
             {/*<Blog></Blog>*/}
             <Footer></Footer>
         </div>
