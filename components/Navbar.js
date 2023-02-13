@@ -7,18 +7,18 @@ const Navbar = () => {
     document.getElementById('get-in-touch').scrollIntoView()
   };
 
-  if (typeof window !== 'undefined') {
-    let prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-      const currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-      } else {
-        document.getElementById("navbar").style.top = "-80px";
-      }
-      prevScrollpos = currentScrollPos;
-    }
-  }
+  // if (typeof window !== 'undefined') {
+  //   let prevScrollpos = window.pageYOffset;
+  //   window.onscroll = function() {
+  //     const currentScrollPos = window.pageYOffset;
+  //     if (prevScrollpos > currentScrollPos) {
+  //       document.getElementById("navbar").style.top = "0";
+  //     } else {
+  //       document.getElementById("navbar").style.top = "-80px";
+  //     }
+  //     prevScrollpos = currentScrollPos;
+  //   }
+  // }
 
   return (
     <div className={navStyles.navbarContainer} id={"navbar"}>

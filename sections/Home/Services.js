@@ -21,7 +21,7 @@ export default function Services() {
           <div className={styles.block1} id={"onboard-in-web3"}>
             <div className={styles.serviceHeader}>
               <img src={"icons/search-icon.svg"} />
-              <p>Onboard in web3</p>
+              <p>Web3 onboard</p>
             </div>
             <p className={styles.serviceText}>
               Looking for opportunities to grow your business? Web3 might be
@@ -52,7 +52,7 @@ export default function Services() {
             <div className={styles.block2}>
               <div className={styles.serviceHeader}>
                 <img src={"icons/search-icon.svg"} />
-                <p>Security Audits</p>
+                <p>Security audits</p>
               </div>
               <p className={styles.serviceText} style={{ marginBottom: 24 }}>
                 An ink! smart contract audit performed by our specialists
@@ -72,7 +72,7 @@ export default function Services() {
             <div className={styles.block3}>
               <div className={styles.serviceHeader}>
                 <img src={"icons/comment-icon.svg"} />
-                <p>Ink! Advisory subscription</p>
+                <p>Advisory subscription</p>
               </div>
               <p className={styles.serviceText} style={{ marginBottom: 24 }}>
                 Get access to the team that created OpenBrush, Sol2ink,
@@ -99,7 +99,7 @@ export default function Services() {
             <div className={styles.block4} id={"investment-diligence"}>
               <div className={styles.serviceHeader}>
                 <img src={"icons/comment-icon.svg"} />
-                <p>Investment tech diligence</p>
+                <p>Investment Diligence</p>
               </div>
               <p className={styles.serviceText} style={{ marginBottom: 24 }}>
                 Not every business idea results in successful company.
@@ -128,7 +128,7 @@ export default function Services() {
             <div className={styles.block5} id={"onboard-in-polkadot"}>
               <div className={styles.serviceHeader}>
                 <img src={"icons/comment-icon.svg"} />
-                <p>Onboard in Polkadot</p>
+                <p>Polkadot onboard</p>
               </div>
               <p className={styles.serviceText} style={{ marginBottom: 24 }}>
                 Looking to grow your total addressable market or upgrade your

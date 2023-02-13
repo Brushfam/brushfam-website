@@ -78,6 +78,7 @@
 @media (max-width: 460px) {
     .section {
         height: 828px;
+      padding-top: 188px;
     }
   .mainDiv {
     width: 89%;

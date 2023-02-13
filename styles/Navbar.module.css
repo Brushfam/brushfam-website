@@ -21,10 +21,13 @@
     flex-direction: column;
     justify-content: flex-start;
     padding-bottom: 40px;
+}
+
+.mainDiv {
     width: 1100px;
 }
 
-/*.mainDiv {*/
+    /*.mainDiv {*/
 /*    position: fixed;*/
 /*    display: flex;*/
 /*    flex-direction: column;*/
@@ -84,7 +87,7 @@
 }
 
 @media (max-width: 1440px) {
-    .navbarContainer .mainDiv {
+    .mainDiv {
         width: 76%
     }
 }
@@ -115,7 +118,13 @@
 /*}*/
 
 @media (max-width: 460px) {
-    /*.navbarContainer {*/
-    /*    padding-bottom: 210px;*/
-    /*}*/
+    .navbarContainer {
+        position: static;
+        background: transparent;
+        backdrop-filter: none;
+    }
+
+    .mainDiv {
+        width: 89%;
+    }
 }

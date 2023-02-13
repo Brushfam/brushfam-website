@@ -1,6 +1,6 @@
 import styles from "@/styles/Contact.module.css";
-import {useState} from "react";
-import {render} from "react-dom";
+import { useState } from "react";
+import { render } from "react-dom";
 
 export default function Contact() {
   const [email, setEmail] = useState("");
@@ -8,10 +8,10 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
-    const form = document.getElementById('form');
+    const form = document.getElementById("form");
     if (!form.checkValidity()) {
-      form.reportValidity()
-      return
+      form.reportValidity();
+      return;
     }
 
     e.preventDefault();
@@ -86,7 +86,7 @@ export default function Contact() {
         </div>
 
         <div className={styles.formDiv}>
-          <form method="post" id={"form"}>
+          <form method="post" id={"form"} >
             <label htmlFor={"email"} className={styles.label}>
               Email
             </label>
@@ -113,21 +113,19 @@ export default function Contact() {
               className={styles.input}
               required
             />
-            {
-              submitted ?
-                  <p className={styles.submittedText}>Submitted!</p>
-                  :
-                  <button
-                      type="submit"
-                      onClick={(e) => {
-                        handleSubmit(e);
-                      }}
-                      className={styles.button}
-                  >
-                    Apply
-                  </button>
-            }
-
+            {submitted ? (
+              <p className={styles.submittedText}>Submitted!</p>
+            ) : (
+              <button
+                type="submit"
+                onClick={(e) => {
+                  handleSubmit(e);
+                }}
+                className={styles.button}
+              >
+                Apply
+              </button>
+            )}
           </form>
         </div>
 
