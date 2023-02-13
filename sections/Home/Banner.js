@@ -9,7 +9,7 @@ export default function Banner() {
   return (
     <section className={styles.section}>
         <div className={styles.mainDiv}>
-            <Navbar></Navbar>
+            {/*<Navbar></Navbar>*/}
             <div style={{ marginBottom: 24 }}>
                 <h1 className={styles.mainText}>Move faster</h1>
                 <h1 className={styles.mainText}>using blockchain.</h1>

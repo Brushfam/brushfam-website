@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   height: 920px;
+  padding-top: 268px;
 }
 
 .mainDiv {
@@ -77,6 +78,7 @@
 @media (max-width: 460px) {
     .section {
         height: 828px;
+      padding-top: 188px;
     }
   .mainDiv {
     width: 89%;

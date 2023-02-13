@@ -1,6 +1,44 @@
 import styles from "@/styles/Contact.module.css";
+import { useState } from "react";
+import { render } from "react-dom";
 
 export default function Contact() {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    const form = document.getElementById("form");
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    e.preventDefault();
+    console.log("Sending");
+    let data = {
+      email,
+      message,
+    };
+
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then((res) => {
+      console.log("Response received");
+      if (res.status === 200) {
+        console.log("Response succeeded!");
+        setSubmitted(true);
+        setEmail("");
+        setMessage("");
+      }
+    });
+  };
+
   return (
     <section className={styles.section} id={"get-in-touch"}>
       <p className={styles.titleText}>Get in touch</p>
@@ -48,7 +86,7 @@ export default function Contact() {
         </div>
 
         <div className={styles.formDiv}>
-          <form method="post">
+          <form method="post" id={"form"} >
             <label htmlFor={"email"} className={styles.label}>
               Email
             </label>
@@ -56,7 +94,11 @@ export default function Contact() {
               type={"email"}
               name={"email"}
               placeholder={"johnsmith@gmail.com"}
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
               className={styles.input}
+              required
             />
             <label htmlFor={"message"} className={styles.label}>
               Your Message
@@ -65,11 +107,25 @@ export default function Contact() {
               type={"text"}
               name={"message"}
               placeholder={"What do you wanna say to us"}
+              onChange={(e) => {
+                setMessage(e.target.value);
+              }}
               className={styles.input}
+              required
             />
-            <button type="button" className={styles.button}>
-              Apply
-            </button>
+            {submitted ? (
+              <p className={styles.submittedText}>Submitted!</p>
+            ) : (
+              <button
+                type="submit"
+                onClick={(e) => {
+                  handleSubmit(e);
+                }}
+                className={styles.button}
+              >
+                Apply
+              </button>
+            )}
           </form>
         </div>
 

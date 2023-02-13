@@ -1,13 +1,39 @@
 .navbarContainer {
-    /*position: fixed;*/
+    position: fixed;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     /*background: rgb(0, 0, 0, .7);*/
-    padding-bottom: 268px;
+    /*padding-bottom: 268px;*/
     height: 80px;
+    /*padding-left: 120px;*/
+    /*padding-right: 120px;*/
+    /*padding-left: 120px;*/
     width: 100%;
+    background: rgb(30,30,30, 0.5);
+    backdrop-filter: blur(7.5px);
+    transition: top 0.3s;
+    z-index: 1;
 }
+
+.navbarContainer .mainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 40px;
+}
+
+.mainDiv {
+    width: 1100px;
+}
+
+    /*.mainDiv {*/
+/*    position: fixed;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: flex-start;*/
+/*    !*width: 1100px;*!*/
+/*}*/
 
 .navbarContainer li {
     margin-right: 40px;
@@ -29,13 +55,14 @@
 }
 
 .navbarNavigation {
-    visibility: hidden;
-    /*display: flex;*/
+    /*visibility: hidden;*/
+    display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .ul {
+    visibility: hidden;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -57,6 +84,12 @@
     font-weight: 600;
 
     cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+    .mainDiv {
+        width: 76%
+    }
 }
 
 @media (max-width: 1340px) {
@@ -86,6 +119,12 @@
 
 @media (max-width: 460px) {
     .navbarContainer {
-        padding-bottom: 210px;
+        position: static;
+        background: transparent;
+        backdrop-filter: none;
+    }
+
+    .mainDiv {
+        width: 89%;
     }
 }
