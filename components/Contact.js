@@ -1,43 +1,82 @@
 import styles from "@/styles/Contact.module.css";
 import { useState } from "react";
-import { render } from "react-dom";
 
 export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [sent, setSent] = useState(false);
 
-  const handleSubmit = (e) => {
-    const form = document.getElementById("form");
-    if (!form.checkValidity()) {
-      form.reportValidity();
-      return;
-    }
+  const SubmitButton = () => {
+    const handleSubmit = async (e) => {
+      const form = document.getElementById("form");
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
 
-    e.preventDefault();
-    console.log("Sending");
-    let data = {
-      email,
-      message,
+      e.preventDefault();
+      setSent(true);
+      console.log("Sending");
+      let data = {
+        email,
+        message,
+      };
+      await sendContactForm(data);
     };
 
-    fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        Accept: "application/json, text/plain, */*",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    }).then((res) => {
-      console.log("Response received");
-      if (res.status === 200) {
-        console.log("Response succeeded!");
-        setSubmitted(true);
-        setEmail("");
-        setMessage("");
-      }
-    });
-  };
+    const sendContactForm = async (data) => {
+      fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }).then((res) => {
+        console.log("Response received");
+        if (res.status === 200) {
+          console.log("Response succeeded!");
+          setSubmitted(true);
+          setEmail("");
+          setMessage("");
+        }
+      });
+    }
+
+    // const SubmittedWrapper = (value) => {
+    //   console.log("+")
+    //   return value ? (
+    //       <p className={styles.submittedText}>Submitted!</p>
+    //   ) : (
+    //       <p className={styles.submittedText}>Sending...</p>
+    //   );
+    // };
+
+    const DefaultSubmitButton = () => {
+      return (
+          <button
+              type="submit"
+              onClick={(e) => {
+                handleSubmit(e);
+              }}
+              className={styles.button}
+          >
+            Apply
+          </button>
+      );
+    };
+
+    // TODO: refactoring
+    return sent ? (submitted ? (
+        <p className={styles.submittedText}>Submitted!</p>
+    ) : (
+          <p className={styles.submittedText}>Submitting...</p>
+    )) :
+        (
+            <DefaultSubmitButton />
+        )
+  }
 
   return (
     <section className={styles.section} id={"get-in-touch"}>
@@ -86,7 +125,7 @@ export default function Contact() {
         </div>
 
         <div className={styles.formDiv}>
-          <form method="post" id={"form"} >
+          <form method="post" id={"form"}>
             <label htmlFor={"email"} className={styles.label}>
               Email
             </label>
@@ -113,19 +152,7 @@ export default function Contact() {
               className={styles.input}
               required
             />
-            {submitted ? (
-              <p className={styles.submittedText}>Submitted!</p>
-            ) : (
-              <button
-                type="submit"
-                onClick={(e) => {
-                  handleSubmit(e);
-                }}
-                className={styles.button}
-              >
-                Apply
-              </button>
-            )}
+            <SubmitButton></SubmitButton>
           </form>
         </div>
 
