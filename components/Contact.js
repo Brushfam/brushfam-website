@@ -8,9 +8,9 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [sent, setSent] = useState(false);
 
-  const SubmitButton = () => {
+  const SubmitButton = ({formName}) => {
     const handleSubmit = async (e) => {
-      const form = document.getElementById("form");
+      const form = document.getElementById(formName);
       if (!form.checkValidity()) {
         form.reportValidity();
         return;
@@ -151,7 +151,7 @@ export default function Contact() {
               className={styles.input}
               required
             />
-            <SubmitButton></SubmitButton>
+            <SubmitButton formName={"form"}></SubmitButton>
           </form>
         </div>
       <div className={styles.contactDivMobileWrapper}>
@@ -187,19 +187,7 @@ export default function Contact() {
                 className={styles.input}
                 required
             />
-            {submitted ? (
-                <p className={styles.submittedText}>Submitted!</p>
-            ) : (
-                <button
-                    type="submit"
-                    onClick={(e) => {
-                      handleSubmit(e, "mobileForm");
-                    }}
-                    className={styles.button}
-                >
-                  Apply
-                </button>
-            )}
+            <SubmitButton formName={"mobileForm"}></SubmitButton>
           </form>
         </div>
         <SocialButtons></SocialButtons>
