@@ -1,38 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
 .section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*height: 600px;*/
 }
 
 .contactDiv {
     display: flex;
     flex-direction: row;
-    width: 1000px
+    padding: 64px;
+    width: 1000px;
+    height: 364px;
+    background: linear-gradient(110.11deg, rgba(144, 151, 170, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+
+.contactDivMobileWrapper {
+    display: none;
+}
+
+.contactDivMobile {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: auto;
+    padding: 64px 40px 64px 40px;
+    background: linear-gradient(110.11deg, rgba(144, 151, 170, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
 }
 
 .leftDiv {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-right: 106px;
-}
-
-.titleText, .titleTextMobile {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 120%;
-    margin-bottom: 9px;
-    width: 1000px;
-
-    background: linear-gradient(133.96deg, #1945E1 10.01%, #206DE1 93.46%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.titleTextMobile {
-    display: none;
+    margin-right: 135px;
 }
 
 .headerText {
@@ -40,50 +44,63 @@
     font-size: 40px;
     line-height: 120%;
     color: #FFFFFF;
-    max-width: 480px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
-.contactDescription {
+.descriptionText {
+    font-weight: 400;
     font-size: 12px;
-    max-width: 360px;
-    margin-bottom: 88px;
+    line-height: 150%;
+    color: #9097AA;
+    margin-bottom: 54px;
 }
 
-.socialTitle, .socialTitleMobile {
-    font-weight: 600;
+.socialWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.socialRow {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.socialButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 30px;
+    width: 141px;
+    height: 45px;
+    background: linear-gradient(110.11deg, rgba(144, 151, 170, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+}
+
+.socialButton p {
+    font-weight: 400;
     font-size: 14px;
     line-height: 150%;
     color: #FFFFFF;
+    margin-left: 10px;
 }
 
-.socialTitleMobile {
-    margin-top: 28px;
+.socialButton:hover {
+    filter: brightness(170%);
+    cursor: pointer;
 }
-
-.contactSocialDiv, .contactSocialDivMobile {
-    display: flex;
-    flex-direction: row;
-    width: 493px;
-    height: 66px;
-    padding: 14px;
-    margin-top: 16px;
-
-    background: linear-gradient(110.11deg, rgba(144, 151, 170, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 6px;
-}
-
-.contactSocialDivMobile {}
 
 .formDiv {
-    width: 400px;
-    height: 347px;
-    padding: 64px 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
-    background: linear-gradient(110.11deg, rgba(144, 151, 170, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
-    border: 1.5px solid rgba(255, 255, 255, 0.2);
-    border-radius: 6px;
+.formDivMobile {
+    display: none;
 }
 
 .label {
@@ -92,12 +109,11 @@
     font-size: 12px;
     line-height: 150%;
     color: #FFFFFF;
-    width: 79%;
 }
 
 .input {
-    width: 320px;
-    margin-bottom: 32px;
+    width: 100%;
+    margin-bottom: 41px;
     background: transparent;
     font-weight: 400;
     font-size: 14px;
@@ -108,6 +124,11 @@
 }
 
 .input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
     color: #9097AA;
 }
 
@@ -127,42 +148,6 @@
     cursor: pointer;
 }
 
-.socialNetwork {
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.lastSocialNetwork, .socialNetwork {
-    width: 118px;
-    height: 38px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
-
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    color: #FFFFFF;
-}
-
-.lastSocialNetwork a, .socialNetwork a {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.socialNetworkTitle {
-    font-size: 12px;
-    margin-left: 8px;
-    color: #FFFFFF;
-}
-
-.socialMobile {
-    display: none;
-}
-
 .submittedText {
     display: flex;
     flex-direction: row;
@@ -178,129 +163,78 @@
     color: #FFFFFF;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1240px) {
     .contactDiv {
-        width:70%
+        width: 79%
     }
-    .titleText {
-        width:70%
-    }
-}
-
-@media (max-width: 1380px) {
     .leftDiv {
-        margin-right: 6px;
-    }
-    .contactSocialDiv {
-        width: 476px;
-    }
-    .socialNetwork, .lastSocialNetwork {
-        width: 110px;
+        margin-right: 75px;
     }
 }
 
-@media (max-width: 1300px) {
-    .section {
-        height: 700px;
-    }
-
+@media (max-width: 955px) {
     .contactDiv {
-        width:66%;
-        align-items: center;
-    }
-    .titleText {
         display: none;
     }
 
-    .titleTextMobile {
+    .contactDivMobileWrapper {
         display: block;
-        text-align: center;
     }
+
+    .contactDivMobile {
+        margin-bottom: 64px;
+    }
+
     .headerText {
-        text-align: center;
-    }
-    .contactDescription {
-        text-align: center;
-    }
-    .socialTitleMobile {
-        text-align: center;
+        margin-bottom: 24px;
     }
 
-    .socialTitle {
-        display: none;
+    .descriptionText {
+        margin-bottom: 64px;
     }
-    .contactSocialDiv {
-        display: none;
+
+    .socialButton {
+        width: 182px;
+        height: 52px;
     }
-    .leftDiv {
-        align-items: center;
-        margin-right: 0;
-    }
-    .socialMobile {
+
+    .socialButton p {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        color: #FFFFFF;
     }
-
-    .contactDiv {
-        flex-direction: column;
-        /*align-items: center;*/
-    }
-
-    .contactDescription {
-        margin-bottom: 28px;
+    .socialRow {
+        column-gap: 16px;
     }
 }
 
 @media (max-width: 460px) {
-    .section {
-        height: 654px;
+    .socialRow {
+        column-gap: 4px;
     }
 
-    .contactDiv {
-        width:89%
-    }
-    .titleTextMobile {
-        width:100%;
-        text-align: start;
+    .contactDivMobileWrapper {
+        width: 89%;
     }
 
-    .headerText {
-        width:100%;
-        text-align: start;
-    }
-    .contactDescription {
-        width:100%;
-        text-align: start;
-    }
-
-    .formDiv {
+    .contactDivMobile {
         width: 100%;
         height: auto;
-        padding: 40px 32px;
     }
 
-    .input {
-        width: 100%;
+    .socialButton {
+        width: 166px;
+        height: 47px;
     }
 
-    .button {
-        width: 109px;
-        height: 40px;
-        font-size: 12px;
+    .socialButton p {
+        font-size: 18px;
     }
 
-    .contactSocialDivMobile {
-        width: auto;
-        height: auto;
-        padding: 6px;
-    }
-
-    .lastSocialNetwork, .socialNetwork {
-        width: 80px;
-        height: 30px;
-    }
-
-    .socialNetworkTitle {
-        font-size: 10px;
+    .socialWrapper {
+        align-items: center;
     }
 }
