@@ -7,8 +7,8 @@ export default function Contact() {
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
-    const form = document.getElementById("form");
+  const handleSubmit = (e, name) => {
+    const form = document.getElementById(name);
     if (!form.checkValidity()) {
       form.reportValidity();
       return;
@@ -74,8 +74,16 @@ export default function Contact() {
     )
   }
 
-  const ContactForm = () => {
-    return(
+  return (
+    <section className={styles.section} id={"get-in-touch"}>
+      <div className={styles.contactDiv}>
+        <div className={styles.leftDiv}>
+          <p className={styles.headerText}>Get in touch</p>
+          <p className={styles.descriptionText}>
+            Work with tech experts to win the battle
+          </p>
+          <SocialButtons></SocialButtons>
+        </div>
         <form method="post" id={"form"} className={styles.formDiv}>
           <label htmlFor={"email"} className={styles.label}>
             Email
@@ -109,7 +117,7 @@ export default function Contact() {
               <button
                   type="submit"
                   onClick={(e) => {
-                    handleSubmit(e);
+                    handleSubmit(e, "form");
                   }}
                   className={styles.button}
               >
@@ -117,20 +125,6 @@ export default function Contact() {
               </button>
           )}
         </form>
-    )
-  }
-
-  return (
-    <section className={styles.section} id={"get-in-touch"}>
-      <div className={styles.contactDiv}>
-        <div className={styles.leftDiv}>
-          <p className={styles.headerText}>Get in touch</p>
-          <p className={styles.descriptionText}>
-            Work with tech experts to win the battle
-          </p>
-          <SocialButtons></SocialButtons>
-        </div>
-          <ContactForm></ContactForm>
         </div>
       <div className={styles.contactDivMobileWrapper}>
         <p className={styles.headerText}>Get in touch</p>
@@ -138,7 +132,47 @@ export default function Contact() {
           Work with tech experts to win the battle
         </p>
         <div className={styles.contactDivMobile}>
-          <ContactForm></ContactForm>
+          <form method="post" id={"mobileForm"} className={styles.formDiv}>
+            <label htmlFor={"email"} className={styles.label}>
+              Email
+            </label>
+            <input
+                type={"email"}
+                name={"email"}
+                placeholder={"johnsmith@gmail.com"}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+                className={styles.input}
+                required
+            />
+            <label htmlFor={"message"} className={styles.label}>
+              Your Message
+            </label>
+            <input
+                type={"text"}
+                name={"message"}
+                placeholder={"What do you wanna say to us"}
+                onChange={(e) => {
+                  setMessage(e.target.value);
+                }}
+                className={styles.input}
+                required
+            />
+            {submitted ? (
+                <p className={styles.submittedText}>Submitted!</p>
+            ) : (
+                <button
+                    type="submit"
+                    onClick={(e) => {
+                      handleSubmit(e, "mobileForm");
+                    }}
+                    className={styles.button}
+                >
+                  Apply
+                </button>
+            )}
+          </form>
         </div>
         <SocialButtons></SocialButtons>
       </div>
