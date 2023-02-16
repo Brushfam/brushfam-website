@@ -30,7 +30,7 @@ export default function HiringSection() {
                 looking for a talented&skilled&problem-solving person to be part of
                 our team!
             </div>
-            <Link href={"/cto-hiring"}>
+            <Link href={"/cto-hiring"} style={{width: 161}}>
                 <div className={styles.learnMore}>Learn more</div>
             </Link>
         </div>
