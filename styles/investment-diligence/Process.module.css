@@ -1,0 +1,55 @@
+.section {
+    padding-top: 216px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerText {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 90px;
+    max-width: 500px;
+}
+
+.auditProcessImg {
+    margin-bottom: 230px;
+}
+
+.auditProcessMobileImg {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .auditProcessImg {
+        width: 86%
+    }
+}
+
+@media (max-width: 900px) {
+    .auditProcessImg {
+        display: none;
+    }
+
+    .auditProcessMobileImg {
+        display: block;
+        margin-bottom: 230px;
+    }
+
+    .headerText {
+        margin-bottom: 42px;
+    }
+}
+
+@media (max-width: 460px) {
+    .headerText {
+        width: 89%;
+        text-align: start;
+    }
+    .auditProcessMobileImg {
+        width: 89%;
+    }
+}

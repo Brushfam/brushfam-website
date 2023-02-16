@@ -1,0 +1,124 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 196px;
+}
+
+.headerText {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 64px;
+    max-width: 500px;
+}
+
+.challengesContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.challengesDiv1, .challengesDiv2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 412px;
+    height: 140px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.challengesDiv1 {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.challengesDiv2 {
+    padding-left: 64px;
+}
+
+.titleDiv {
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.titleText1, .titleText2, .titleText3{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.titleText1 {
+    max-width: 154px;
+}
+
+.titleText2 {
+    max-width: 240px;
+}
+
+.titleText3 {
+    max-width: 170px;
+}
+
+.numberOne {}
+
+@media (max-width: 1340px) {
+    .challengesDiv1, .challengesDiv2 {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 372px;
+    }
+}
+
+@media (max-width: 1110px) {
+    .challengesContainer {
+        flex-direction: column;
+    }
+
+    .challengesContainer p {
+        max-width: 268px;
+        margin-left: 52px;
+    }
+
+    .challengesDiv1 {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 40px;
+        width: 380px;
+        height: 176px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .challengesDiv2 {
+        padding-left: 0;
+        padding-right: 0;
+        height: 176px;
+    }
+
+    .numberOne {
+        margin-left: 14px;
+    }
+
+    .titleText3 {
+        max-width: 160px;
+    }
+}
+
+@media (max-width: 460px) {
+    .challengesDiv1, .challengesDiv2 {
+        width: 89%;
+        padding-bottom: 22px;
+        height: auto;
+    }
+
+}

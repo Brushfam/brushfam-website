@@ -1,0 +1,80 @@
+.wrapperDiv {
+    display: none;
+}
+
+.package {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 380px;
+    height: 311px;
+    padding: 24px 16px 0 16px;
+    margin-top: 24px;
+    background: linear-gradient(110.11deg, rgba(144, 151, 170, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+
+.titleName {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+    padding-left: 8px;
+}
+
+.titlePrice {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+    padding-left: 8px;
+}
+
+.cell1, .cell2 {
+    height: 33px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-weight: 400;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.cell1 {
+    width: 221px;
+    padding-left: 8px;
+    font-size: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cell2 {
+    justify-content: center;
+    width: 127px;
+    font-size: 12px;
+}
+
+.wrapperTable {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+@media (max-width: 1110px) {
+    .wrapperDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 460px) {
+    .package {
+        width: 89%;
+    }
+}

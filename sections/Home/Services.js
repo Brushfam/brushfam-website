@@ -109,7 +109,7 @@ export default function Services() {
                 code, talk to engineers responsible gathering all needed
                 information. All of this combined with the wide-range experience
                 our team has will give us enough data to come up with a
-                conclusion on the technical plausibility of the idea and our
+                conclusion on the technical possibility of the idea and our
                 impression of the team’s ability to have it implemented.
               </p>
               <button

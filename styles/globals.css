@@ -43,11 +43,11 @@ li {
   /*margin-right: 40px;*/
 }
 
-@media (max-width: 760px) {
-  p {
-    font-size: 10px;
-  }
-}
+/*@media (max-width: 760px) {*/
+/*  p {*/
+/*    font-size: 10px;*/
+/*  }*/
+/*}*/
 
 /*@media (max-width: 460px) {*/
 /*  p {*/

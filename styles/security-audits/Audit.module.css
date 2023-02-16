@@ -1,0 +1,61 @@
+.section {
+    padding-top: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleText {
+    max-width: 473px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 64px;
+}
+
+.auditBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 64px;
+
+    width: 800px;
+    height: 167px;
+
+    background: linear-gradient(110.11deg, rgba(144, 151, 170, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+
+.auditBlock p {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1090px) {
+    .auditBlock {
+        width: 380px;
+        height: 200px;
+        padding: 40px;
+    }
+
+    .auditBlock p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 460px) {
+    .titleText {
+        width: 89%;
+        text-align: start;
+    }
+
+    .auditBlock {
+        width: 89%;
+    }
+}

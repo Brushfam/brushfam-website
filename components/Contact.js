@@ -1,6 +1,5 @@
 import styles from "@/styles/Contact.module.css";
 import { useState } from "react";
-import { render } from "react-dom";
 
 export default function Contact() {
   const [email, setEmail] = useState("");

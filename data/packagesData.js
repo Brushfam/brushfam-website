@@ -1,0 +1,164 @@
+export const desktopPackagesData = [
+  {
+    cell1: "Daily total involvement of 1 person",
+    cell2: "1 hour",
+    cell3: "2 hours",
+    cell4: "Unlimited",
+    cell5: "Unlimited",
+    tooltip:
+      "One technical expert from our team2 will work with your team2 on daily basis to ensure the correct implementation of all the advice.",
+  },
+  {
+    cell1: "Daily Tech guidance",
+    cell2: "+",
+    cell3: "+",
+    cell4: "+",
+    cell5: "+",
+    tooltip:
+      "Our team2 will provide you with detailed technical instructions, advice, and consultations on your product development and improvement on every day basis.",
+  },
+  {
+    cell1: "Mentorship (tech coach sessions)",
+    cell2: "+",
+    cell3: "+",
+    cell4: "+",
+    cell5: "+",
+    tooltip:
+      "Your team2 will get technical and leadership mentorship from our experts to ensure your team2’s professional and technical improvement with further ability to work on breakthrough projects without outside help.",
+  },
+  {
+    cell1: "Pull Requests code review ",
+    cell2: "+",
+    cell3: "+",
+    cell4: "+",
+    cell5: "+",
+    tooltip:
+      "Our team2 will be reviewing your pull requests code before publication to be sure that your code is flawlessly built and secure.",
+  },
+  {
+    cell1: "Architecture decisions",
+    cell2: "+",
+    cell3: "+",
+    cell4: "+",
+    cell5: "+",
+    tooltip:
+      "We will help you on brainstorming and choose the best architecture decision personalized for your product and its goals.",
+  },
+  {
+    cell1: "Operational involvement",
+    cell2: "-",
+    cell3: "Up to 1 hour",
+    cell4: "Up to 2 hour",
+    cell5: "Negotiated",
+    tooltip:
+      "Technical experts from our team2 will be operationally involved in your development process.",
+  },
+];
+
+export const firstPackageData = [
+  {
+    cell1: "Daily total involvement of 1 person",
+    cell2: "1 hour"
+  },
+  {
+    cell1: "Daily Tech guidance",
+    cell2: "+",
+  },
+  {
+    cell1: "Mentorship (tech coach sessions)",
+    cell2: "+",
+  },
+  {
+    cell1: "Pull Requests code review ",
+    cell2: "+",
+  },
+  {
+    cell1: "Architecture decisions",
+    cell2: "+",
+  },
+  {
+    cell1: "Operational involvement",
+    cell2: "-",
+  }
+]
+
+export const secondPackageData = [
+  {
+    cell1: "Daily total involvement of 1 person",
+    cell2: "2 hours"
+  },
+  {
+    cell1: "Daily Tech guidance",
+    cell2: "+",
+  },
+  {
+    cell1: "Mentorship (tech coach sessions)",
+    cell2: "+",
+  },
+  {
+    cell1: "Pull Requests code review ",
+    cell2: "+",
+  },
+  {
+    cell1: "Architecture decisions",
+    cell2: "+",
+  },
+  {
+    cell1: "Operational involvement",
+    cell2: "Up to 1 hour",
+  }
+]
+
+export const unlimitedPackageData = [
+  {
+    cell1: "Daily total involvement of 1 person",
+    cell2: "Unlimited"
+  },
+  {
+    cell1: "Daily Tech guidance",
+    cell2: "+",
+  },
+  {
+    cell1: "Mentorship (tech coach sessions)",
+    cell2: "+",
+  },
+  {
+    cell1: "Pull Requests code review ",
+    cell2: "+",
+  },
+  {
+    cell1: "Architecture decisions",
+    cell2: "+",
+  },
+  {
+    cell1: "Operational involvement",
+    cell2: "Up to 2 hour",
+  }
+]
+
+export const unlimitedPlusPackageData = [
+  {
+    cell1: "Daily total involvement of 1 person",
+    cell2: "Unlimited"
+  },
+  {
+    cell1: "Daily Tech guidance",
+    cell2: "+",
+  },
+  {
+    cell1: "Mentorship (tech coach sessions)",
+    cell2: "+",
+  },
+  {
+    cell1: "Pull Requests code review ",
+    cell2: "+",
+  },
+  {
+    cell1: "Architecture decisions",
+    cell2: "+",
+  },
+  {
+    cell1: "Operational involvement",
+    cell2: "Negotiated",
+  }
+]

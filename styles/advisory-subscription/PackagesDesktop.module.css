@@ -1,0 +1,122 @@
+.packagesTable {
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-right: 16px;
+    margin-top: 64px;
+    /*width: 1200px;*/
+    height: 479px;
+    background: linear-gradient(110.11deg, rgba(144, 151, 170, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+
+.titleRow {
+    height: 149px;
+}
+
+.cell1, .cell2, .cell3, .cell4 {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    align-content: center;
+}
+
+.cell1 {
+    width: 230px;
+}
+
+.cell2 {
+    width: 209px;
+}
+
+.cell3 {
+    width: 209px;
+}
+
+.cell4 {
+    width: 232px;
+}
+
+.cell5 {
+    width: 288px;
+}
+
+.titleRowDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.titleName {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    padding-left: 40px;
+}
+
+.titlePrice {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    color: #FFFFFF;
+    padding-left: 40px;
+}
+
+.row p {
+    height: 51px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.cellWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell1Wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cell1Wrapper p {
+    padding-top: 4px;
+}
+
+.tipImg {
+    margin-left: 14px;
+    margin-right: 10px;
+}
+
+@media (max-width: 1340px)  {
+    .titleName, .titlePrice {
+        padding-left: 24px;
+    }
+
+    .cell2 {
+        width: 179px;
+    }
+
+    .cell3 {
+        width: 179px;
+    }
+
+    .cell4 {
+        width: 202px;
+    }
+
+    .cell5 {
+        width: 258px;
+    }
+}
+
+@media (max-width: 1110px) {
+    .packagesTable {
+        display: none;
+    }
+}

@@ -1,0 +1,133 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.headerText {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 64px;
+}
+
+.presentationBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.galleryBlock {
+    display: flex;
+    flex-direction: column;
+    margin-right: 92px;
+}
+
+.galleryBlockMobile {
+    display: none;
+}
+
+.galleryRow {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+}
+
+.nestedGalleryBlock {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.commentBlock {
+    display: flex;
+    flex-direction: column;
+    width:519px;
+}
+
+.commentBlock p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.commentBlock ul {
+    /*list-style-image: url('/list-dot.svg');*/
+    list-style: none;
+}
+
+.commentBlock li {
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.commentBlock li img {
+    height: 17px;
+    margin-right: 6px;
+}
+
+.mockBlock {
+    width: 294px;
+    height: 215px;
+    background: #434343;
+    border-radius: 6px;
+}
+
+.mockMobileBlock {
+    width: 380px;
+    height: 215px;
+    background: #434343;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 1240px) {
+    .presentationBlock {
+        flex-direction: column-reverse;
+        margin-left: 0;
+    }
+
+    .commentBlock {
+        margin-bottom: 80px;
+    }
+
+    .galleryBlock {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .galleryBlock {
+        display: none;
+    }
+
+    .galleryBlockMobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .commentBlock {
+        width: auto;
+        font-size: 14px;
+    }
+
+    .commentBlock li {
+        max-width: 89%;
+        margin-bottom: 20px;
+    }
+
+    .presentationBlock {
+        width: 89%;
+    }
+
+    .headerText {
+        margin-bottom: 24px;
+        text-align: start;
+        width: 89%;
+    }
+}

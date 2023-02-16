@@ -1,0 +1,78 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 240px;
+    margin-bottom: 230px;
+}
+
+.divWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin-bottom: 64px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.pointDiv {
+    display: flex;
+    flex-direction: row;
+    /*align-items: center;*/
+    margin-left: 110px;
+    margin-bottom: 22px;
+}
+
+.pointDiv p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+    max-width: 800px;
+}
+
+.pointDiv img {
+    height: 17px;
+    margin-right: 4px;
+    margin-top: 2px;
+}
+
+@media (max-width: 1440px) {
+    .divWrapper {
+        width: 69%;
+    }
+}
+
+@media (max-width: 1090px) {
+    .pointDiv p {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 900px) {
+    .divWrapper {
+
+    }
+
+    .pointDiv {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .pointDiv p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 460px) {
+    .divWrapper {
+        width: 89%;
+    }
+}
