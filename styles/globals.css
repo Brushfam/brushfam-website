@@ -19,6 +19,7 @@ body {
 div {
   background-repeat: no-repeat;
   background-size: cover;
+  scroll-margin: 200px;
 }
 
 p {

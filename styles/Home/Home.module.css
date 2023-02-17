@@ -58,6 +58,12 @@
   }
 }
 
+@media (max-width: 1160px) {
+  .section {
+    padding-top: 216px;
+  }
+}
+
 @media (max-width: 1090px) {
   .mainDiv p {
     font-size: 16px;

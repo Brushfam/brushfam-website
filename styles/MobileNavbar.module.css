@@ -1,0 +1,107 @@
+.navbarMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    padding: 16px 20px;
+    bottom:0;
+    right: 0;
+    width: 100%;
+    height: 52px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(7.5px);
+    z-index: 1;
+}
+
+.navbarContainer {
+    position: fixed;
+    right: -20px;
+    width: 348px;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 43px 24px 41px;
+    background: linear-gradient(140.39deg, rgba(144, 151, 170, 0.15) 0.14%, rgba(0, 0, 0, 0.15) 96.57%), rgba(5, 6, 7, 0.8);
+
+    transform: translateX(-20px);
+    transition: transform 0.3s ease-out;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+}
+
+.navbarMenuButton {
+    cursor: pointer;
+}
+
+.navbarContainer ul {
+    list-style: none;
+    transition: all 700ms ease-in-out;
+}
+
+.navbarContainer ul p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.button {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    /* identical to box height, or 24px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+    background: transparent;
+    border: 0;
+
+    cursor: pointer;
+}
+
+.item {
+    padding: 30px 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.item li {
+    margin-left: 20px;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+}
+
+.link img {
+    margin-right: 10px;
+}
+
+.exitButton {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.arrow {
+    margin-left: 12px;
+    /*transition: transform 100ms ease-in-out;*/
+}
+
+.navbarContainer ul{
+    margin-top: 20px;
+}
+
+@media (min-width: 1160px) {
+    .navbarMobile {
+        display: none;
+    }
+
+    .navbarContainer {
+        display: none;
+    }
+}

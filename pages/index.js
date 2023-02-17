@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 import Blog from "@/sections/Home/Blog";
 import Navbar from "@/components/Navbar";
+import {MobileNavbar} from "@/components/MobileNavbar";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
                 <title>Brushfam</title>
             </Head>
             <Navbar></Navbar>
+            <MobileNavbar></MobileNavbar>
             <Banner></Banner>
             <Web3Projects></Web3Projects>
             <Products></Products>
