@@ -5,14 +5,39 @@
     align-items: center;
 }
 
+.investment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 1018px
+}
+
 .headerText {
     font-weight: 700;
     font-size: 40px;
     line-height: 120%;
-    text-align: center;
     color: #FFFFFF;
-    margin-bottom: 90px;
+    margin-bottom: 24px;
     max-width: 500px;
+}
+
+.descriptionText {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #9097AA;
+    margin-bottom: 72px;
+    max-width: 687px;
+}
+
+.titleText {
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #1945E1 ;
+    background-image: linear-gradient(133.96deg, #1945E1 10.01%, #206DE1 93.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .auditProcessImg {
@@ -24,7 +49,7 @@
 }
 
 @media (max-width: 1200px) {
-    .auditProcessImg {
+    .auditProcessImg, .investment {
         width: 86%
     }
 }
@@ -38,10 +63,6 @@
         display: block;
         margin-bottom: 230px;
     }
-
-    .headerText {
-        margin-bottom: 42px;
-    }
 }
 
 @media (max-width: 460px) {
@@ -49,7 +70,11 @@
         width: 89%;
         text-align: start;
     }
-    .auditProcessMobileImg {
+    .auditProcessMobileImg, .investment {
         width: 89%;
+    }
+
+    .descriptionText {
+        width: 100%;
     }
 }

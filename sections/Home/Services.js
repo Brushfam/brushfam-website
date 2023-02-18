@@ -76,7 +76,7 @@ export default function Services() {
               </div>
               <p className={styles.serviceText} style={{ marginBottom: 24 }}>
                 Get access to the team that created OpenBrush, Sol2ink,
-                TypeChain and leads WASM ink! ecosystem. Move faster and with
+                Typechain and leads WASM ink! ecosystem. Move faster and with
                 optimal expenses. With our top tech specialists providing
                 constant mentorship, reviewing PRs, and helping hire new team
                 members you will avoid architecture mistakes, time lost and
@@ -105,10 +105,10 @@ export default function Services() {
                 Not every business idea results in successful company.
                 With Brushfam we want to make sure the ideas you are investing
                 your money in, are possible to be implemented and the startup’s
-                team knows how to do it. We will be analyze startup’s documents,
+                team knows how to do it. We will analyze startup’s documents,
                 code, talk to engineers responsible gathering all needed
                 information. All of this combined with the wide-range experience
-                our team has will give us enough data to come up with a
+                our team has, will give us enough data to come up with a
                 conclusion on the technical possibility of the idea and our
                 impression of the team’s ability to have it implemented.
               </p>

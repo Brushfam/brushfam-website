@@ -135,6 +135,7 @@ export const MobileNavbar = () => {
                   <Link
                     href={"https://github.com/727-Ventures/typechain-polkadot"}
                     className={styles.link}
+                    style={{marginBottom: 0}}
                   >
                     <img src="/nav-icons/nav-typechain.svg" />
                     <p>Typechain</p>
@@ -182,7 +183,7 @@ export const MobileNavbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/investment-diligence"} className={styles.link}>
+                  <Link href={"/investment-diligence"} className={styles.link} style={{marginBottom: 0}}>
                     <img src="/nav-icons/nav-investment.svg" />
                     <p>Investment Diligence</p>
                   </Link>
@@ -213,6 +214,7 @@ export const MobileNavbar = () => {
                   <Link
                     href={"https://docs.openbrush.io/"}
                     className={styles.link}
+                    style={{marginBottom: 0}}
                   >
                     <img src="/nav-icons/nav-docs.svg" />
                     <p>Docs</p>
@@ -236,19 +238,34 @@ export const MobileNavbar = () => {
             {CompanyIsOpened ? (
               <ul>
                 <li>
-                  <Link href={"/about-us"} className={styles.link}>
+                  <Link href={"/about-us"} className={styles.link} style={{marginBottom: 0}}>
                     <p>About us</p>
                   </Link>
                 </li>
-                <li>
-                  <Link href={"/hiring"} className={styles.link}>
-                    <p>Hiring</p>
-                  </Link>
-                </li>
+                {/*<li>*/}
+                {/*  <Link href={"/hiring"} className={styles.link}>*/}
+                {/*    <p>Hiring</p>*/}
+                {/*  </Link>*/}
+                {/*</li>*/}
               </ul>
             ) : (
               <></>
             )}
+          </div>
+
+          <div className={styles.social}>
+            <Link href={"https://t.me/openbrush"} style={{marginRight: 38}}>
+              <img src={"/icons/telegram-mobile.svg"}/>
+            </Link>
+            <Link href={"https://instagram.com/727_ventures?igshid=ZmVmZTY5ZGE="} style={{marginRight: 38}}>
+              <img src={"/icons/inst-mobile.svg"}/>
+            </Link>
+            <Link href={"https://twitter.com/Brushfam_io"} style={{marginRight: 38}}>
+              <img src={"/icons/twitter-mobile.svg"}/>
+            </Link>
+            <Link href={"mailto:contact@727.ventures"} >
+              <img src={"/icons/mail-mobile.svg"}/>
+            </Link>
           </div>
         </div>
       ) : (

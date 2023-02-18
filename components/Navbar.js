@@ -191,7 +191,7 @@ const Navbar = () => {
                   <div className={navStyles.borderBlock1}></div>
                 </div>
                 <div className={navStyles.dropdownContent} style={{width: 367}}>
-                  <div className={navStyles.dropDownItem}>
+                  <div className={navStyles.dropDownLastItem}>
                     <Link href={"/about-us"}>
                       <div className={navStyles.dropDownItemHeader}>
                         <p className={navStyles.dropdownTitle}>About us</p>
@@ -201,16 +201,16 @@ const Navbar = () => {
                       </p>
                     </Link>
                   </div>
-                  <div className={navStyles.dropDownLastItem}>
-                    <Link href={"/hiring"}>
-                      <div className={navStyles.dropDownItemHeader}>
-                        <p className={navStyles.dropdownTitle}>Hiring</p>
-                      </div>
-                      <p className={navStyles.description}>
-                        Our team is known for its contribution to the Polkadot ecosystem. Our visionary attitude helps us think boldly and embrace technological challenges.
-                      </p>
-                    </Link>
-                  </div>
+                  {/*<div className={navStyles.dropDownLastItem}>*/}
+                  {/*  <Link href={"/hiring"}>*/}
+                  {/*    <div className={navStyles.dropDownItemHeader}>*/}
+                  {/*      <p className={navStyles.dropdownTitle}>Hiring</p>*/}
+                  {/*    </div>*/}
+                  {/*    <p className={navStyles.description}>*/}
+                  {/*      Our team is known for its contribution to the Polkadot ecosystem. Our visionary attitude helps us think boldly and embrace technological challenges.*/}
+                  {/*    </p>*/}
+                  {/*  </Link>*/}
+                  {/*</div>*/}
                 </div>
               </div>
 

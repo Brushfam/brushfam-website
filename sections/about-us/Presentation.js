@@ -4,39 +4,33 @@ export default function Presentation() {
   const DesktopGallery = () => {
     return <div className={styles.galleryBlock}>
       <div className={styles.galleryRow}>
-        <div className={styles.mockBlock} style={{ marginRight: 8 }}></div>
-        <div className={styles.nestedGalleryBlock}>
+          <img src={"/team-gallery/img1.png"} style={{ marginRight: 8 }}/>
           <img src={"/team-gallery/img2.png"} />
-          <img src={"/team-gallery/img3.png"} />
-        </div>
       </div>
       <div className={styles.galleryRow}>
-        <img src={"/team-gallery/img4.png"} style={{ marginRight: 8 }} />
-        <img src={"/team-gallery/img5.png"} />
+        <img src={"/team-gallery/img3.png"} style={{ marginRight: 8 }} />
+        <img src={"/team-gallery/img4.png"} />
       </div>
       <div className={styles.galleryRow}>
+        <img src={"/team-gallery/img5.png"} style={{ marginRight: 8 }} />
         <img src={"/team-gallery/img6.png"} style={{ marginRight: 8 }} />
-        <img src={"/team-gallery/img7.png"} style={{ marginRight: 8 }} />
-        <img src={"/team-gallery/img8.png"} />
+        <img src={"/team-gallery/img7.png"} />
       </div>
     </div>
   }
 
   const MobileGallery = () => {
     return <div className={styles.galleryBlockMobile}>
-      <div className={styles.mockMobileBlock}></div>
+        <img src={"/team-gallery/img1-mobile.png"} style={{ marginBottom: 8 }}/>
         <img src={"/team-gallery/img2-mobile.png"} />
         <div className={styles.galleryRow}>
-          <img src={"/team-gallery/img3-mobile.png"} style={{ marginRight: 8 }}/>
-          <img src={"/team-gallery/img4-mobile.png"} />
+          <img src={"/team-gallery/img4-mobile.png"} style={{ marginRight: 8 }}/>
+          <img src={"/team-gallery/img5-mobile.png"} />
         </div>
+      <img src={"/team-gallery/img3-mobile.png"} style={{ marginBottom: 8 }}/>
         <div className={styles.galleryRow}>
-          <img src={"/team-gallery/img5-mobile.png"} style={{ marginRight: 8 }}/>
-          <img src={"/team-gallery/img6-mobile.png"} />
-        </div>
-        <div className={styles.galleryRow}>
-          <img src={"/team-gallery/img7-mobile.png"} style={{ marginRight: 8 }}/>
-          <img src={"/team-gallery/img8-mobile.png"} />
+          <img src={"/team-gallery/img6-mobile.png"} style={{ marginRight: 8 }}/>
+          <img src={"/team-gallery/img7-mobile.png"} />
         </div>
     </div>
   }

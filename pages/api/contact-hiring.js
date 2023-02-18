@@ -1,4 +1,5 @@
 import nodemailer from "nodemailer";
+import { promises as fs } from 'fs';
 
 export default async function (req, res) {
     require("dotenv").config();
@@ -19,6 +20,11 @@ export default async function (req, res) {
         subject: `Message From ${req.body.email}`,
         text: req.body.message,
         html: "<div>" + req.body.message + "</div>",
+        attachments: [
+            {
+                path: req.body.file.path,
+            }
+        ]
     };
 
     await new Promise((resolve, reject) => {

@@ -6,7 +6,7 @@ export const desktopPackagesData = [
     cell4: "Unlimited",
     cell5: "Unlimited",
     tooltip:
-      "One technical expert from our team2 will work with your team2 on daily basis to ensure the correct implementation of all the advice.",
+      "One technical expert from our team will work with your team on daily basis to ensure the correct implementation of all the advice.",
   },
   {
     cell1: "Daily Tech guidance",
@@ -15,7 +15,7 @@ export const desktopPackagesData = [
     cell4: "+",
     cell5: "+",
     tooltip:
-      "Our team2 will provide you with detailed technical instructions, advice, and consultations on your product development and improvement on every day basis.",
+      "Our team will provide you with detailed technical instructions, advice, and consultations on your product development and improvement on every day basis.",
   },
   {
     cell1: "Mentorship (tech coach sessions)",
@@ -24,7 +24,7 @@ export const desktopPackagesData = [
     cell4: "+",
     cell5: "+",
     tooltip:
-      "Your team2 will get technical and leadership mentorship from our experts to ensure your team2’s professional and technical improvement with further ability to work on breakthrough projects without outside help.",
+      "Your team will get technical and leadership mentorship from our experts to ensure your team’s professional and technical improvement with further ability to work on breakthrough projects without outside help.",
   },
   {
     cell1: "Pull Requests code review ",
@@ -33,7 +33,7 @@ export const desktopPackagesData = [
     cell4: "+",
     cell5: "+",
     tooltip:
-      "Our team2 will be reviewing your pull requests code before publication to be sure that your code is flawlessly built and secure.",
+      "Our team will be reviewing your pull requests code before publication to be sure that your code is flawlessly built and secure.",
   },
   {
     cell1: "Architecture decisions",
@@ -51,7 +51,7 @@ export const desktopPackagesData = [
     cell4: "Up to 2 hour",
     cell5: "Negotiated",
     tooltip:
-      "Technical experts from our team2 will be operationally involved in your development process.",
+      "Technical experts from our team will be operationally involved in your development process.",
   },
 ];
 

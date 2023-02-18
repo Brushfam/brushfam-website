@@ -8,7 +8,7 @@ export const productsData = [
         link: "https://github.com/727-Ventures/sol2ink"
     },
     {
-        label: "TypeChain",
+        label: "Typechain",
         link: "https://github.com/727-Ventures/typechain-polkadot"
     }
 ]

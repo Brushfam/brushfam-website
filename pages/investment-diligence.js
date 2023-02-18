@@ -13,8 +13,6 @@ export default function investmentDiligence() {
             <Navbar></Navbar>
             <MobileNavbar></MobileNavbar>
             <TitleSection></TitleSection>
-            <Audit></Audit>
-            <Services></Services>
             <Process></Process>
             <Contact></Contact>
             <Footer></Footer>

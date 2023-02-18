@@ -17,7 +17,7 @@ export default function Packages() {
                 <button type="button" onClick={handleClick} className={styles.firstButton}>
                     Get started
                 </button>
-                <Link href={"mailto:nameless.endless@727.ventures?subject=Advisory consultation"}>
+                <Link href={"mailto:contact@727.ventures?subject=Advisory consultation"}>
                     <div className={styles.secondButton}>
                         Consultation
                     </div>

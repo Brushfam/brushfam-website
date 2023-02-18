@@ -13,7 +13,7 @@ export default function Challenges() {
             <h2 className={styles.titleText1}>Architecture choice</h2>
           </div>
           <p>
-            Our team will review the idea of the project and helps with making
+            Our team will review the idea of the project and will help with making
             the best architecture choice for your project.
           </p>
         </div>
@@ -30,7 +30,7 @@ export default function Challenges() {
         <div className={styles.challengesDiv2}>
           <div className={styles.titleDiv}>
             <img src={"3.svg"} />
-            <h2 className={styles.titleText3}>Code security</h2>
+            <h2 className={styles.titleText3} style={{maxWidth: 120}}>Code security</h2>
           </div>
           <p>
             A proper review of PRs from our experienced team members will help
