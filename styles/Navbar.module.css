@@ -148,9 +148,9 @@
     border-bottom: none
 }
 
-.dropDownItem:hover, .dropDownLastItem:hover {
-    /*filter: brightness(120%);*/
-}
+/*.dropdownContent:hover .dropDownItem, .dropDownLastItem {*/
+/*    filter: brightness(120%);*/
+/*}*/
 
 .dropDownItemHeader {
     display: flex;
@@ -292,7 +292,7 @@
     }
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1159px) {
     /*.navbarNavigation {*/
     /*    visibility: hidden;*/
     /*}*/

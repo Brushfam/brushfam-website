@@ -11,12 +11,12 @@ export const MobileNavbar = () => {
     const icon = document.getElementById("navbar-bottom");
     if (isOpened) {
       icon.style.visibility = "visible";
-      // document.body.style.overflowY = "visible";
-      // document.body.style.position = "static";
+      document.body.style.overflowY = "visible";
+      document.body.style.position = "static";
     } else {
       icon.style.visibility = "hidden";
-      // document.body.style.overflowY = "hidden";
-      // document.body.style.position = "fixed";
+      document.body.style.overflowY = "hidden";
+      document.body.style.position = "fixed";
     }
   }
 
