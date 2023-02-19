@@ -89,7 +89,8 @@
 
 .arrow {
     margin-left: 12px;
-    /*transition: transform 100ms ease-in-out;*/
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .navbarContainer ul{
