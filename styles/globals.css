@@ -55,3 +55,10 @@ li {
 /*    font-size: 8px;*/
 /*  }*/
 /*}*/
+
+@media (max-width: 1159px) {
+  body {
+    overflow: hidden;
+    position: fixed;
+  }
+}
