@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1400px;
 }
 
 .mainDiv {
@@ -11,7 +10,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-bottom: 40px;
     margin-top: 240px;
     width: 1000px;
 }
@@ -67,36 +65,40 @@
 }
 
 .block1 {
-    height: 209px;
-    /*height: 250px;*/
+    /*height: 209px;*/
+    height: 250px;
     width: 1000px;
 }
 
 .block2 {
-    height: 205px;
-    /*height: 246px;*/
+    /*height: 205px;*/
+    height: 246px;
     width: 354px;
     margin-right: 24px;
 }
 
 .block3 {
-    height: 205px;
-    /*height: 246px;*/
+    /*height: 205px;*/
+    height: 246px;
     width: 622px;
 }
 
 .block4 {
-    height: 241px;
-    /*height: 282px;*/
+    /*height: 241px;*/
+    height: 282px;
     width: 681px;
     margin-right: 24px;
 }
 
 .block5 {
-    height: 241px;
-    /*height: 282px;*/
+    /*height: 241px;*/
+    height: 282px;
     width: 295px;
     padding: 40px;
+}
+
+.block5 p {
+    margin-bottom: 61px;
 }
 
 .serviceHeader {
@@ -114,9 +116,17 @@
     color: #FFFFFF;
 }
 
+.serviceHeader h3 {
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
 .button {
-    display: none;
-    /*display: flex;*/
+    /*display: none;*/
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -167,34 +177,29 @@
 
 @media (max-width: 1380px) {
     .block1 {
-        height: 227px;
-        /*height: 268px;*/
+        height: auto;
         width: 900px;
     }
 
     .block2 {
-        height: 223px;
-        /*height: 264px;*/
+        height: auto;
         width: 319px;
         margin-right: 24px;
     }
 
     .block3 {
-        height: 223px;
-        /*height: 264px;*/
+        height: auto;
         width: 560px;
     }
 
     .block4 {
-        height: 259px;
-        /*height: 300px;*/
+        height: auto;
         width: 613px;
         margin-right: 24px;
     }
 
     .block5 {
-        height: 259px;
-        /*height: 300px;*/
+        height: auto;
         width: 266px;
         padding-right: 32px;
     }
@@ -212,7 +217,7 @@
     }
 
     .section {
-        height: 2000px;
+        height: auto;
     }
 
     .block1, .block2, .block3, .block4, .block5 {
@@ -225,6 +230,12 @@
     .block4 {
         margin-right: 0;
     }
+    .block5 p {
+        margin-bottom: 0;
+    }
+    .block5 {
+        margin-bottom: 40px;
+    }
     .serviceTitle, .serviceTitle4, .serviceTitle5 {
         text-align: center;
         max-width: none;
@@ -233,6 +244,8 @@
     .mainDiv {
         justify-content: center;
         width: auto;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     .textTitle {
@@ -267,9 +280,6 @@
 }
 
 @media (max-width: 460px) {
-    .section {
-        height: 2100px;
-    }
     .mainDiv {
         width: 89%;
     }

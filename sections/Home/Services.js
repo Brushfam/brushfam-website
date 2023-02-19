@@ -1,4 +1,5 @@
 import styles from "@/styles/Home/Services.module.css";
+import Link from "next/link";
 
 export default function Services() {
   const handleClick = () => {
@@ -9,7 +10,6 @@ export default function Services() {
     <section className={styles.section}>
       <div className={styles.mainDiv}>
         <p className={styles.textTitle}>Services & Solutions</p>
-        {/*<h1 className={styles.textHeader}>Our expertise will</h1>*/}
         <h1 className={styles.textHeader} style={{ marginBottom: 64 }}>
           Our expertise will empower your business
         </h1>
@@ -36,13 +36,14 @@ export default function Services() {
               you. Or we can stay as your support hand on the advisory
               subscription.
             </p>
-            <button
+            <Link
+                href={"/onboard-to-web3"}
               type="button"
               onClick={handleClick}
               className={styles.button}
             >
               Read more
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -59,13 +60,14 @@ export default function Services() {
                 provides the independent estimation of the code generated to
                 implement the smart contract’s terms.
               </p>
-              <button
+              <Link
+                  href={"/advisory-subscription"}
                 type="button"
                 onClick={handleClick}
                 className={styles.button}
               >
                 Read more
-              </button>
+              </Link>
             </div>
           </div>
           <div className={styles.wrapper} id={"ink-advisory"}>
@@ -82,13 +84,14 @@ export default function Services() {
                 members you will avoid architecture mistakes, time lost and
                 sometimes fatal vulnerabilities.
               </p>
-              <button
+              <Link
+                  href={"/security-audits"}
                 type="button"
                 onClick={handleClick}
                 className={styles.button}
               >
                 Read more
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -112,13 +115,14 @@ export default function Services() {
                 conclusion on the technical possibility of the idea and our
                 impression of the team’s ability to have it implemented.
               </p>
-              <button
+              <Link
+                  href={"/investment-diligence"}
                 type="button"
                 onClick={handleClick}
                 className={styles.button}
               >
                 Read more
-              </button>
+              </Link>
             </div>
           </div>
           <div className={styles.wrapper}>
@@ -128,21 +132,21 @@ export default function Services() {
             <div className={styles.block5} id={"onboard-in-polkadot"}>
               <div className={styles.serviceHeader}>
                 <img src={"icons/comment-icon.svg"} />
-                <p>Polkadot onboard</p>
+                <h3>Polkadot onboard</h3>
               </div>
-              <p className={styles.serviceText} style={{ marginBottom: 24 }}>
+              <p className={styles.serviceText}>
                 Looking to grow your total addressable market or upgrade your
                 tech? With Sol2ink, being the automatic transpiler tool, the
                 process of code transforming from solidity to ink! is just one
                 click away.
               </p>
-              <button
-                type="button"
-                onClick={handleClick}
-                className={styles.button}
-              >
-                Read more
-              </button>
+              {/*<button*/}
+              {/*  type="button"*/}
+              {/*  onClick={handleClick}*/}
+              {/*  className={styles.button}*/}
+              {/*>*/}
+              {/*  Read more*/}
+              {/*</button>*/}
             </div>
           </div>
         </div>
