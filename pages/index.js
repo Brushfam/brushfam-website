@@ -9,11 +9,12 @@ import Contact from "@/components/Contact";
 import Blog from "@/sections/Home/Blog";
 import Navbar from "@/components/Navbar";
 import {MobileNavbar} from "@/components/MobileNavbar";
+import styles from "@/styles/bg-styles/bg.module.css"
 
 export default function Home() {
   return (
     <>
-        <div style={{backgroundImage: 'url("/main-page-bg.jpg")'}}>
+        <div className={styles.mainProperty}>
             <Head>
                 <title>Brushfam</title>
             </Head>

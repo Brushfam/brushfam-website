@@ -6,10 +6,11 @@ import Audit from "@/sections/investment-diligence/Audit";
 import Services from "@/sections/investment-diligence/Services";
 import Process from "@/sections/investment-diligence/Process";
 import {MobileNavbar} from "@/components/MobileNavbar";
+import styles from "@/styles/bg-styles/bg.module.css"
 
 export default function investmentDiligence() {
     return(
-        <div style={{backgroundImage: 'url("/advisory-subscription-bg.jpg")'}}>
+        <div className={styles.investmentProperty}>
             <Navbar></Navbar>
             <MobileNavbar></MobileNavbar>
             <TitleSection></TitleSection>

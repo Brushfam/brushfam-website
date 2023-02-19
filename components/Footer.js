@@ -113,7 +113,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.footerLastText}>
-        <p style={{ size: 12 }}>Brushfam ©2022. All rights reserved.</p>
+        <p>Brushfam ©2022. All rights reserved.</p>
       </div>
     </section>
   );

@@ -5,10 +5,11 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Packages from "@/sections/advisory-subscription/Packages";
 import {MobileNavbar} from "@/components/MobileNavbar";
+import styles from "@/styles/bg-styles/bg.module.css"
 
 export default function advisorySubscription() {
     return(
-        <div style={{backgroundImage: 'url("/advisory-subscription-bg.jpg")'}}>
+        <div className={styles.advisoryProperty}>
             <Navbar></Navbar>
             <MobileNavbar></MobileNavbar>
             <TitleSection></TitleSection>

@@ -222,7 +222,7 @@ const Navbar = () => {
                     <Link href={"https://docs.openbrush.io/"}>
                       <div className={navStyles.dropDownLastItem}>
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-docs.svg" />
+                          <img src="/nav-icons/nav-docs.svg" style={{paddingLeft: 4, paddingRight: 4}}/>
                           <p className={navStyles.dropdownTitle}>Docs</p>
                         </div>
                       </div>

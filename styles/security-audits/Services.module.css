@@ -60,15 +60,16 @@
 }
 
 .block3 {
-    width: 372px;
+    width: 350px;
+    padding: 40px 26px;
 }
 
 .block4 {
-    width: 572px;
+    width: 646px;
 }
 
 .block5 {
-    width: 375px;
+    width: 430px;
 }
 
 .blockTitle {
@@ -97,15 +98,15 @@
     }
 
     .block3 {
-        width: 335px;
+        width: 315px;
     }
 
     .block4 {
-        width: 515px;
+        width: 582px;
     }
 
     .block5 {
-        width: 338px;
+        width: 387px;
     }
 }
 

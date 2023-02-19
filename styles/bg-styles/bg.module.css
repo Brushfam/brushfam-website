@@ -1,0 +1,49 @@
+.mainProperty {
+    background-image: url("/main-page-bg.jpg");
+}
+
+.aboutUsProperty {
+    background-image: url("/about-us-bg.jpg");
+}
+
+.advisoryProperty {
+    background-image: url("/advisory-subscription-bg.jpg");
+}
+
+.investmentProperty {
+    background-image: url("/advisory-subscription-bg.jpg");
+}
+
+.onboardProperty {
+    background-image: url("/advisory-subscription-bg.jpg");
+}
+
+.securityProperty {
+    background-image: url("/advisory-subscription-bg.jpg");
+}
+
+@media (max-width: 460px) {
+    .mainProperty {
+        background-image: url("/main-mobile-bg.jpg");
+    }
+
+    .aboutUsProperty {
+        background-image: url("/about-us-mobile-bg.jpg");
+    }
+
+    .advisoryProperty {
+        background-image: url("/advisory-mobile-bg.jpg");
+    }
+
+    .investmentProperty {
+        background-image: url("/advisory-mobile-bg.jpg");
+    }
+
+    .onboardProperty {
+        background-image: url("/web3-mobile-bg.jpg");
+    }
+
+    .securityProperty {
+        background-image: url("/security-mobile-bg.jpg");
+    }
+}

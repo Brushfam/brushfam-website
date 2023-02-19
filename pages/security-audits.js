@@ -6,10 +6,11 @@ import Audit from "@/sections/security-audits/Audit"
 import Services from "@/sections/security-audits/Services"
 import Process from "@/sections/security-audits/Process";
 import {MobileNavbar} from "@/components/MobileNavbar";
+import styles from "@/styles/bg-styles/bg.module.css"
 
 export default function securityAudits() {
     return(
-        <div style={{backgroundImage: 'url("/advisory-subscription-bg.jpg")'}}>
+        <div className={styles.securityProperty}>
             <Navbar></Navbar>
             <MobileNavbar></MobileNavbar>
             <TitleSection></TitleSection>
