@@ -94,7 +94,8 @@
         padding-right: 0;
         margin-bottom: 40px;
         width: 380px;
-        height: 176px;
+        height: auto;
+        padding-bottom: 40px;
         border-right: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
@@ -102,7 +103,6 @@
     .challengesDiv2 {
         padding-left: 0;
         padding-right: 0;
-        height: 176px;
     }
 
     .numberOne {
