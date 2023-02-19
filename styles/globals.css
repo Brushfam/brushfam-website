@@ -56,10 +56,10 @@ li {
 /*  }*/
 /*}*/
 
-@media (min-width: 1160px) {
-  body {
-    overflow-y: visible !important;
-    /*overflow-x: hidden;*/
-    position: static !important;
-  }
-}
+/*@media (min-width: 1160px) {*/
+/*  body {*/
+/*    overflow-y: visible !important;*/
+/*    !*overflow-x: hidden;*!*/
+/*    position: static !important;*/
+/*  }*/
+/*}*/

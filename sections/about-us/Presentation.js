@@ -21,16 +21,16 @@ export default function Presentation() {
 
   const MobileGallery = () => {
     return <div className={styles.galleryBlockMobile}>
-        <img src={"/team-gallery/img1-mobile.png"} style={{ marginBottom: 8 }}/>
-        <img src={"/team-gallery/img2-mobile.png"} />
+        <img src={"/team-gallery/img1-mobile.png"} style={{ marginBottom: 8, height: 215, width: 380 }}/>
+        <img src={"/team-gallery/img2-mobile.png"} style={{marginBottom: 8, height: 169, width: 380}}/>
         <div className={styles.galleryRow}>
-          <img src={"/team-gallery/img4-mobile.png"} style={{ marginRight: 8 }}/>
-          <img src={"/team-gallery/img5-mobile.png"} />
+          <img src={"/team-gallery/img3-mobile.png"} style={{ marginRight: 8, height: 219, width: 160  }}/>
+          <img src={"/team-gallery/img4-mobile.png"} style={{height: 219, width: 212}}/>
         </div>
-      <img src={"/team-gallery/img3-mobile.png"} style={{ marginBottom: 8 }}/>
+      <img src={"/team-gallery/img5-mobile.png"} style={{ marginBottom: 8, height: 222, width: 380 }}/>
         <div className={styles.galleryRow}>
-          <img src={"/team-gallery/img6-mobile.png"} style={{ marginRight: 8 }}/>
-          <img src={"/team-gallery/img7-mobile.png"} />
+          <img src={"/team-gallery/img6-mobile.png"} style={{ marginRight: 8, height: 157, width: 182 }}/>
+          <img src={"/team-gallery/img7-mobile.png"} style={{height: 157, width: 190}}/>
         </div>
     </div>
   }
