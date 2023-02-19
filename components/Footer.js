@@ -84,7 +84,7 @@ const Footer = () => {
             {servicesData &&
                 servicesData.map((item, i) => {
                   return <p key={i.toString()} className={styles.item}>
-                    <Link href={item.link} scroll={false}>
+                    <Link href={item.link}>
                       {item.label}
                     </Link>
                   </p>;

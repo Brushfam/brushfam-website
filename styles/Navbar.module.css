@@ -277,9 +277,9 @@
 }
 
 @media (max-width: 1440px) {
-    /*.mainDiv {*/
-    /*    width: 89%*/
-    /*}*/
+    .mainDiv {
+        width: 84%
+    }
 }
 
 @media (max-width: 1340px) {

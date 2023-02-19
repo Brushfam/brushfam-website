@@ -16,23 +16,23 @@ export const productsData = [
 export const servicesData = [
     {
         label: "Web3 onboard",
-        link: "#onboard-in-web3"
+        link: "/onboard-to-web3"
     },
     {
         label: "Advisory subscription",
-        link: "#ink-advisory"
+        link: "/advisory-subscription"
     },
     {
         label: "Security audits",
-        link: "#security-audits"
+        link: "/security-audits"
     },
     {
         label: "Polkadot onboard",
-        link: "#onboard-in-polkadot"
+        link: "/#onboard-in-polkadot"
     },
     {
         label: "Investment Diligence",
-        link: "#investment-diligence"
+        link: "/investment-diligence"
     },
 ]
 

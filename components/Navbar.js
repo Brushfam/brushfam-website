@@ -122,7 +122,7 @@ const Navbar = () => {
                     </div>
                     <div className={navStyles.dropDownItem}  style={{padding: "20px 0"}}>
 
-                      <Link href={"security-audits"}>
+                      <Link href={"/security-audits"}>
                         <div className={navStyles.dropDownItemHeader}>
                           <img src="/nav-icons/nav-audits.svg" />
                           <p className={navStyles.dropdownTitle}>Security audits</p>
