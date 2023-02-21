@@ -17,12 +17,21 @@ export default async function (req, res) {
     const mailData = {
         from: "nameless.brushfam@gmail.com",
         to: "nameless.endless@727.ventures",
-        subject: `Message From ${req.body.email}`,
+        subject: `CTO`,
         text: req.body.message,
-        html: "<div>" + req.body.message + "</div>",
+        html: "" +
+            "<div>" +
+                "<p>Hiring form:</p>" +
+                "<p>Name: " + req.body.name + "</p>" +
+                "<p>Lastname: " + req.body.lastname + "</p>" +
+                "<p>Country: " + req.body.country + "</p>" +
+                "<p>LinkdIn: " + req.body.ln + "</p>" +
+                "<p>Message: " + req.body.message + "</p>" +
+            "</div>",
         attachments: [
             {
-                path: req.body.file.path,
+                filename: "Attachment",
+                path: req.body.file.files.file,
             }
         ]
     };
@@ -40,4 +49,12 @@ export default async function (req, res) {
     });
     res.status(200);
     res.send();
+}
+
+export const config = {
+    api: {
+        bodyParser: {
+            sizeLimit: '10mb',
+        },
+    },
 }

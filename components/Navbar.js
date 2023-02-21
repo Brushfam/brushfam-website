@@ -123,7 +123,7 @@ const Navbar = () => {
                       >
                         <div className={navStyles.borderBlock2}></div>
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-web3.svg" />
+                          <img src="/nav-icons/nav-web3.svg" style={{width: 15}}/>
                           <p className={navStyles.dropdownTitle}>
                             Web3 onboard
                           </p>
@@ -137,7 +137,7 @@ const Navbar = () => {
                         style={{ padding: "20px 0" }}
                       >
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-advisory.svg" />
+                          <img src="/nav-icons/nav-advisory.svg" style={{width: 15}}/>
                           <p className={navStyles.dropdownTitle}>
                             Advisory subscription
                           </p>
@@ -151,7 +151,7 @@ const Navbar = () => {
                         style={{ padding: "20px 0" }}
                       >
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-audits.svg" />
+                          <img src="/nav-icons/nav-audits.svg" style={{width: 15}}/>
                           <p className={navStyles.dropdownTitle}>
                             Security audits
                           </p>
@@ -165,7 +165,7 @@ const Navbar = () => {
                         style={{ padding: "20px 0" }}
                       >
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-polkadot.svg" />
+                          <img src="/nav-icons/nav-polkadot.svg" style={{width: 15}}/>
                           <p className={navStyles.dropdownTitle}>
                             Polkadot onboard
                           </p>
@@ -179,7 +179,7 @@ const Navbar = () => {
                         style={{ padding: "20px 0" }}
                       >
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-investment.svg" />
+                          <img src="/nav-icons/nav-investment.svg" style={{width: 18, marginRight: 7}}/>
                           <p className={navStyles.dropdownTitle}>
                             Investment Diligence
                           </p>
@@ -248,7 +248,7 @@ const Navbar = () => {
                   <div className={navStyles.dropdownContentHeader}>
                     <div
                       className={navStyles.borderBlock3}
-                      style={{ height: 186 }}
+                      style={{ height: 300 }}
                     ></div>
                     <div className={navStyles.borderBlock1}></div>
                   </div>
@@ -269,16 +269,16 @@ const Navbar = () => {
                         </p>
                       </div>
                     </Link>
-                    {/*<div className={navStyles.dropDownLastItem}>*/}
-                    {/*  <Link href={"/hiring"}>*/}
-                    {/*    <div className={navStyles.dropDownItemHeader}>*/}
-                    {/*      <p className={navStyles.dropdownTitle}>Hiring</p>*/}
-                    {/*    </div>*/}
-                    {/*    <p className={navStyles.description}>*/}
-                    {/*      Our team is known for its contribution to the Polkadot ecosystem. Our visionary attitude helps us think boldly and embrace technological challenges.*/}
-                    {/*    </p>*/}
-                    {/*  </Link>*/}
-                    {/*</div>*/}
+                    <Link href={"/hiring"}>
+                    <div className={navStyles.dropDownLastItem}>
+                        <div className={navStyles.dropDownItemHeader}>
+                          <p className={navStyles.dropdownTitle}>Hiring</p>
+                        </div>
+                        <p className={navStyles.description}>
+                          Our team is known for its contribution to the Polkadot ecosystem. Our visionary attitude helps us think boldly and embrace technological challenges.
+                        </p>
+                    </div>
+                    </Link>
                   </div>
                   <div
                     className={navStyles.testBlock}

@@ -60,6 +60,12 @@
     max-width: 500px;
 }
 
+@media (max-width: 1159px) {
+    .section {
+        padding-top: 120px;
+    }
+}
+
 @media (max-width: 1440px) {
     .divWrapper {
         width: 69%;

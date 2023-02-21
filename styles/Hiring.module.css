@@ -82,6 +82,12 @@
     cursor: pointer;
 }
 
+@media (max-width: 1159px) {
+    .section {
+        padding-top: 120px;
+    }
+}
+
 @media (max-width: 1200px) {
     .hiringBlock {
         column-gap: 20px;

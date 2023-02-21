@@ -172,31 +172,31 @@ export const MobileNavbar = () => {
               <ul>
                 <li>
                   <Link href={"/onboard-to-web3"} className={styles.link} onClick={toggleBody}>
-                    <img src="/nav-icons/nav-web3.svg" />
+                    <img src="/nav-icons/nav-web3.svg" style={{width: 15}}/>
                     <p>Web3 onboard</p>
                   </Link>
                 </li>
                 <li>
                   <Link href={"/advisory-subscription"} className={styles.link} onClick={toggleBody}>
-                    <img src="/nav-icons/nav-advisory.svg" />
+                    <img src="/nav-icons/nav-advisory.svg" style={{width: 15}}/>
                     <p>Advisory subscription</p>
                   </Link>
                 </li>
                 <li>
                   <Link href={"security-audits"} className={styles.link} onClick={toggleBody}>
-                    <img src="/nav-icons/nav-audits.svg" />
+                    <img src="/nav-icons/nav-audits.svg" style={{width: 15}}/>
                     <p>Security audits</p>
                   </Link>
                 </li>
                 <li>
                   <Link href={"/#onboard-in-polkadot"} className={styles.link} onClick={toggleBody}>
-                    <img src="/nav-icons/nav-polkadot.svg" />
+                    <img src="/nav-icons/nav-polkadot.svg" style={{width: 15}}/>
                     <p>Polkadot onboard</p>
                   </Link>
                 </li>
                 <li>
                   <Link href={"/investment-diligence"} className={styles.link} onClick={toggleBody} style={{marginBottom: 0}}>
-                    <img src="/nav-icons/nav-investment.svg" />
+                    <img src="/nav-icons/nav-investment.svg" style={{width: 18, marginRight: 7}}/>
                     <p>Investment Diligence</p>
                   </Link>
                 </li>
@@ -230,7 +230,7 @@ export const MobileNavbar = () => {
                     style={{marginBottom: 0}}
                     onClick={toggleBody}
                   >
-                    <img src="/nav-icons/nav-docs.svg" />
+                    <img src="/nav-icons/nav-docs.svg" style={{paddingLeft: 5, paddingRight: 4}}/>
                     <p>Docs</p>
                   </Link>
                 </li>
@@ -252,15 +252,15 @@ export const MobileNavbar = () => {
             {CompanyIsOpened ? (
               <ul>
                 <li>
-                  <Link href={"/about-us"} className={styles.link} onClick={toggleBody} style={{marginBottom: 0}}>
+                  <Link href={"/about-us"} className={styles.link} onClick={toggleBody}>
                     <p>About us</p>
                   </Link>
                 </li>
-                {/*<li>*/}
-                {/*  <Link href={"/hiring"} className={styles.link}>*/}
-                {/*    <p>Hiring</p>*/}
-                {/*  </Link>*/}
-                {/*</li>*/}
+                <li>
+                  <Link href={"/hiring"} className={styles.link} onClick={toggleBody} style={{marginBottom: 0}}>
+                    <p>Hiring</p>
+                  </Link>
+                </li>
               </ul>
             ) : (
               <></>
