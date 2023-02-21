@@ -10,7 +10,7 @@ const Dropzone = () => {
     accept: {
       "application/pdf": [],
     },
-    maxSize: 10000000,
+    maxSize: 4000000,
   });
 
   const files = acceptedFiles.map((file) => (
@@ -25,14 +25,14 @@ const Dropzone = () => {
             <div className={styles.fileDivError}>
               <input {...getInputProps({})} />
               <p className={styles.uploadText}>Upload your file (PDF)</p>
-              <p className={styles.sizeTextError}>Maximum upload size: 10MB</p>
+              <p className={styles.sizeTextError}>Maximum upload size: 4MB</p>
               <div className={styles.files}>{files}</div>
             </div>
         ) : (
             <div className={styles.fileDiv}>
               <input {...getInputProps({})} />
               <p className={styles.uploadText}>Upload your file (PDF)</p>
-              <p className={styles.sizeText}>Maximum upload size: 10MB</p>
+              <p className={styles.sizeText}>Maximum upload size: 4MB</p>
               <div className={styles.files}>{files}</div>
             </div>
         )}

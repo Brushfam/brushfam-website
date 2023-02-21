@@ -54,7 +54,7 @@ export default async function (req, res) {
 export const config = {
     api: {
         bodyParser: {
-            sizeLimit: '10mb',
+            sizeLimit: '4mb',
         },
     },
 }
