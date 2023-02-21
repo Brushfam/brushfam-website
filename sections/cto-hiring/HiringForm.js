@@ -9,6 +9,8 @@ const Dropzone = () => {
     multiple: false,
     accept: {
       "application/pdf": [],
+      'image/jpeg': [],
+      'image/png': [],
     },
     maxSize: 4000000,
   });
@@ -24,14 +26,14 @@ const Dropzone = () => {
         {fileRejections.length > 0 ? (
             <div className={styles.fileDivError}>
               <input {...getInputProps({})} />
-              <p className={styles.uploadText}>Upload your file (PDF)</p>
+              <p className={styles.uploadText}>Upload your file</p>
               <p className={styles.sizeTextError}>Maximum upload size: 4MB</p>
               <div className={styles.files}>{files}</div>
             </div>
         ) : (
             <div className={styles.fileDiv}>
               <input {...getInputProps({})} />
-              <p className={styles.uploadText}>Upload your file (PDF)</p>
+              <p className={styles.uploadText}>Upload your file</p>
               <p className={styles.sizeText}>Maximum upload size: 4MB</p>
               <div className={styles.files}>{files}</div>
             </div>
@@ -199,7 +201,7 @@ export default function HiringForm() {
           </div>
           <div className={styles.lastColumn}>
             <label htmlFor={"message"} className={styles.label}>
-              Tell more about yourself or attach a CV
+              Tell more about yourself or attach a CV (PDF/PNG/JPG)
             </label>
             <textarea
               name={"message"}
