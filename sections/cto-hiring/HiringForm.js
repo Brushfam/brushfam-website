@@ -136,7 +136,7 @@ export default function HiringForm() {
           <div className={styles.row}>
             <div className={styles.column}>
               <label htmlFor={"name"} className={styles.label}>
-                Email
+                First Name
               </label>
               <input
                 type={"text"}

@@ -113,7 +113,7 @@ export default function JobDescription() {
 
     const Benefits = () => {
       return (
-        <div className={styles.divWrapper}>
+        <div className={styles.divWrapper} style={{marginBottom: 0}}>
           <div className={styles.title}>Work conditions and benefits:</div>
           <div className={styles.pointDiv}>
             <img src={"list-dot.svg"} />
