@@ -1,46 +1,46 @@
-import styles from "@/styles/cto-hiring/JobDescription.module.css";
+import styles from "@/styles/rust-dev-hiring/JobDescription.module.css";
 
 export default function JobDescription() {
     const WorkDescription = () => {
         return(
             <div className={styles.divWrapper}>
                 <div className={styles.title}>
-                    You will be working on:
+                    What you will be working on:
                 </div>
                 <div className={styles.pointDiv}>
                     <img src={"list-dot.svg"} />
                     <p>
-                        Creating the architecture and development of our Portfolio Companies
+                        Develop and maintain our ink! smart contracts infrastructure products widely used by ink! smart contract developers
                     </p>
                 </div>
                 <div className={styles.pointDiv}>
                     <img src={"list-dot.svg"} />
                     <p>
-                        Document and perform high-standard maintenance of new as well as existing technical solutions
+                        Perform security audits of ink! smart contract applications
                     </p>
                 </div>
                 <div className={styles.pointDiv}>
                     <img src={"list-dot.svg"} />
                     <p>
-                        Manage tech team
+                        Provide advisory to other ink! developers and projects
                     </p>
                 </div>
                 <div className={styles.pointDiv}>
                     <img src={"list-dot.svg"} />
                     <p>
-                        Development and support of Polkadot products
+                        Brainstorming and implementing the best solutions for clients’ cases
                     </p>
                 </div>
                 <div className={styles.pointDiv}>
                     <img src={"list-dot.svg"} />
                     <p>
-                        Architecture and design of projects according to business needs
+                        Provide a vision of how project should be developed from a technical side
                     </p>
                 </div>
                 <div className={styles.pointDiv} style={{marginBottom: 0}}>
                     <img src={"list-dot.svg"} />
                     <p>
-                        Provide a vision of how a project should be developed from a technical side
+                        Building the substrate smart contract ecosystem
                     </p>
                 </div>
             </div>
@@ -56,55 +56,67 @@ export default function JobDescription() {
                 <div className={styles.pointDiv}>
                     <img src={"list-dot.svg"} />
                     <p>
-                        Deep technical knowledge of blockchain technology and Rust
+                        3+ years of development experience
                     </p>
                 </div>
                 <div className={styles.pointDiv}>
                     <img src={"list-dot.svg"} />
                     <p>
-                        Proficiency with Rust, C++, Go, Javascript, Typescript
+                        1+ years of blockchain development experience
                     </p>
                 </div>
                 <div className={styles.pointDiv}>
                     <img src={"list-dot.svg"} />
                     <p>
-                        Experience in smart contracts development
+                        Expert-level experience in Rust or C++
                     </p>
                 </div>
                 <div className={styles.pointDiv}>
                     <img src={"list-dot.svg"} />
                     <p>
-                        You are interested in Polkadot and other cross-chain ecosystems
+                        High interest in blockchain and web3 technologies
                     </p>
                 </div>
                 <div className={styles.pointDiv}>
                     <img src={"list-dot.svg"} />
                     <p>
-                        You have working experience with data structures and algorithms
+                        Proficiency in algorithms and data structures
                     </p>
                 </div>
                 <div className={styles.pointDiv}>
                     <img src={"list-dot.svg"} />
                     <p>
-                        Knowledge of English at the Intermediate level
+                        Problem-solving skills
                     </p>
                 </div>
                 <div className={styles.pointDiv}>
                     <img src={"list-dot.svg"} />
                     <p>
-                        Fantastic problem-solving skills
+                        Knowledge of English at the <b>Intermediate</b> level and higher
                     </p>
                 </div>
                 <div className={styles.pointDiv}>
                     <img src={"list-dot.svg"} />
                     <p>
-                        Be self-motivated and proactive
+                        Passion for innovation and brainstorming new solutions
+                    </p>
+                </div>
+                <div className={styles.pointDiv}>
+                    <img src={"list-dot.svg"} />
+                    <p>
+                        Experience with security assessments and commercial audits is a big plus
+                    </p>
+                </div>
+                <div className={styles.pointDiv}>
+                    <img src={"list-dot.svg"} />
+                    <p>
+                        Experience in smart contracts development is a plus
                     </p>
                 </div>
                 <div className={styles.pointDiv} style={{marginBottom: 0}}>
                     <img src={"list-dot.svg"} />
                     <p>
-                        Passion for innovation and brainstorming new solutions
+                        Knowledge of Typescript is a plus
                     </p>
                 </div>
             </div>
@@ -114,7 +126,7 @@ export default function JobDescription() {
     const Benefits = () => {
       return (
         <div className={styles.divWrapper} style={{marginBottom: 0}}>
-          <div className={styles.title}>Work conditions and benefits:</div>
+          <div className={styles.title}>What we offer:</div>
           <div className={styles.pointDiv}>
             <img src={"list-dot.svg"} />
             <p>
@@ -124,28 +136,32 @@ export default function JobDescription() {
           </div>
           <div className={styles.pointDiv}>
             <img src={"list-dot.svg"} />
-            <p>Modern working environment and international team</p>
-          </div>
-          <div className={styles.pointDiv}>
-            <img src={"list-dot.svg"} />
-            <p>You can be part of special crypto projects</p>
-          </div>
-          <div className={styles.pointDiv}>
-            <img src={"list-dot.svg"} />
             <p>Competitive compensation package</p>
+          </div>
+          <div className={styles.pointDiv}>
+            <img src={"list-dot.svg"} />
+            <p>Modern working environment</p>
+          </div>
+          <div className={styles.pointDiv}>
+            <img src={"list-dot.svg"} />
+            <p>Zero bureaucracy and micromanagement</p>
+          </div>
+          <div className={styles.pointDiv}>
+            <img src={"list-dot.svg"} />
+            <p>You can be part of special web3 projects</p>
           </div>
           <div className={styles.pointDiv}>
             <img src={"list-dot.svg"} />
             <p>Remote work and flexible working hours</p>
           </div>
-          <div className={styles.pointDiv}>
-            <img src={"list-dot.svg"} />
-            <p>You can gain portfolio companies’ tokens</p>
-          </div>
+            <div className={styles.pointDiv}>
+                <img src={"list-dot.svg"} />
+                <p>You can gain portfolio companies’ tokens</p>
+            </div>
           <div className={styles.pointDiv} style={{marginBottom: 0}}>
             <img src={"list-dot.svg"} />
             <p>
-              You will be developing a brand-new product with a talented team
+                You will be developing a brand-new product with a talented team
             </p>
           </div>
         </div>
@@ -154,8 +170,8 @@ export default function JobDescription() {
 
     return(
         <section className={styles.section}>
-            <WorkDescription></WorkDescription>
             <Requirements></Requirements>
+            <WorkDescription></WorkDescription>
             <Benefits></Benefits>
         </section>
     )

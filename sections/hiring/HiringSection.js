@@ -7,7 +7,7 @@ export default function HiringSection() {
       <p className={styles.titleText}>Vacancies</p>
       <p className={styles.headerText}>We’re hiring</p>
       <div className={styles.hiringBlock}>
-        <div className={styles.positionTitle}>Chief Technical Officer</div>
+        <div className={styles.positionTitle}>Rust Blockchain Developer</div>
         <div className={styles.positionDescription}>
           We’re looking for a Blockchain Developer interested in Rust and CTO
           ambitions. If you are good at blockchain development, join the team of
@@ -16,12 +16,12 @@ export default function HiringSection() {
           looking for a talented&skilled&problem-solving person to be part of
           our team!
         </div>
-        <Link href={"/cto-hiring"}>
+        <Link href={"/rust-dev-hiring"}>
           <div className={styles.learnMore}>Learn more</div>
         </Link>
       </div>
         <div className={styles.hiringBlockMobile}>
-            <div className={styles.positionTitle}>Chief Technical Officer</div>
+            <div className={styles.positionTitle}>Rust Blockchain Developer</div>
             <div className={styles.positionDescription}>
                 We’re looking for a Blockchain Developer interested in Rust and CTO
                 ambitions. If you are good at blockchain development, join the team of
@@ -30,7 +30,7 @@ export default function HiringSection() {
                 looking for a talented&skilled&problem-solving person to be part of
                 our team!
             </div>
-            <Link href={"/cto-hiring"} style={{width: 161}}>
+            <Link href={"/rust-dev-hiring"} style={{width: 161}}>
                 <div className={styles.learnMore}>Learn more</div>
             </Link>
         </div>

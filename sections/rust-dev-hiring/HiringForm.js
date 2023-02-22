@@ -1,5 +1,5 @@
-import styles from "@/styles/cto-hiring/HiringForm.module.css";
-import { useCallback, useState } from "react";
+import styles from "@/styles/rust-dev-hiring/HiringForm.module.css";
+import { useState } from "react";
 import { useDropzone } from "react-dropzone";
 
 let acceptedFile;

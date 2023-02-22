@@ -1,12 +1,12 @@
 import Navbar from "@/components/Navbar";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import JobTitle from "@/sections/cto-hiring/JobTitle";
-import JobDescription from "@/sections/cto-hiring/JobDescription";
-import HiringForm from "@/sections/cto-hiring/HiringForm";
+import JobTitle from "@/sections/rust-dev-hiring/JobTitle";
+import JobDescription from "@/sections/rust-dev-hiring/JobDescription";
+import HiringForm from "@/sections/rust-dev-hiring/HiringForm";
 import {MobileNavbar} from "@/components/MobileNavbar";
 
-export default function CtoHiring() {
+export default function RustDevHiring() {
     return(
         <div style={{backgroundImage: 'url("/chief-technical-officer-bg.jpg")'}}>
             <Navbar></Navbar>
