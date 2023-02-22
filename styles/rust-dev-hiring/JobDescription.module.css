@@ -87,6 +87,9 @@
 }
 
 @media (max-width: 460px) {
+    .section {
+        padding-top: 180px;
+    }
     .divWrapper {
         width: 89%;
     }

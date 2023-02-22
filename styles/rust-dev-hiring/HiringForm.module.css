@@ -279,4 +279,8 @@
   .divWrapper {
     width: 89%;
   }
+
+  .section {
+    margin-bottom: 120px;
+  }
 }
