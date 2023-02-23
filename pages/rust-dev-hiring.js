@@ -5,10 +5,11 @@ import JobTitle from "@/sections/rust-dev-hiring/JobTitle";
 import JobDescription from "@/sections/rust-dev-hiring/JobDescription";
 import HiringForm from "@/sections/rust-dev-hiring/HiringForm";
 import {MobileNavbar} from "@/components/MobileNavbar";
+import styles from "@/styles/bg-styles/bg.module.css"
 
 export default function RustDevHiring() {
     return(
-        <div style={{backgroundImage: 'url("/chief-technical-officer-bg.jpg")'}}>
+        <div className={styles.aboutUsProperty}>
             <Navbar></Navbar>
             <MobileNavbar></MobileNavbar>
             <JobTitle></JobTitle>
