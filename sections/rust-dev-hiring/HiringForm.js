@@ -5,45 +5,45 @@ import { useDropzone } from "react-dropzone";
 let acceptedFile;
 
 const Dropzone = () => {
-  const { getRootProps, getInputProps, acceptedFiles, fileRejections } = useDropzone({
-    multiple: false,
-    accept: {
-      "application/pdf": [],
-      'image/jpeg': [],
-      'image/png': [],
-    },
-    maxSize: 3100000,
-  });
+  const { getRootProps, getInputProps, acceptedFiles, fileRejections } =
+    useDropzone({
+      multiple: false,
+      accept: {
+        "application/pdf": [],
+        "image/jpeg": [],
+        "image/png": [],
+      },
+      maxSize: 3100000,
+    });
 
   const files = acceptedFiles.map((file) => (
-      <div key={file.name}>{file.name}</div>
+    <div key={file.name}>{file.name}</div>
   ));
 
-  acceptedFile = acceptedFiles[0]
+  acceptedFile = acceptedFiles[0];
 
   return (
-      <div {...getRootProps({})} className={styles.dropzoneWrapper}>
-        {fileRejections.length > 0 ? (
-            <div className={styles.fileDivError}>
-              <input {...getInputProps({})} />
-              <p className={styles.uploadText}>Upload your file</p>
-              <p className={styles.sizeTextError}>Maximum upload size: 3MB</p>
-              <div className={styles.files}>{files}</div>
-            </div>
-        ) : (
-            <div className={styles.fileDiv}>
-              <input {...getInputProps({})} />
-              <p className={styles.uploadText}>Upload your file</p>
-              <p className={styles.sizeText}>Maximum upload size: 3MB</p>
-              <div className={styles.files}>{files}</div>
-            </div>
-        )}
-      </div>
+    <div {...getRootProps({})} className={styles.dropzoneWrapper}>
+      {fileRejections.length > 0 ? (
+        <div className={styles.fileDivError}>
+          <input {...getInputProps({})} />
+          <p className={styles.uploadText}>Upload your file</p>
+          <p className={styles.sizeTextError}>Maximum upload size: 3MB</p>
+          <div className={styles.files}>{files}</div>
+        </div>
+      ) : (
+        <div className={styles.fileDiv}>
+          <input {...getInputProps({})} />
+          <p className={styles.uploadText}>Upload your file</p>
+          <p className={styles.sizeText}>Maximum upload size: 3MB</p>
+          <div className={styles.files}>{files}</div>
+        </div>
+      )}
+    </div>
   );
-}
+};
 
 export default function HiringForm() {
-  const [file, setFile] = useState([])
   const [name, setName] = useState("");
   const [lastname, setLastname] = useState("");
   const [country, setCountry] = useState("");
@@ -51,28 +51,27 @@ export default function HiringForm() {
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [sent, setSent] = useState(false);
-  const [clicked, setClicked] = useState(false)
+  const [clicked, setClicked] = useState(false);
 
-  const SubmitButton = ({formName}) => {
+  const SubmitButton = ({ formName }) => {
     const handleSubmit = async (e) => {
       e.preventDefault();
-      setClicked(true)
+      setClicked(true);
 
       if (!name || !lastname || !country || !ln || !message) {
-        document.getElementById(formName).scrollIntoView()
+        document.getElementById(formName).scrollIntoView();
         return;
       }
 
       setSent(true);
 
       const formDataFile = new FormData();
-      formDataFile.append('file', acceptedFile);
-      let response = await fetch('https://httpbin.org/post', {
-        method: 'POST',
+      formDataFile.append("file", acceptedFile);
+      let response = await fetch("https://httpbin.org/post", {
+        method: "POST",
         body: formDataFile,
-      })
+      });
       const file = await response.json();
-      setFile(file)
       console.log("Sending");
       let data = {
         name,
@@ -80,7 +79,7 @@ export default function HiringForm() {
         country,
         ln,
         message,
-        file
+        file,
       };
       await sendContactForm(data);
     };
@@ -132,14 +131,17 @@ export default function HiringForm() {
     );
   };
 
-
   return (
     <section className={styles.section}>
       <div className={styles.divWrapper}>
         <form method="post" id={"hiringForm"} className={styles.formDiv}>
           <div className={styles.row}>
             <div className={styles.column}>
-              <label htmlFor={"name"} className={styles.label} style={clicked && !name ? {color: "red"} : {}}>
+              <label
+                htmlFor={"name"}
+                className={styles.label}
+                style={clicked && !submitted && !name ? { color: "red" } : {}}
+              >
                 First Name
               </label>
               <input
@@ -149,11 +151,21 @@ export default function HiringForm() {
                 onChange={(e) => {
                   setName(e.target.value);
                 }}
-                className={clicked && !name ? styles.inputError : styles.input}
+                className={
+                  clicked && !submitted && !name
+                    ? styles.inputError
+                    : styles.input
+                }
               />
             </div>
             <div className={styles.column}>
-              <label htmlFor={"lastname"} className={styles.label} style={clicked && !lastname ? {color: "red"} : {}}>
+              <label
+                htmlFor={"lastname"}
+                className={styles.label}
+                style={
+                  clicked && !submitted && !lastname ? { color: "red" } : {}
+                }
+              >
                 Last Name
               </label>
               <input
@@ -163,13 +175,23 @@ export default function HiringForm() {
                 onChange={(e) => {
                   setLastname(e.target.value);
                 }}
-                className={clicked && !lastname ? styles.inputError : styles.input}
+                className={
+                  clicked && !submitted && !lastname
+                    ? styles.inputError
+                    : styles.input
+                }
               />
             </div>
           </div>
           <div className={styles.row}>
             <div className={styles.column}>
-              <label htmlFor={"country"} className={styles.label} style={clicked && !country ? {color: "red"} : {}}>
+              <label
+                htmlFor={"country"}
+                className={styles.label}
+                style={
+                  clicked && !submitted && !country ? { color: "red" } : {}
+                }
+              >
                 Your residence location
               </label>
               <input
@@ -179,11 +201,19 @@ export default function HiringForm() {
                 onChange={(e) => {
                   setCountry(e.target.value);
                 }}
-                className={clicked && !country ? styles.inputError : styles.input}
+                className={
+                  clicked && !submitted && !country
+                    ? styles.inputError
+                    : styles.input
+                }
               />
             </div>
             <div className={styles.column}>
-              <label htmlFor={"ln"} className={styles.label} style={clicked && !ln ? {color: "red"} : {}}>
+              <label
+                htmlFor={"ln"}
+                className={styles.label}
+                style={clicked && !submitted && !ln ? { color: "red" } : {}}
+              >
                 LinkedIn
               </label>
               <input
@@ -193,12 +223,20 @@ export default function HiringForm() {
                 onChange={(e) => {
                   setLn(e.target.value);
                 }}
-                className={clicked && !ln ? styles.inputError : styles.input}
+                className={
+                  clicked && !submitted && !ln
+                    ? styles.inputError
+                    : styles.input
+                }
               />
             </div>
           </div>
           <div className={styles.lastColumn}>
-            <label htmlFor={"message"} className={styles.label} style={clicked && !message ? {color: "red"} : {}}>
+            <label
+              htmlFor={"message"}
+              className={styles.label}
+              style={clicked && !submitted && !message ? { color: "red" } : {}}
+            >
               Tell more about yourself or attach a CV (PDF/PNG/JPG)
             </label>
             <textarea
@@ -207,11 +245,14 @@ export default function HiringForm() {
               onChange={(e) => {
                 setMessage(e.target.value);
               }}
-              className={clicked && !message ? styles.lastInputError : styles.lastInput}
+              className={
+                clicked && !submitted && !message
+                  ? styles.lastInputError
+                  : styles.lastInput
+              }
             />
           </div>
-          <Dropzone>
-          </Dropzone>
+          <Dropzone></Dropzone>
           <SubmitButton formName={"hiringForm"}></SubmitButton>
         </form>
       </div>
