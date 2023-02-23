@@ -58,7 +58,7 @@ export default function HiringForm() {
       e.preventDefault();
       setClicked(true);
 
-      if (!name || !lastname || !country || !ln || !message) {
+      if (!name || !lastname || !country || !ln || (!message && !acceptedFile)) {
         document.getElementById(formName).scrollIntoView();
         return;
       }
@@ -235,7 +235,7 @@ export default function HiringForm() {
             <label
               htmlFor={"message"}
               className={styles.label}
-              style={clicked && !submitted && !message ? { color: "red" } : {}}
+              style={clicked && !submitted && (!message && !acceptedFile) ? { color: "red" } : {}}
             >
               Tell more about yourself or attach a CV (PDF/PNG/JPG)
             </label>
@@ -246,7 +246,7 @@ export default function HiringForm() {
                 setMessage(e.target.value);
               }}
               className={
-                clicked && !submitted && !message
+                clicked && !submitted && (!message && !acceptedFile)
                   ? styles.lastInputError
                   : styles.lastInput
               }
