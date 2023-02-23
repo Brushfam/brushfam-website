@@ -58,4 +58,8 @@
     .auditBlock {
         width: 89%;
     }
+
+    .section {
+        padding-top: 180px;
+    }
 }

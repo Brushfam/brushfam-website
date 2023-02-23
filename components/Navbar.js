@@ -52,7 +52,7 @@ const Navbar = () => {
                         <div className={navStyles.borderBlock2}></div>
 
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-openbrush.svg" />
+                          <img src="/nav-icons/nav-openbrush.svg"/>
                           <p className={navStyles.dropdownTitle}>OpenBrush</p>
                         </div>
                         <p className={navStyles.description}>
@@ -119,11 +119,10 @@ const Navbar = () => {
                     <Link href={"/onboard-to-web3"}>
                       <div
                         className={navStyles.dropDownItem}
-                        style={{ padding: "20px 0" }}
                       >
                         <div className={navStyles.borderBlock2}></div>
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-web3.svg" />
+                          <img src="/nav-icons/nav-web3.svg" style={{width: 15}}/>
                           <p className={navStyles.dropdownTitle}>
                             Web3 onboard
                           </p>
@@ -134,10 +133,9 @@ const Navbar = () => {
                     <Link href={"/advisory-subscription"}>
                       <div
                         className={navStyles.dropDownItem}
-                        style={{ padding: "20px 0" }}
                       >
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-advisory.svg" />
+                          <img src="/nav-icons/nav-advisory.svg" style={{width: 15}}/>
                           <p className={navStyles.dropdownTitle}>
                             Advisory subscription
                           </p>
@@ -148,10 +146,9 @@ const Navbar = () => {
                     <Link href={"/security-audits"}>
                       <div
                         className={navStyles.dropDownItem}
-                        style={{ padding: "20px 0" }}
                       >
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-audits.svg" />
+                          <img src="/nav-icons/nav-audits.svg" style={{width: 15}}/>
                           <p className={navStyles.dropdownTitle}>
                             Security audits
                           </p>
@@ -162,10 +159,9 @@ const Navbar = () => {
                     <Link href={"/#onboard-in-polkadot"}>
                       <div
                         className={navStyles.dropDownItem}
-                        style={{ padding: "20px 0" }}
                       >
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-polkadot.svg" />
+                          <img src="/nav-icons/nav-polkadot.svg" style={{width: 15}}/>
                           <p className={navStyles.dropdownTitle}>
                             Polkadot onboard
                           </p>
@@ -176,10 +172,9 @@ const Navbar = () => {
                     <Link href={"/investment-diligence"}>
                       <div
                         className={navStyles.dropDownLastItem}
-                        style={{ padding: "20px 0" }}
                       >
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-investment.svg" />
+                          <img src="/nav-icons/nav-investment.svg" style={{width: 18, marginRight: 7}}/>
                           <p className={navStyles.dropdownTitle}>
                             Investment Diligence
                           </p>
@@ -230,7 +225,7 @@ const Navbar = () => {
                   </div>
                   <div
                     className={navStyles.testBlock}
-                    style={{ width: 172 }}
+                    style={{ width: 170 }}
                   ></div>
                 </div>
               </div>
@@ -248,7 +243,7 @@ const Navbar = () => {
                   <div className={navStyles.dropdownContentHeader}>
                     <div
                       className={navStyles.borderBlock3}
-                      style={{ height: 186 }}
+                      style={{ height: 288 }}
                     ></div>
                     <div className={navStyles.borderBlock1}></div>
                   </div>
@@ -257,7 +252,7 @@ const Navbar = () => {
                     style={{ width: 367 }}
                   >
                     <Link href={"/about-us"}>
-                      <div className={navStyles.dropDownLastItem}>
+                      <div className={navStyles.dropDownItem}>
                         <div className={navStyles.borderBlock2}></div>
                         <div className={navStyles.dropDownItemHeader}>
                           <p className={navStyles.dropdownTitle}>About us</p>
@@ -269,16 +264,16 @@ const Navbar = () => {
                         </p>
                       </div>
                     </Link>
-                    {/*<div className={navStyles.dropDownLastItem}>*/}
-                    {/*  <Link href={"/hiring"}>*/}
-                    {/*    <div className={navStyles.dropDownItemHeader}>*/}
-                    {/*      <p className={navStyles.dropdownTitle}>Hiring</p>*/}
-                    {/*    </div>*/}
-                    {/*    <p className={navStyles.description}>*/}
-                    {/*      Our team is known for its contribution to the Polkadot ecosystem. Our visionary attitude helps us think boldly and embrace technological challenges.*/}
-                    {/*    </p>*/}
-                    {/*  </Link>*/}
-                    {/*</div>*/}
+                    <Link href={"/hiring"}>
+                    <div className={navStyles.dropDownLastItem}>
+                        <div className={navStyles.dropDownItemHeader}>
+                          <p className={navStyles.dropdownTitle}>Hiring</p>
+                        </div>
+                        <p className={navStyles.description}>
+                          Our team is known for its contribution to the Polkadot ecosystem. Our visionary attitude helps us think boldly and embrace technological challenges.
+                        </p>
+                    </div>
+                    </Link>
                   </div>
                   <div
                     className={navStyles.testBlock}

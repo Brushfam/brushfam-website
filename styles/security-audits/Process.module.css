@@ -52,4 +52,12 @@
     .auditProcessMobileImg {
         width: 89%;
     }
+
+    .section {
+        padding-top: 120px;
+    }
+
+    .auditProcessMobileImg {
+        margin-bottom: 110px;
+    }
 }

@@ -82,6 +82,12 @@
     cursor: pointer;
 }
 
+@media (max-width: 1159px) {
+    .section {
+        padding-top: 120px;
+    }
+}
+
 @media (max-width: 1200px) {
     .hiringBlock {
         column-gap: 20px;
@@ -111,6 +117,7 @@
         font-size: 24px;
         line-height: 120%;
         margin-bottom: 10px;
+        width: auto;
     }
 
     .positionDescription {
@@ -125,5 +132,9 @@
     .hiringBlockMobile {
         width: 89%;
         height: auto;
+    }
+
+    .section {
+        margin-bottom: 120px;
     }
 }

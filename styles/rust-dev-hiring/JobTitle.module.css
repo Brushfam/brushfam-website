@@ -36,7 +36,7 @@
     font-size: 40px;
     line-height: 120%;
     color: #FFFFFF;
-    max-width: 322px;
+    max-width: 340px;
 }
 
 .briefDiv {
@@ -54,10 +54,16 @@
 
 .briefDescription {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 150%;
     color: #9097AA;
     max-width: 500px;
+}
+
+@media (max-width: 1159px) {
+    .section {
+        padding-top: 120px;
+    }
 }
 
 @media (max-width: 1440px) {
