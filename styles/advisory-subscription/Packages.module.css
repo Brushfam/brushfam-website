@@ -54,7 +54,8 @@
 
 @media (max-width: 460px) {
     .section {
-        padding-top: 230px;
+        padding-top: 110px;
+        margin-bottom: 120px;
     }
     .headerText {
         margin-bottom: 24px;

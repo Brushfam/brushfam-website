@@ -121,4 +121,7 @@
         height: auto;
     }
 
+    .section {
+        padding-top: 180px;
+    }
 }

@@ -19,6 +19,7 @@
   flex-direction: column;
   align-items: center;
   width: 1000px;
+  scroll-margin: 100px;
 }
 
 .label {
@@ -39,10 +40,18 @@
   color: #9097aa;
 }
 
-/*
-#CD0C0C
- */
+.inputError::placeholder,
+.lastInputError::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #CD0C0C;
+}
 
+.inputError,
+.lastInputError,
 .input,
 .lastInput {
   height: 53px;
@@ -63,10 +72,12 @@
   color: #ffffff;
 }
 
+.inputError,
 .input {
   width: 460px;
 }
 
+.lastInputError,
 .lastInput {
   width: 1000px;
   resize: none;
@@ -151,10 +162,10 @@
 }
 
 .fileDivError {
-  background-image: linear-gradient(to right, #cd0c0c 50%, transparent 50%),
-  linear-gradient(to right, #cd0c0c 50%, transparent 50%),
-  linear-gradient(to bottom, #cd0c0c 50%, transparent 50%),
-  linear-gradient(to bottom, #cd0c0c 50%, transparent 50%);
+  background-image: linear-gradient(to right, #CD0C0C 50%, transparent 50%),
+  linear-gradient(to right, #CD0C0C 50%, transparent 50%),
+  linear-gradient(to bottom, #CD0C0C 50%, transparent 50%),
+  linear-gradient(to bottom, #CD0C0C 50%, transparent 50%);
   background-position: left top, left bottom, left top, right top;
   background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
   background-size: 20px 1px, 20px 1px, 1px 20px, 1px 20px;
@@ -182,7 +193,7 @@
 }
 
 .sizeTextError {
-  color: #cd0c0c;
+  color: #CD0C0C;
 }
 
 .files {
@@ -202,28 +213,20 @@
   overflow-x: hidden;
 }
 
-/*@media (max-width: 1440px) {*/
-/*    .divWrapper {*/
-/*        width: 69%;*/
-/*    }*/
-/*}*/
-
 @media (max-width: 1100px) {
   .formDiv {
     width: auto;
   }
 
+  .inputError,
   .input {
     width: 322px;
   }
 
+  .lastInputError,
   .lastInput {
     width: 722px;
   }
-
-  /*.fileDiv, .fileDivError {*/
-  /*    width: 314px;*/
-  /*}*/
 }
 
 @media (max-width: 800px) {
@@ -238,11 +241,14 @@
     margin-bottom: 40px;
   }
 
+  .inputError,
+  .lastInputError,
   .lastInput,
   .input {
     width: 100%;
   }
 
+  .lastInputError,
   .lastInput {
     height: 130px;
   }

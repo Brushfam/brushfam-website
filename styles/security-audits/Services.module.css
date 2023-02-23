@@ -177,4 +177,8 @@
     .headerText {
         max-width: 300px;
     }
+
+    .section {
+        padding-top: 120px;
+    }
 }

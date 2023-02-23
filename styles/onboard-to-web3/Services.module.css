@@ -54,4 +54,12 @@
     .onboardProcessMobileImg {
         width: 89%;
     }
+
+    .section {
+        padding-top: 180px;
+    }
+
+    .onboardProcessMobileImg {
+        margin-bottom: 120px;
+    }
 }

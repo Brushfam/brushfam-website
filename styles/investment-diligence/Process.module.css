@@ -78,4 +78,12 @@
     .descriptionText {
         width: 100%;
     }
+
+    .section {
+        padding-top: 180px;
+    }
+
+    .auditProcessMobileImg {
+        margin-bottom: 110px;
+    }
 }

@@ -98,7 +98,9 @@ export const MobileNavbar = () => {
   return (
     <div>
       <div className={styles.navbarMobile} id={"navbar-bottom"}>
-        <img src={"/logos/brushfam-mini-logo.svg"} />
+        <Link href={"/"}>
+          <img src={"/logos/brushfam-mini-logo.svg"} />
+        </Link>
         <img
           src={"/navbar-button.svg"}
           className={styles.navbarMenuButton}

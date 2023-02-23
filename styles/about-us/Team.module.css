@@ -176,4 +176,12 @@
         font-weight: 400;
         font-size: 9px;
     }
+
+    .section {
+        padding-top: 120px;
+    }
+
+    .teamList {
+        margin-bottom: 120px;
+    }
 }

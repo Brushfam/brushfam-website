@@ -12,7 +12,7 @@ const Dropzone = () => {
       'image/jpeg': [],
       'image/png': [],
     },
-    maxSize: 4000000,
+    maxSize: 3100000,
   });
 
   const files = acceptedFiles.map((file) => (
@@ -27,14 +27,14 @@ const Dropzone = () => {
             <div className={styles.fileDivError}>
               <input {...getInputProps({})} />
               <p className={styles.uploadText}>Upload your file</p>
-              <p className={styles.sizeTextError}>Maximum upload size: 4MB</p>
+              <p className={styles.sizeTextError}>Maximum upload size: 3MB</p>
               <div className={styles.files}>{files}</div>
             </div>
         ) : (
             <div className={styles.fileDiv}>
               <input {...getInputProps({})} />
               <p className={styles.uploadText}>Upload your file</p>
-              <p className={styles.sizeText}>Maximum upload size: 4MB</p>
+              <p className={styles.sizeText}>Maximum upload size: 3MB</p>
               <div className={styles.files}>{files}</div>
             </div>
         )}
@@ -51,16 +51,18 @@ export default function HiringForm() {
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [sent, setSent] = useState(false);
+  const [clicked, setClicked] = useState(false)
 
-  const SubmitButton = ({ formName }) => {
+  const SubmitButton = ({formName}) => {
     const handleSubmit = async (e) => {
-      const form = document.getElementById(formName);
-      if (!form.checkValidity()) {
-        form.reportValidity();
+      e.preventDefault();
+      setClicked(true)
+
+      if (!name || !lastname || !country || !ln || !message) {
+        document.getElementById(formName).scrollIntoView()
         return;
       }
 
-      e.preventDefault();
       setSent(true);
 
       const formDataFile = new FormData();
@@ -137,7 +139,7 @@ export default function HiringForm() {
         <form method="post" id={"hiringForm"} className={styles.formDiv}>
           <div className={styles.row}>
             <div className={styles.column}>
-              <label htmlFor={"name"} className={styles.label}>
+              <label htmlFor={"name"} className={styles.label} style={clicked && !name ? {color: "red"} : {}}>
                 First Name
               </label>
               <input
@@ -147,12 +149,11 @@ export default function HiringForm() {
                 onChange={(e) => {
                   setName(e.target.value);
                 }}
-                className={styles.input}
-                required
+                className={clicked && !name ? styles.inputError : styles.input}
               />
             </div>
             <div className={styles.column}>
-              <label htmlFor={"lastname"} className={styles.label}>
+              <label htmlFor={"lastname"} className={styles.label} style={clicked && !lastname ? {color: "red"} : {}}>
                 Last Name
               </label>
               <input
@@ -162,14 +163,13 @@ export default function HiringForm() {
                 onChange={(e) => {
                   setLastname(e.target.value);
                 }}
-                className={styles.input}
-                required
+                className={clicked && !lastname ? styles.inputError : styles.input}
               />
             </div>
           </div>
           <div className={styles.row}>
             <div className={styles.column}>
-              <label htmlFor={"country"} className={styles.label}>
+              <label htmlFor={"country"} className={styles.label} style={clicked && !country ? {color: "red"} : {}}>
                 Your residence location
               </label>
               <input
@@ -179,12 +179,11 @@ export default function HiringForm() {
                 onChange={(e) => {
                   setCountry(e.target.value);
                 }}
-                className={styles.input}
-                required
+                className={clicked && !country ? styles.inputError : styles.input}
               />
             </div>
             <div className={styles.column}>
-              <label htmlFor={"ln"} className={styles.label}>
+              <label htmlFor={"ln"} className={styles.label} style={clicked && !ln ? {color: "red"} : {}}>
                 LinkedIn
               </label>
               <input
@@ -194,13 +193,12 @@ export default function HiringForm() {
                 onChange={(e) => {
                   setLn(e.target.value);
                 }}
-                className={styles.input}
-                required
+                className={clicked && !ln ? styles.inputError : styles.input}
               />
             </div>
           </div>
           <div className={styles.lastColumn}>
-            <label htmlFor={"message"} className={styles.label}>
+            <label htmlFor={"message"} className={styles.label} style={clicked && !message ? {color: "red"} : {}}>
               Tell more about yourself or attach a CV (PDF/PNG/JPG)
             </label>
             <textarea
@@ -209,8 +207,7 @@ export default function HiringForm() {
               onChange={(e) => {
                 setMessage(e.target.value);
               }}
-              className={styles.lastInput}
-              required
+              className={clicked && !message ? styles.lastInputError : styles.lastInput}
             />
           </div>
           <Dropzone>
