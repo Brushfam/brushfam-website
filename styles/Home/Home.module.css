@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 920px;
   padding-top: 268px;
 }
 
@@ -83,7 +82,7 @@
 
 @media (max-width: 460px) {
     .section {
-        height: 828px;
+        height: 800px;
       padding-top: 188px;
     }
   .mainDiv {
