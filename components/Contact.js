@@ -178,7 +178,7 @@ export default function Contact() {
         </p>
         <div className={styles.contactDivMobile}>
           <form method="post" id={"mobileForm"} className={styles.formDiv}>
-            <label htmlFor={"email"} className={styles.label} style={clicked && !submitted && !(email || isEmail(email)) ? { color: "#CD0C0C" } : {}}>
+            <label htmlFor={"email"} className={styles.label} style={clicked && !submitted && !(email && isEmail(email)) ? { color: "#CD0C0C" } : {}}>
               Email
             </label>
             <input
