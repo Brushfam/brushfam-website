@@ -61,7 +61,7 @@ export default function Services() {
                 implement the smart contract’s terms.
               </p>
               <Link
-                  href={"/advisory-subscription"}
+                  href={"/security-audits"}
                 type="button"
                 onClick={handleClick}
                 className={styles.button}
@@ -85,7 +85,7 @@ export default function Services() {
                 sometimes fatal vulnerabilities.
               </p>
               <Link
-                  href={"/security-audits"}
+                  href={"/advisory-subscription"}
                 type="button"
                 onClick={handleClick}
                 className={styles.button}
