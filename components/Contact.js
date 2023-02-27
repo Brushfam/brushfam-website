@@ -135,6 +135,7 @@ export default function Contact() {
               onChange={(e) => {
                 setEmail(e.target.value);
               }}
+              autoComplete="off"
               className={styles.input}
               required
           />
@@ -148,6 +149,7 @@ export default function Contact() {
               onChange={(e) => {
                 setMessage(e.target.value);
               }}
+              autoComplete="off"
               className={styles.input}
               required
             />
@@ -171,6 +173,7 @@ export default function Contact() {
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
+                autoComplete="off"
                 className={styles.input}
                 required
             />
@@ -184,6 +187,7 @@ export default function Contact() {
                 onChange={(e) => {
                   setMessage(e.target.value);
                 }}
+                autoComplete="off"
                 className={styles.input}
                 required
             />

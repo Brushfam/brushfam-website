@@ -151,6 +151,7 @@ export default function HiringForm() {
                 onChange={(e) => {
                   setName(e.target.value);
                 }}
+                autoComplete="off"
                 className={
                   clicked && !submitted && !name
                     ? styles.inputError
@@ -175,6 +176,7 @@ export default function HiringForm() {
                 onChange={(e) => {
                   setLastname(e.target.value);
                 }}
+                autoComplete="off"
                 className={
                   clicked && !submitted && !lastname
                     ? styles.inputError
@@ -201,6 +203,7 @@ export default function HiringForm() {
                 onChange={(e) => {
                   setCountry(e.target.value);
                 }}
+                autoComplete="off"
                 className={
                   clicked && !submitted && !country
                     ? styles.inputError
@@ -223,6 +226,7 @@ export default function HiringForm() {
                 onChange={(e) => {
                   setLn(e.target.value);
                 }}
+                autoComplete="off"
                 className={
                   clicked && !submitted && !ln
                     ? styles.inputError
@@ -245,6 +249,7 @@ export default function HiringForm() {
               onChange={(e) => {
                 setMessage(e.target.value);
               }}
+              autoComplete="off"
               className={
                 clicked && !submitted && (!message && !acceptedFile)
                   ? styles.lastInputError
