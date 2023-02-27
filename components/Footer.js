@@ -35,9 +35,6 @@ const Footer = () => {
             </a>
           </div>
           <div className={styles.socialDivMobile} style={{marginBottom: 37}}>
-            {/*<a href={"https://www.linkedin.com/company/727-ventures-vs/"}>*/}
-            {/*  <img src={"icons/in-mobile.svg"} />*/}
-            {/*</a>*/}
             <a href={"https://discord.gg/EARg6RCThP"}>
               <img src={"icons/discord-mobile.svg"} />
             </a>
@@ -49,9 +46,6 @@ const Footer = () => {
             </a>
           </div>
           <div className={styles.socialDivMobile}>
-            {/*<a href={"https://instagram.com/727_ventures?igshid=ZmVmZTY5ZGE="}>*/}
-            {/*  <img src={"icons/inst-mobile.svg"} />*/}
-            {/*</a>*/}
             <a href={"https://medium.com/727-ventures"}>
               <img src={"icons/medium-mobile.svg"} />
             </a>
