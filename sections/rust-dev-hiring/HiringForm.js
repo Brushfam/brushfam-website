@@ -152,6 +152,8 @@ export default function HiringForm() {
                   setName(e.target.value);
                 }}
                 autoComplete="off"
+                autoCorrect={"off"}
+                spellCheck={"false"}
                 className={
                   clicked && !submitted && !name
                     ? styles.inputError
@@ -177,6 +179,8 @@ export default function HiringForm() {
                   setLastname(e.target.value);
                 }}
                 autoComplete="off"
+                autoCorrect={"off"}
+                spellCheck={"false"}
                 className={
                   clicked && !submitted && !lastname
                     ? styles.inputError
@@ -204,6 +208,8 @@ export default function HiringForm() {
                   setCountry(e.target.value);
                 }}
                 autoComplete="off"
+                autoCorrect={"off"}
+                spellCheck={"false"}
                 className={
                   clicked && !submitted && !country
                     ? styles.inputError
@@ -227,6 +233,8 @@ export default function HiringForm() {
                   setLn(e.target.value);
                 }}
                 autoComplete="off"
+                autoCorrect={"off"}
+                spellCheck={"false"}
                 className={
                   clicked && !submitted && !ln
                     ? styles.inputError
@@ -250,6 +258,8 @@ export default function HiringForm() {
                 setMessage(e.target.value);
               }}
               autoComplete="off"
+              autoCorrect={"off"}
+              spellCheck={"false"}
               className={
                 clicked && !submitted && (!message && !acceptedFile)
                   ? styles.lastInputError

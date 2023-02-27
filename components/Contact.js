@@ -136,6 +136,8 @@ export default function Contact() {
                 setEmail(e.target.value);
               }}
               autoComplete="off"
+              autoCorrect={"off"}
+              spellCheck={"false"}
               className={styles.input}
               required
           />
@@ -150,6 +152,8 @@ export default function Contact() {
                 setMessage(e.target.value);
               }}
               autoComplete="off"
+              autoCorrect={"off"}
+              spellCheck={"false"}
               className={styles.input}
               required
             />
@@ -174,6 +178,8 @@ export default function Contact() {
                   setEmail(e.target.value);
                 }}
                 autoComplete="off"
+                autoCorrect={"off"}
+                spellCheck={"false"}
                 className={styles.input}
                 required
             />
@@ -188,6 +194,8 @@ export default function Contact() {
                   setMessage(e.target.value);
                 }}
                 autoComplete="off"
+                autoCorrect={"off"}
+                spellCheck={"false"}
                 className={styles.input}
                 required
             />
