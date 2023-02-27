@@ -6,10 +6,14 @@ import Footer from "@/components/Footer";
 import Packages from "@/sections/advisory-subscription/Packages";
 import {MobileNavbar} from "@/components/MobileNavbar";
 import styles from "@/styles/bg-styles/bg.module.css"
+import Head from "next/head";
 
 export default function advisorySubscription() {
     return(
         <div className={styles.advisoryProperty}>
+            <Head>
+                <title>Advisory subscription</title>
+            </Head>
             <Navbar></Navbar>
             <MobileNavbar></MobileNavbar>
             <TitleSection></TitleSection>

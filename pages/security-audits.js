@@ -7,10 +7,14 @@ import Services from "@/sections/security-audits/Services"
 import Process from "@/sections/security-audits/Process";
 import {MobileNavbar} from "@/components/MobileNavbar";
 import styles from "@/styles/bg-styles/bg.module.css"
+import Head from "next/head";
 
 export default function securityAudits() {
     return(
         <div className={styles.securityProperty}>
+            <Head>
+                <title>Security audits</title>
+            </Head>
             <Navbar></Navbar>
             <MobileNavbar></MobileNavbar>
             <TitleSection></TitleSection>

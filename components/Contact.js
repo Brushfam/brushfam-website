@@ -2,21 +2,26 @@ import styles from "@/styles/Contact.module.css";
 import { useState } from "react";
 import Link from "next/link";
 
+const isEmail = (email) =>
+    /^[A-Z0-9.!#$%&'*+\-/=?^_`{|}~]+@[A-Z0-9.-]+\.[A-Z0-9]+$/i.test(email);
+
 export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [clicked, setClicked] = useState(false);
   const [sent, setSent] = useState(false);
 
   const SubmitButton = ({formName}) => {
     const handleSubmit = async (e) => {
-      const form = document.getElementById(formName);
-      if (!form.checkValidity()) {
-        form.reportValidity();
+      e.preventDefault();
+      setClicked(true);
+
+      if (!email || !message || !isEmail(email)) {
+        document.getElementById(formName).scrollIntoView();
         return;
       }
 
-      e.preventDefault();
       setSent(true);
       console.log("Sending");
       let data = {
@@ -125,7 +130,7 @@ export default function Contact() {
           <SocialButtons></SocialButtons>
         </div>
         <form method="post" id={"form"} className={styles.formDiv}>
-          <label htmlFor={"email"} className={styles.label}>
+          <label htmlFor={"email"} className={styles.label} style={clicked && !submitted && !(email && isEmail(email)) ? { color: "#CD0C0C" } : {}}>
             Email
           </label>
           <input
@@ -135,10 +140,16 @@ export default function Contact() {
               onChange={(e) => {
                 setEmail(e.target.value);
               }}
-              className={styles.input}
-              required
+              autoComplete="off"
+              autoCorrect={"off"}
+              spellCheck={"false"}
+              className={
+                clicked && !submitted && !email && !isEmail(email)
+                    ? styles.inputError
+                    : styles.input
+              }
           />
-          <label htmlFor={"message"} className={styles.label}>
+          <label htmlFor={"message"} className={styles.label} style={clicked && !submitted && !message ? { color: "#CD0C0C" } : {}}>
             Your Message
           </label>
           <input
@@ -148,8 +159,14 @@ export default function Contact() {
               onChange={(e) => {
                 setMessage(e.target.value);
               }}
-              className={styles.input}
-              required
+              autoComplete="off"
+              autoCorrect={"off"}
+              spellCheck={"false"}
+              className={
+                clicked && !submitted && !message
+                    ? styles.inputError
+                    : styles.input
+              }
             />
             <SubmitButton formName={"form"}></SubmitButton>
           </form>
@@ -161,7 +178,7 @@ export default function Contact() {
         </p>
         <div className={styles.contactDivMobile}>
           <form method="post" id={"mobileForm"} className={styles.formDiv}>
-            <label htmlFor={"email"} className={styles.label}>
+            <label htmlFor={"email"} className={styles.label} style={clicked && !submitted && !(email && isEmail(email)) ? { color: "#CD0C0C" } : {}}>
               Email
             </label>
             <input
@@ -171,10 +188,16 @@ export default function Contact() {
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
-                className={styles.input}
-                required
+                autoComplete="off"
+                autoCorrect={"off"}
+                spellCheck={"false"}
+                className={
+                  clicked && !submitted && !email && !isEmail(email)
+                      ? styles.inputError
+                      : styles.input
+                }
             />
-            <label htmlFor={"message"} className={styles.label}>
+            <label htmlFor={"message"} className={styles.label} style={clicked && !submitted && !message ? { color: "#CD0C0C" } : {}}>
               Your Message
             </label>
             <input
@@ -184,8 +207,14 @@ export default function Contact() {
                 onChange={(e) => {
                   setMessage(e.target.value);
                 }}
-                className={styles.input}
-                required
+                autoComplete="off"
+                autoCorrect={"off"}
+                spellCheck={"false"}
+                className={
+                  clicked && !submitted && !message
+                      ? styles.inputError
+                      : styles.input
+                }
             />
             <SubmitButton formName={"mobileForm"}></SubmitButton>
           </form>

@@ -140,7 +140,7 @@ export default function HiringForm() {
               <label
                 htmlFor={"name"}
                 className={styles.label}
-                style={clicked && !submitted && !name ? { color: "red" } : {}}
+                style={clicked && !submitted && !name ? { color: "#CD0C0C" } : {}}
               >
                 First Name
               </label>
@@ -151,6 +151,9 @@ export default function HiringForm() {
                 onChange={(e) => {
                   setName(e.target.value);
                 }}
+                autoComplete="off"
+                autoCorrect={"off"}
+                spellCheck={"false"}
                 className={
                   clicked && !submitted && !name
                     ? styles.inputError
@@ -163,7 +166,7 @@ export default function HiringForm() {
                 htmlFor={"lastname"}
                 className={styles.label}
                 style={
-                  clicked && !submitted && !lastname ? { color: "red" } : {}
+                  clicked && !submitted && !lastname ? { color: "#CD0C0C" } : {}
                 }
               >
                 Last Name
@@ -175,6 +178,9 @@ export default function HiringForm() {
                 onChange={(e) => {
                   setLastname(e.target.value);
                 }}
+                autoComplete="off"
+                autoCorrect={"off"}
+                spellCheck={"false"}
                 className={
                   clicked && !submitted && !lastname
                     ? styles.inputError
@@ -189,7 +195,7 @@ export default function HiringForm() {
                 htmlFor={"country"}
                 className={styles.label}
                 style={
-                  clicked && !submitted && !country ? { color: "red" } : {}
+                  clicked && !submitted && !country ? { color: "#CD0C0C" } : {}
                 }
               >
                 Your residence location
@@ -201,6 +207,9 @@ export default function HiringForm() {
                 onChange={(e) => {
                   setCountry(e.target.value);
                 }}
+                autoComplete="off"
+                autoCorrect={"off"}
+                spellCheck={"false"}
                 className={
                   clicked && !submitted && !country
                     ? styles.inputError
@@ -212,7 +221,7 @@ export default function HiringForm() {
               <label
                 htmlFor={"ln"}
                 className={styles.label}
-                style={clicked && !submitted && !ln ? { color: "red" } : {}}
+                style={clicked && !submitted && !ln ? { color: "#CD0C0C" } : {}}
               >
                 LinkedIn
               </label>
@@ -223,6 +232,9 @@ export default function HiringForm() {
                 onChange={(e) => {
                   setLn(e.target.value);
                 }}
+                autoComplete="off"
+                autoCorrect={"off"}
+                spellCheck={"false"}
                 className={
                   clicked && !submitted && !ln
                     ? styles.inputError
@@ -235,7 +247,7 @@ export default function HiringForm() {
             <label
               htmlFor={"message"}
               className={styles.label}
-              style={clicked && !submitted && (!message && !acceptedFile) ? { color: "red" } : {}}
+              style={clicked && !submitted && (!message && !acceptedFile) ? { color: "#CD0C0C" } : {}}
             >
               Tell more about yourself or attach a CV (PDF/PNG/JPG)
             </label>
@@ -245,6 +257,9 @@ export default function HiringForm() {
               onChange={(e) => {
                 setMessage(e.target.value);
               }}
+              autoComplete="off"
+              autoCorrect={"off"}
+              spellCheck={"false"}
               className={
                 clicked && !submitted && (!message && !acceptedFile)
                   ? styles.lastInputError
