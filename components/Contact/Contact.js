@@ -96,7 +96,7 @@ export default function Contact() {
               onChange={(e) => {
                 setEmail(e.target.value);
               }}
-              autoComplete="off"
+              autoComplete="new-password"
               autoCorrect={"off"}
               spellCheck={"false"}
               className={
@@ -115,7 +115,7 @@ export default function Contact() {
               onChange={(e) => {
                 setMessage(e.target.value);
               }}
-              autoComplete="off"
+              autoComplete="new-password"
               autoCorrect={"off"}
               spellCheck={"false"}
               className={
