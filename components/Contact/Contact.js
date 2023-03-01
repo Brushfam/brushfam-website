@@ -90,6 +90,7 @@ export default function Contact() {
             Email
           </label>
           <input
+              type={"text"}
               name={"email"}
               placeholder={"johnsmith@gmail.com"}
               onChange={(e) => {
@@ -108,6 +109,7 @@ export default function Contact() {
             Your Message
           </label>
           <input
+              type={"text"}
               name={"message"}
               placeholder={"What do you wanna say to us"}
               onChange={(e) => {
@@ -121,6 +123,10 @@ export default function Contact() {
                     ? styles.inputError
                     : styles.input
               }
+            />
+          <input
+          type={"password"}
+          style={{display: "none"}}
             />
           <div className={styles.buttonWrapper}>
             <SubmitButton></SubmitButton>
