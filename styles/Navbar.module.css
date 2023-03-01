@@ -6,9 +6,6 @@
     height: 80px;
     width: 100%;
     background: rgb(30,30,30, .5);
-    /*background: #1D223080;*/
-    /*backdrop-filter: blur(7.5px);*/
-    /*-webkit-backdrop-filter: blur(7.5px);*/
     transition: top 0.3s;
     z-index: 1;
 }
@@ -88,7 +85,7 @@
     font-size: 14px;
     list-style: none;
     font-weight: 600;
-    margin-right: 40px;
+    margin-right: 80px;
     white-space: nowrap;
     /*height: 67px;*/
 }
@@ -294,6 +291,10 @@
 
     .ul {
         margin-right: 0px;
+    }
+
+    .menu {
+        margin-right: 60px;
     }
 }
 

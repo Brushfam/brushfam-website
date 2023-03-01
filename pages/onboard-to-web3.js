@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar";
-import Contact from "@/components/Contact";
+import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer";
 import Services from "@/sections/onboard-to-web3/Services";
 import TitleSection from "@/sections/onboard-to-web3/TitleSection";

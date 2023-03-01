@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar";
-import Contact from "@/components/Contact";
+import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer";
 import JobTitle from "@/sections/rust-dev-hiring/JobTitle";
 import JobDescription from "@/sections/rust-dev-hiring/JobDescription";

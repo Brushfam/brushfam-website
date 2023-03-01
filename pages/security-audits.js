@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar";
-import Contact from "@/components/Contact";
+import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer";
 import TitleSection from "@/sections/security-audits/TitleSection"
 import Audit from "@/sections/security-audits/Audit"
