@@ -99,10 +99,10 @@ export const MobileNavbar = () => {
     <div>
       <div className={styles.navbarMobile} id={"navbar-bottom"}>
         <Link href={"/"}>
-          <img src={"/logos/brushfam-mini-logo.svg"} />
+          <img src={"/logos/brushfam-mobile-logo.svg"} />
         </Link>
         <img
-          src={"/navbar-button.svg"}
+          src={"/mobile-navbar-button.svg"}
           className={styles.navbarMenuButton}
           onClick={toggle}
         />

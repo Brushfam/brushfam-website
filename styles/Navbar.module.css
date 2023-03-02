@@ -5,10 +5,7 @@
     align-items: center;
     height: 80px;
     width: 100%;
-    background: rgb(30,30,30, .5);
-    /*background: #1D223080;*/
-    /*backdrop-filter: blur(7.5px);*/
-    /*-webkit-backdrop-filter: blur(7.5px);*/
+    background: rgba(0, 0, 0, 0.5);
     transition: top 0.3s;
     z-index: 1;
 }
