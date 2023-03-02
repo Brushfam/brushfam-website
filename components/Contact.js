@@ -50,15 +50,6 @@ export default function Contact() {
       });
     }
 
-    // const SubmittedWrapper = (value) => {
-    //   console.log("+")
-    //   return value ? (
-    //       <p className={styles.submittedText}>Submitted!</p>
-    //   ) : (
-    //       <p className={styles.submittedText}>Sending...</p>
-    //   );
-    // };
-
     const DefaultSubmitButton = () => {
       return (
           <button
@@ -88,13 +79,13 @@ export default function Contact() {
     return(
         <div className={styles.socialWrapper}>
           <div className={styles.socialRow}>
-            <Link href={"https://twitter.com/Brushfam_io"}>
+            <Link href={"https://twitter.com/Brushfam_io"} target="_blank">
               <div className={styles.socialButton}>
                 <img src={"/icons/twitter-social-icon.svg"}/>
                 <p>Twitter</p>
               </div>
             </Link>
-            <Link href={"https://medium.com/727-ventures"}>
+            <Link href={"https://medium.com/727-ventures"} target="_blank">
               <div className={styles.socialButton}>
                 <img src={"/icons/medium-social-icon.svg"}/>
                 <p>Medium</p>
@@ -102,13 +93,13 @@ export default function Contact() {
             </Link>
           </div>
           <div className={styles.socialRow}>
-            <Link href={"https://matrix.to/#/!utTuYglskDvqRRMQta:matrix.org?via=matrix.org&via=t2bot.io&via=web3.foundation"}>
+            <Link href={"https://matrix.to/#/!utTuYglskDvqRRMQta:matrix.org?via=matrix.org&via=t2bot.io&via=web3.foundation"} target="_blank">
               <div className={styles.socialButton}>
                 <img src={"/icons/element-social-icon.svg"}/>
                 <p>Element</p>
               </div>
             </Link>
-            <Link href={"https://discord.gg/EARg6RCThP"}>
+            <Link href={"https://discord.gg/EARg6RCThP"} target="_blank">
               <div className={styles.socialButton}>
                 <img src={"/icons/discord-social-icon.svg"}/>
                 <p>Discord</p>

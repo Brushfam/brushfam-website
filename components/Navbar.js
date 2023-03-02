@@ -22,7 +22,6 @@ const Navbar = () => {
 
   return (
     <div className={navStyles.navbarContainer} id={"navbar"}>
-      <div className={navStyles.mainDiv}>
         <div className={navStyles.navbarDiv}>
           <div className={navStyles.logoDiv}>
             <Link href="/">
@@ -291,7 +290,6 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-      </div>
     </div>
   );
 };
