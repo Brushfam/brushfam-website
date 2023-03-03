@@ -2,8 +2,6 @@ import Navbar from "@/components/Navbar";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer";
 import TitleSection from "@/sections/investment-diligence/TitleSection";
-import Audit from "@/sections/investment-diligence/Audit";
-import Services from "@/sections/investment-diligence/Services";
 import Process from "@/sections/investment-diligence/Process";
 import {MobileNavbar} from "@/components/MobileNavbar";
 import styles from "@/styles/bg-styles/bg.module.css"

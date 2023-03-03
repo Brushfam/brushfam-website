@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*height: 576px;*/
     padding-top: 201px;
 }
 
@@ -23,11 +22,10 @@
     line-height: 120%;
     text-align: center;
     color: #FFFFFF;
-    margin-bottom: 24px;
 }
 
 .descriptionText {
-    max-width: 768px;
+    max-width: 400px;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -53,12 +51,6 @@
     }
 }
 
-@media (max-width: 1110px) {
-    .descriptionText {
-        max-width: 70%;
-    }
-}
-
 @media (max-width: 460px) {
     .section {
         padding-left: 5%;
@@ -73,6 +65,13 @@
     .descriptionText {
         margin-bottom: 64px;
         text-align: left;
-        max-width: 340px;
+        max-width: none;
+    }
+}
+
+@media (max-width: 460px) {
+    .headerText {
+        text-align: left;
+        font-size: 36px;
     }
 }

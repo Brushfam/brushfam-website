@@ -107,7 +107,7 @@ const Navbar = () => {
                   <div className={navStyles.dropdownContentHeader}>
                     <div
                       className={navStyles.borderBlock3}
-                      style={{ height: 321 }}
+                      style={{ height: 384 }}
                     ></div>
                     <div className={navStyles.borderBlock1}></div>
                   </div>
@@ -155,18 +155,18 @@ const Navbar = () => {
                       </div>
                     </Link>
 
-                    {/*<Link href={"/#onboard-in-polkadot"}>*/}
-                    {/*  <div*/}
-                    {/*    className={navStyles.dropDownItem}*/}
-                    {/*  >*/}
-                    {/*    <div className={navStyles.dropDownItemHeader}>*/}
-                    {/*      <img src="/nav-icons/nav-polkadot.svg" style={{width: 15}}/>*/}
-                    {/*      <p className={navStyles.dropdownTitle}>*/}
-                    {/*        Polkadot onboard*/}
-                    {/*      </p>*/}
-                    {/*    </div>*/}
-                    {/*  </div>*/}
-                    {/*</Link>*/}
+                    <Link href={"/polkadot-onboard"}>
+                      <div
+                        className={navStyles.dropDownItem}
+                      >
+                        <div className={navStyles.dropDownItemHeader}>
+                          <img src="/nav-icons/nav-polkadot.svg" style={{width: 15}}/>
+                          <p className={navStyles.dropdownTitle}>
+                            Polkadot onboard
+                          </p>
+                        </div>
+                      </div>
+                    </Link>
 
                     <Link href={"/investment-diligence"}>
                       <div

@@ -18,6 +18,10 @@
     background-image: url("/advisory-subscription-bg.jpg");
 }
 
+.polkadotOnboardProperty {
+    background-image: url("/advisory-subscription-bg.jpg");
+}
+
 .securityProperty {
     background-image: url("/advisory-subscription-bg.jpg");
 }
@@ -40,6 +44,10 @@
     }
 
     .onboardProperty {
+        background-image: url("/web3-mobile-bg.jpg");
+    }
+
+    .polkadotOnboardProperty {
         background-image: url("/web3-mobile-bg.jpg");
     }
 

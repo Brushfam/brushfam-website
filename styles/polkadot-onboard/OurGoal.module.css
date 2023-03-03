@@ -1,0 +1,59 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    margin-bottom: 202px;
+}
+
+.headerText {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.ourGoalBlock {
+    padding: 60px;
+    width: 800px;
+    height: 244px;
+    background: linear-gradient(110.11deg, rgba(144, 151, 170, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+
+.ourGoalText {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 680px;
+}
+
+@media (max-width: 900px) {
+    .ourGoalBlock {
+        width: 380px;
+        height: auto;
+        padding: 40px;
+    }
+    .ourGoalText {
+        font-size: 12px;
+        line-height: 150%;
+        text-align: start;
+    }
+}
+
+@media (max-width: 460px) {
+    .section {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 120px;
+    }
+
+    .ourGoalBlock {
+        width: 100%;
+        padding: 40px;
+    }
+}

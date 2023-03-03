@@ -128,6 +128,12 @@
     }
 }
 
+@media (max-width: 1159px) {
+    .section {
+        scroll-margin: 160px;
+    }
+}
+
 @media (max-width: 700px) {
     .contactDiv {
         width: 300px;
@@ -142,48 +148,3 @@
     }
 }
 
-/*@media (max-width: 955px) {*/
-/*    .headerText {*/
-/*        margin-bottom: 24px;*/
-/*    }*/
-
-/*    .descriptionText {*/
-/*        margin-bottom: 64px;*/
-/*    }*/
-
-/*    .socialButton {*/
-/*        width: 182px;*/
-/*        height: 52px;*/
-/*    }*/
-
-/*    .socialButton p {*/
-/*        font-weight: 600;*/
-/*        font-size: 20px;*/
-/*        line-height: 120%;*/
-/*        display: flex;*/
-/*        align-items: center;*/
-/*        color: #FFFFFF;*/
-/*    }*/
-/*    .socialRow {*/
-/*        column-gap: 16px;*/
-/*    }*/
-/*}*/
-
-/*@media (max-width: 460px) {*/
-/*    .socialRow {*/
-/*        column-gap: 4px;*/
-/*    }*/
-
-/*    .socialButton {*/
-/*        width: 166px;*/
-/*        height: 47px;*/
-/*    }*/
-
-/*    .socialButton p {*/
-/*        font-size: 18px;*/
-/*    }*/
-
-/*    .socialWrapper {*/
-/*        align-items: center;*/
-/*    }*/
-/*}*/
