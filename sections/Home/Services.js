@@ -16,7 +16,7 @@ export default function Services() {
           </p>
           <div className={styles.block1} id={"onboard-in-web3"}>
             <div className={styles.serviceHeader}>
-              <img src={"icons/services/web3-onboard.svg"} />
+              <img src={"icons/services/web3-onboard.svg"} style={{marginLeft: 6}}/>
               <p>Web3 onboard</p>
             </div>
             <p className={styles.serviceText}>
