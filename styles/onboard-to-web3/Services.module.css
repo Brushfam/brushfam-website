@@ -16,7 +16,7 @@
 }
 
 .onboardProcessImg {
-    margin-bottom: 64px;
+    margin-bottom: 200px;
 }
 
 .onboardProcessText {
@@ -33,7 +33,7 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 960px) {
     .onboardProcessImg, .onboardProcessText {
         display: none;
     }

@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 350px;
-  margin-top: 120px;
+  margin-top: 82px;
 }
 
 .footerDiv {
@@ -49,6 +48,7 @@
   justify-content: right;
   width: 1200px;
   margin-top: 20px;
+  margin-bottom: 32px;
 }
 
 .brushfamLogo {
@@ -104,9 +104,6 @@
   .footerDiv {
     padding-top: 90px;
   }
-  .footerSection {
-    height: 320px;
-  }
 }
 
 @media (max-width: 1159px) {
@@ -117,17 +114,9 @@
   .item {
     font-size: 11px;
   }
-
-  .footerSection {
-    height: 360px;
-  }
 }
 
 @media (max-width: 955px) {
-  .footerSection {
-    height: 1310px;
-  }
-
   .socialDiv {
     display: none;
   }
@@ -142,7 +131,7 @@
   .footerDiv {
     flex-direction: column;
     align-items: center;
-    padding-top: 120px;
+    padding-top: 60px;
   }
   .footerSocial {
     align-items: center;
@@ -195,6 +184,12 @@
     text-align: center;
     width: 100%;
     margin-top: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .footerSection {
+    margin-top: 64px;
   }
 }
 

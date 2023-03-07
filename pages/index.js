@@ -5,7 +5,7 @@ import Products from "@/sections/Home/Products";
 import Services from "@/sections/Home/Services";
 import LetsBuild from "@/sections/Home/LetsBuild";
 import Footer from "@/components/Footer";
-import Contact from "@/components/Contact";
+import Contact from "@/components/Contact/Contact";
 import Blog from "@/sections/Home/Blog";
 import Navbar from "@/components/Navbar";
 import {MobileNavbar} from "@/components/MobileNavbar";

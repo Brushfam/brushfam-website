@@ -4,9 +4,6 @@ export default function Process() {
     return(
         <section className={styles.section}>
             <div className={styles.investment}>
-                <p className={styles.titleText}>
-                    Services & Solutions
-                </p>
                 <p className={styles.headerText}>
                     The process:
                 </p>

@@ -20,15 +20,15 @@ export const navbarData = [
         label: "Services & Solutions",
         items: [
             {
-                title: "<img src='/nav-icons/nav-web3.svg'/><p>Web3 onboard</p>",
+                title: "<img src='/nav-icons/nav-advisory.svg'/><p>Web3 onboard</p>",
                 description: ""
             },
             {
-                title: "<img src='/nav-icons/nav-advisory.svg'/><p>Advisory subscription</p>",
+                title: "<img src='/nav-icons/nav-audit.svg'/><p>Advisory subscription</p>",
                 description: ""
             },
             {
-                title: "<img src='/nav-icons/nav-audits.svg'/><p>Security audits</p>",
+                title: "<img src='/nav-icons/nav-investment.svg'/><p>Security audits</p>",
                 description: ""
             },
             {
@@ -36,7 +36,7 @@ export const navbarData = [
                 description: ""
             },
             {
-                title: "<img src='/nav-icons/nav-investment.svg'/><p>Investment Diligence</p>",
+                title: "<img src='/nav-icons/nav-web3.svg'/><p>Investment Diligence</p>",
                 description: ""
             }
         ]

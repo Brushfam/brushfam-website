@@ -2,10 +2,6 @@ import styles from "@/styles/Home/Services.module.css";
 import Link from "next/link";
 
 export default function Services() {
-  const handleClick = () => {
-    // implementation details
-  };
-
   return (
     <section className={styles.section}>
       <div className={styles.mainDiv}>
@@ -20,8 +16,8 @@ export default function Services() {
           </p>
           <div className={styles.block1} id={"onboard-in-web3"}>
             <div className={styles.serviceHeader}>
-              <img src={"icons/search-icon.svg"} />
-              <p>Web3 onboard</p>
+              <img src={"icons/services/web3-onboard.svg"}/>
+              <p style={{marginLeft: 4}}>Web3 onboard</p>
             </div>
             <p className={styles.serviceText}>
               Looking for opportunities to grow your business? Web3 might be
@@ -39,7 +35,6 @@ export default function Services() {
             <Link
                 href={"/onboard-to-web3"}
               type="button"
-              onClick={handleClick}
               className={styles.button}
             >
               Read more
@@ -52,7 +47,7 @@ export default function Services() {
           <div className={styles.wrapper} id={"security-audits"}>
             <div className={styles.block2}>
               <div className={styles.serviceHeader}>
-                <img src={"icons/search-icon.svg"} />
+                <img src={"icons/services/security-audits.svg"} />
                 <p>Security audits</p>
               </div>
               <p className={styles.serviceText} style={{ marginBottom: 24 }}>
@@ -63,7 +58,6 @@ export default function Services() {
               <Link
                   href={"/security-audits"}
                 type="button"
-                onClick={handleClick}
                 className={styles.button}
               >
                 Read more
@@ -73,7 +67,7 @@ export default function Services() {
           <div className={styles.wrapper} id={"ink-advisory"}>
             <div className={styles.block3}>
               <div className={styles.serviceHeader}>
-                <img src={"icons/comment-icon.svg"} />
+                <img src={"icons/services/advisory-subscription.svg"} />
                 <p>Advisory subscription</p>
               </div>
               <p className={styles.serviceText} style={{ marginBottom: 24 }}>
@@ -87,7 +81,6 @@ export default function Services() {
               <Link
                   href={"/advisory-subscription"}
                 type="button"
-                onClick={handleClick}
                 className={styles.button}
               >
                 Read more
@@ -101,8 +94,8 @@ export default function Services() {
             <p className={styles.serviceTitle4}>For VC/angel investors:</p>
             <div className={styles.block4} id={"investment-diligence"}>
               <div className={styles.serviceHeader}>
-                <img src={"icons/comment-icon.svg"} />
-                <p>Investment Diligence</p>
+                <img src={"icons/services/investment-diligence.svg"} />
+                <p>Investment diligence</p>
               </div>
               <p className={styles.serviceText} style={{ marginBottom: 24 }}>
                 Not every business idea results in successful company.
@@ -118,7 +111,6 @@ export default function Services() {
               <Link
                   href={"/investment-diligence"}
                 type="button"
-                onClick={handleClick}
                 className={styles.button}
               >
                 Read more
@@ -131,22 +123,22 @@ export default function Services() {
             </p>
             <div className={styles.block5} id={"onboard-in-polkadot"}>
               <div className={styles.serviceHeader}>
-                <img src={"icons/comment-icon.svg"} />
+                <img src={"icons/services/polkadot-onboard.svg"} />
                 <h3>Polkadot onboard</h3>
               </div>
-              <p className={styles.serviceText}>
+              <p className={styles.serviceText} style={{ marginBottom: 24 }}>
                 Looking to grow your total addressable market or upgrade your
                 tech? With Sol2ink, being the automatic transpiler tool, the
                 process of code transforming from solidity to ink! is just one
                 click away.
               </p>
-              {/*<button*/}
-              {/*  type="button"*/}
-              {/*  onClick={handleClick}*/}
-              {/*  className={styles.button}*/}
-              {/*>*/}
-              {/*  Read more*/}
-              {/*</button>*/}
+              <Link
+                  href={"/polkadot-onboard"}
+                  type="button"
+                  className={styles.button}
+              >
+                Read more
+              </Link>
             </div>
           </div>
         </div>

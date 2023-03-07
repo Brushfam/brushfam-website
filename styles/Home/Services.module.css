@@ -97,14 +97,10 @@
     padding: 40px;
 }
 
-.block5 p {
-    margin-bottom: 61px;
-}
-
 .serviceHeader {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 14px;
 }
 
@@ -202,9 +198,7 @@
         width: 266px;
         padding-right: 32px;
     }
-}
 
-@media (max-width: 1260px) {
     .mainDiv {
         margin-top: 200px
     }
@@ -228,12 +222,6 @@
     }
     .block4 {
         margin-right: 0;
-    }
-    .block5 p {
-        margin-bottom: 0;
-    }
-    .block5 {
-        margin-bottom: 40px;
     }
     .serviceTitle, .serviceTitle4, .serviceTitle5 {
         text-align: center;

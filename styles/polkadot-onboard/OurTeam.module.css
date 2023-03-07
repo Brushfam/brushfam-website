@@ -1,0 +1,58 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.headerText {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.ourTeamWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    row-gap: 22px;
+}
+
+.ourTeamPoint {
+    display: flex;
+    flex-direction: row;
+}
+
+.ourTeamPoint img {
+    height: 17px;
+    margin-right: 6px;
+    margin-top: 2px;
+}
+
+.ourTeamText {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+    max-width: 510px;
+}
+
+@media (max-width: 900px) {
+    .ourTeamText {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 460px) {
+    .section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .ourTeamText {
+        font-size: 12px;
+        max-width: none;
+    }
+}

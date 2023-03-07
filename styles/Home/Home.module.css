@@ -68,7 +68,7 @@
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 800px) {
   .mainText {
     font-size: 40px;
   }
@@ -81,8 +81,8 @@
 
 @media (max-width: 460px) {
     .section {
-        height: 800px;
-      padding-top: 188px;
+      padding-top: 210px;
+      padding-bottom: 100px;
     }
   .mainDiv {
     width: 89%;
