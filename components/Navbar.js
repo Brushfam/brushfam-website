@@ -115,24 +115,12 @@ const Navbar = () => {
                     className={navStyles.dropdownContent}
                     style={{ width: 262 }}
                   >
-                    <Link href={"/onboard-to-web3"}>
-                      <div
-                        className={navStyles.dropDownItem}
-                      >
-                        <div className={navStyles.borderBlock2}></div>
-                        <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-web3.svg" style={{width: 15}}/>
-                          <p className={navStyles.dropdownTitle}>
-                            Web3 onboard
-                          </p>
-                        </div>
-                      </div>
-                    </Link>
 
                     <Link href={"/advisory-subscription"}>
                       <div
-                        className={navStyles.dropDownItem}
+                          className={navStyles.dropDownItem}
                       >
+                        <div className={navStyles.borderBlock2}></div>
                         <div className={navStyles.dropDownItemHeader}>
                           <img src="/nav-icons/nav-advisory.svg" style={{width: 15}}/>
                           <p className={navStyles.dropdownTitle}>
@@ -144,12 +132,25 @@ const Navbar = () => {
 
                     <Link href={"/security-audits"}>
                       <div
+                          className={navStyles.dropDownItem}
+                      >
+                        <div className={navStyles.dropDownItemHeader}>
+                          <img src="/nav-icons/nav-audit.svg" style={{width: 15}}/>
+                          <p className={navStyles.dropdownTitle}>
+                            Security audits
+                          </p>
+                        </div>
+                      </div>
+                    </Link>
+
+                    <Link href={"/onboard-to-web3"}>
+                      <div
                         className={navStyles.dropDownItem}
                       >
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-audits.svg" style={{width: 15}}/>
+                          <img src="/nav-icons/nav-web3.svg" style={{width: 18, marginRight: 7}}/>
                           <p className={navStyles.dropdownTitle}>
-                            Security audits
+                            Web3 onboard
                           </p>
                         </div>
                       </div>
@@ -173,13 +174,14 @@ const Navbar = () => {
                         className={navStyles.dropDownLastItem}
                       >
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-investment.svg" style={{width: 18, marginRight: 7}}/>
+                          <img src="/nav-icons/nav-investment.svg" style={{width: 15}}/>
                           <p className={navStyles.dropdownTitle}>
                             Investment Diligence
                           </p>
                         </div>
                       </div>
                     </Link>
+
                   </div>
                   <div
                     className={navStyles.testBlock}
@@ -224,7 +226,7 @@ const Navbar = () => {
                   </div>
                   <div
                     className={navStyles.testBlock}
-                    style={{ width: 170 }}
+                    style={{ width: 171 }}
                   ></div>
                 </div>
               </div>
@@ -276,7 +278,7 @@ const Navbar = () => {
                   </div>
                   <div
                     className={navStyles.testBlock}
-                    style={{ width: 253 }}
+                    style={{ width: 252 }}
                   ></div>
                 </div>
               </div>

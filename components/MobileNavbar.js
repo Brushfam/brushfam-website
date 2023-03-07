@@ -173,12 +173,6 @@ export const MobileNavbar = () => {
             {ServicesIsOpened ? (
               <ul>
                 <li>
-                  <Link href={"/onboard-to-web3"} className={styles.link} onClick={toggleBody}>
-                    <img src="/nav-icons/nav-web3.svg" style={{width: 15}}/>
-                    <p>Web3 onboard</p>
-                  </Link>
-                </li>
-                <li>
                   <Link href={"/advisory-subscription"} className={styles.link} onClick={toggleBody}>
                     <img src="/nav-icons/nav-advisory.svg" style={{width: 15}}/>
                     <p>Advisory subscription</p>
@@ -186,8 +180,14 @@ export const MobileNavbar = () => {
                 </li>
                 <li>
                   <Link href={"security-audits"} className={styles.link} onClick={toggleBody}>
-                    <img src="/nav-icons/nav-audits.svg" style={{width: 15}}/>
+                    <img src="/nav-icons/nav-audit.svg" style={{width: 15}}/>
                     <p>Security audits</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link href={"/onboard-to-web3"} className={styles.link} onClick={toggleBody}>
+                    <img src="/nav-icons/nav-web3.svg" style={{width: 18, marginRight: 7}}/>
+                    <p>Web3 onboard</p>
                   </Link>
                 </li>
                 <li>
@@ -198,7 +198,7 @@ export const MobileNavbar = () => {
                 </li>
                 <li>
                   <Link href={"/investment-diligence"} className={styles.link} onClick={toggleBody} style={{marginBottom: 0}}>
-                    <img src="/nav-icons/nav-investment.svg" style={{width: 18, marginRight: 7}}/>
+                    <img src="/nav-icons/nav-investment.svg" style={{width: 15}}/>
                     <p>Investment Diligence</p>
                   </Link>
                 </li>

@@ -124,10 +124,6 @@ export default function Contact() {
                     : styles.input
               }
             />
-          <input
-          type={"password"}
-          style={{display: "none"}}
-            />
           <div className={styles.buttonWrapper}>
             <SubmitButton></SubmitButton>
           </div>

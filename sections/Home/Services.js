@@ -16,8 +16,8 @@ export default function Services() {
           </p>
           <div className={styles.block1} id={"onboard-in-web3"}>
             <div className={styles.serviceHeader}>
-              <img src={"icons/services/web3-onboard.svg"} style={{marginLeft: 6}}/>
-              <p>Web3 onboard</p>
+              <img src={"icons/services/web3-onboard.svg"}/>
+              <p style={{marginLeft: 4}}>Web3 onboard</p>
             </div>
             <p className={styles.serviceText}>
               Looking for opportunities to grow your business? Web3 might be
@@ -126,12 +126,19 @@ export default function Services() {
                 <img src={"icons/services/polkadot-onboard.svg"} />
                 <h3>Polkadot onboard</h3>
               </div>
-              <p className={styles.serviceText}>
+              <p className={styles.serviceText} style={{ marginBottom: 24 }}>
                 Looking to grow your total addressable market or upgrade your
                 tech? With Sol2ink, being the automatic transpiler tool, the
                 process of code transforming from solidity to ink! is just one
                 click away.
               </p>
+              <Link
+                  href={"/polkadot-onboard"}
+                  type="button"
+                  className={styles.button}
+              >
+                Read more
+              </Link>
             </div>
           </div>
         </div>
