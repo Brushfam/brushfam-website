@@ -95,8 +95,8 @@ const Navbar = () => {
                     </Link>
                   </div>
                   <div
-                    className={navStyles.testBlock}
-                    style={{ width: 294 }}
+                    className={navStyles.helperBlock}
+                    style={{ width: 292 }}
                   ></div>
                 </div>
               </div>
@@ -184,8 +184,8 @@ const Navbar = () => {
 
                   </div>
                   <div
-                    className={navStyles.testBlock}
-                    style={{ width: 76 }}
+                    className={navStyles.helperBlock}
+                    style={{ width: 74 }}
                   ></div>
                 </div>
               </div>
@@ -225,18 +225,11 @@ const Navbar = () => {
                     </Link>
                   </div>
                   <div
-                    className={navStyles.testBlock}
-                    style={{ width: 171 }}
+                    className={navStyles.helperBlock}
+                    style={{ width: 169 }}
                   ></div>
                 </div>
               </div>
-
-              {/*<div className={navStyles.dropdown}>*/}
-              {/*  <p className={navStyles.navTitle} style={{zIndex: 3}}>Blog</p>*/}
-              {/*  <div*/}
-              {/*      className={navStyles.blog}*/}
-              {/*  ></div>*/}
-              {/*</div>*/}
 
               <div className={navStyles.dropdown}>
                 <div className={navStyles.navTitle}>
@@ -277,8 +270,8 @@ const Navbar = () => {
                     </Link>
                   </div>
                   <div
-                    className={navStyles.testBlock}
-                    style={{ width: 252 }}
+                    className={navStyles.helperBlock}
+                    style={{ width: 250 }}
                   ></div>
                 </div>
               </div>

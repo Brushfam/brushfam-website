@@ -1,11 +1,11 @@
 import Navbar from "@/components/Navbar";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer";
-import Services from "@/sections/onboard-to-web3/Services";
 import TitleSection from "@/sections/onboard-to-web3/TitleSection";
 import {MobileNavbar} from "@/components/MobileNavbar";
 import styles from "@/styles/bg-styles/bg.module.css"
 import Head from "next/head";
+import Web3 from "@/sections/onboard-to-web3/Web3";
 
 export default function onboardToWeb3() {
     return(
@@ -16,7 +16,7 @@ export default function onboardToWeb3() {
             <Navbar></Navbar>
             <MobileNavbar></MobileNavbar>
             <TitleSection></TitleSection>
-            <Services></Services>
+            <Web3></Web3>
             <Contact></Contact>
             <Footer></Footer>
         </div>
