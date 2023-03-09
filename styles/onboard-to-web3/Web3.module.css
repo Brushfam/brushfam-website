@@ -1,0 +1,163 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 240px;
+    margin-bottom: 202px;
+}
+
+.headerText {
+    width: 1140px;
+    margin-left: 100px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: start;
+    color: #FFFFFF;
+    margin-bottom: 64px;
+}
+
+.web3Wrapper {
+    width: 1140px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.web3Blocks {
+    column-gap: 20px;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+.block1, .block2, .block3, .block4, .block5 {
+    padding: 36px;
+    background: linear-gradient(110.11deg, rgba(144, 151, 170, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+
+.block1 {
+    width: 348px;
+    height: 204px;
+    margin-bottom: 20px;
+}
+
+.block2 {
+    width: 420px;
+    height: 204px;
+}
+
+.block3 {
+    width: 291px;
+    height: 204px;
+}
+
+.block4 {
+    width: 514px;
+    height: 168px;
+}
+
+.block5 {
+    width: 566px;
+    height: 168px;
+}
+
+.blockTitleText {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.blockDescriptionText {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #9097AA;
+}
+
+@media (max-width: 1440px) {
+    .web3Wrapper {
+        width: auto;
+        margin-left: 0;
+    }
+    .headerText {
+        width: 888px;
+        margin-left: 0;
+    }
+    .block1, .block2, .block3 {
+        height: 258px;
+    }
+    .block4, .block5 {
+        height: auto;
+    }
+
+    .block1 {
+        width: 278px;
+        margin-bottom: 20px;
+    }
+
+    .block2 {
+        width: 336px;
+    }
+
+    .block3 {
+        width: 234px;
+    }
+
+    .block4 {
+        width: 413px;
+    }
+
+    .block5 {
+        width: 454px;
+    }
+}
+
+@media (max-width: 960px) {
+    .headerText {
+        text-align: center;
+        width: 89%;
+    }
+    .blockTitleText {
+        margin-bottom: 16px;
+    }
+
+    .web3Blocks {
+        flex-direction: column;
+    }
+
+    .block2, .block3, .block4 {
+        margin-bottom: 20px;
+    }
+
+    .block1, .block2, .block3, .block4, .block5 {
+        height: auto;
+        width: 380px;
+    }
+}
+
+@media (max-width: 460px)  {
+    .headerText {
+        margin-bottom: 64px;
+        text-align: left;
+    }
+
+    .section {
+        padding-top: 180px;
+        margin-bottom: 120px;
+    }
+
+    .web3Wrapper {
+        width: 89%;
+    }
+
+    .block1, .block2, .block3, .block4, .block5 {
+       width: 100%;
+    }
+}
