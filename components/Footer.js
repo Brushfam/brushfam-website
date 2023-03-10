@@ -4,7 +4,7 @@ import {learnData, productsData, servicesData} from "@/data/footerData";
 
 const copy = async () => {
   await navigator.clipboard.writeText("GWp4e6czcwtq54WavFVrFzPtQ8NCVde6V7L6q5byau66yd6");
-  alert("wallet address copied!")
+  // alert("wallet address copied!")
 }
 
 const Footer = () => {
