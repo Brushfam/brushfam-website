@@ -2,6 +2,11 @@ import styles from "@/styles/Footer.module.css";
 import Link from "next/link";
 import {learnData, productsData, servicesData} from "@/data/footerData";
 
+const copy = async () => {
+  await navigator.clipboard.writeText("GWp4e6czcwtq54WavFVrFzPtQ8NCVde6V7L6q5byau66yd6");
+  alert("wallet address copied!")
+}
+
 const Footer = () => {
   return (
     <section className={styles.footerSection}>
@@ -10,6 +15,7 @@ const Footer = () => {
           <img
             className={styles.brushfamLogo}
             src={"logos/brushfam-logo.svg"}
+            onClick={copy}
           />
           <div className={styles.socialDiv}>
             <a href={"https://www.linkedin.com/company/727-ventures-vs/"}>
