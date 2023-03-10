@@ -107,6 +107,9 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.footerLastText}>
+        <Link href={"/privacy-policy"}>
+          <p>Privacy Policy</p>
+        </Link>
         <p>Brushfam ©2022. All rights reserved.</p>
       </div>
     </section>

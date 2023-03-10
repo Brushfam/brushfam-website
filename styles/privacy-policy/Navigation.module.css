@@ -1,6 +1,46 @@
-.navigationText {
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.NavigationWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 1000px;
+}
+
+.navigationText, .navigationTitle {
     font-weight: 600;
-    font-size: 20px;
     line-height: 120%;
     color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.navigationTitle {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.navigationText {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+    .NavigationWrapper {
+        width: 69%;
+    }
+}
+
+@media (max-width: 600px) {
+    .NavigationWrapper {
+        width: 89%;
+    }
+
+    .section {
+        margin-bottom: 80px;
+    }
 }
