@@ -1,41 +1,41 @@
 export const privacyPolicyNavigation = [
     {
-        point: "COLLECTION OF THE INFORMATION"
+        point: "Collection of the information"
     },
     {
-        point: "USE OF THE INFORMATION"
+        point: "Use of the information"
     },
     {
-        point: "YOUR RIGHTS"
+        point: "Your rights"
     },
     {
-        point: "DISCLOSURE OF THE INFORMATION"
+        point: "Disclosure of the information"
     },
     {
-        point: "YOUR CHOICES AND ACCESS TO YOUR PERSONAL INFORMATION"
+        point: "Your choices and access to your personal information"
     },
     {
-        point: "ADVERTISERS AND THIRD PARTIES"
+        point: "Advertisers and third parties"
     },
     {
-        point: "DATA SECURITY"
+        point: "Data security"
     },
     {
-        point: "RETENTION OF THE INFORMATION"
+        point: "Retention of the information"
     },
     {
-        point: "MINORS"
+        point: "Minors"
     },
     {
-        point: "СOOKIES"
+        point: "Сookies"
     },
     {
-        point: "INTERNATIONAL TRANSFER"
+        point: "International transfer"
     },
     {
-        point: "CHANGES AND UPDATES TO THIS PRIVACY POLICY"
+        point: "Changes and updates to this privacy policy"
     },
     {
-        point: "BRUSHFAM CONTACT INFORMATION"
+        point: "Brushfam contact information"
     },
 ]
