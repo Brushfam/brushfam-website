@@ -10,6 +10,10 @@ import Blog from "@/sections/Home/Blog";
 import Navbar from "@/components/Navbar";
 import {MobileNavbar} from "@/components/MobileNavbar";
 import styles from "@/styles/bg-styles/bg.module.css"
+import ReactGA from 'react-ga';
+
+ReactGA.initialize( process.env.GA_CODE);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 export default function Home() {
   return (
