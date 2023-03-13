@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 
 export default function PrivacyPolicy() {
     return(
-        <div className={styles.polkadotOnboardProperty}>
+        <div className={styles.mainProperty}>
             <Head>
                 <title>Privacy Policy</title>
             </Head>
