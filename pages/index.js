@@ -10,8 +10,16 @@ import Blog from "@/sections/Home/Blog";
 import Navbar from "@/components/Navbar";
 import {MobileNavbar} from "@/components/MobileNavbar";
 import styles from "@/styles/bg-styles/bg.module.css"
+import ReactGA from 'react-ga';
+import {useEffect} from "react";
+
+ReactGA.initialize( process.env.GA_CODE);
 
 export default function Home() {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    })
+
   return (
     <>
         <div className={styles.mainProperty}>
