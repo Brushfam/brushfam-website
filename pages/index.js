@@ -17,6 +17,7 @@ ReactGA.initialize( process.env.GA_CODE);
 
 export default function Home() {
     useEffect(() => {
+        ReactGA.set({ page: window.location.pathname + window.location.search});
         ReactGA.pageview(window.location.pathname + window.location.search);
     })
 
