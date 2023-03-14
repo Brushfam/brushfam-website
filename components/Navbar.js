@@ -7,19 +7,6 @@ const Navbar = () => {
     document.getElementById("get-in-touch").scrollIntoView();
   };
 
-  // if (typeof window !== 'undefined') {
-  //   let prevScrollpos = window.pageYOffset;
-  //   window.onscroll = function() {
-  //     const currentScrollPos = window.pageYOffset;
-  //     if (prevScrollpos > currentScrollPos) {
-  //       document.getElementById("navbar").style.top = "0";
-  //     } else {
-  //       document.getElementById("navbar").style.top = "-80px";
-  //     }
-  //     prevScrollpos = currentScrollPos;
-  //   }
-  // }
-
   return (
     <div className={navStyles.navbarContainer} id={"navbar"}>
         <div className={navStyles.navbarDiv}>
@@ -196,7 +183,7 @@ const Navbar = () => {
                   <div className={navStyles.dropdownContentHeader}>
                     <div
                       className={navStyles.borderBlock3}
-                      style={{ height: 196 }}
+                      style={{ height: 135 }}
                     ></div>
                     <div className={navStyles.borderBlock1}></div>
                   </div>
@@ -205,7 +192,7 @@ const Navbar = () => {
                     style={{ width: 253 }}
                   >
                     <Link href={"https://discord.gg/EARg6RCThP"}>
-                      <div className={navStyles.dropDownItem}>
+                      <div className={navStyles.dropDownLastItem}>
                         <div className={navStyles.borderBlock2}></div>
                         <div className={navStyles.dropDownItemHeader}>
                           <img src="/nav-icons/nav-discord.svg" />
@@ -215,14 +202,14 @@ const Navbar = () => {
                         </div>
                       </div>
                     </Link>
-                    <Link href={"https://docs.openbrush.io/"}>
-                      <div className={navStyles.dropDownLastItem}>
-                        <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-docs.svg" style={{paddingLeft: 4, paddingRight: 4}}/>
-                          <p className={navStyles.dropdownTitle}>Docs</p>
-                        </div>
-                      </div>
-                    </Link>
+                    {/*<Link href={"https://docs.openbrush.io/"}>*/}
+                    {/*  <div className={navStyles.dropDownLastItem}>*/}
+                    {/*    <div className={navStyles.dropDownItemHeader}>*/}
+                    {/*      <img src="/nav-icons/nav-docs.svg" style={{paddingLeft: 4, paddingRight: 4}}/>*/}
+                    {/*      <p className={navStyles.dropdownTitle}>Docs</p>*/}
+                    {/*    </div>*/}
+                    {/*  </div>*/}
+                    {/*</Link>*/}
                   </div>
                   <div
                     className={navStyles.helperBlock}
