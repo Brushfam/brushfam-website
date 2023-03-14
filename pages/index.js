@@ -13,13 +13,13 @@ import styles from "@/styles/bg-styles/bg.module.css"
 import ReactGA from 'react-ga';
 import {useEffect} from "react";
 
+ReactGA.initialize(process.env.GA_CODE);
+console.log(process.env.GA_CODE)
+
 export default function Home() {
     useEffect(() => {
-        ReactGA.initialize(process.env.GA_CODE);
-        console.log(process.env.GA_CODE)
-        ReactGA.set({ page: window.location.pathname + window.location.search});
         ReactGA.pageview(window.location.pathname + window.location.search);
-    })
+    }, [])
 
   return (
     <>
