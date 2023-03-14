@@ -13,8 +13,8 @@ import styles from "@/styles/bg-styles/bg.module.css"
 import ReactGA from 'react-ga';
 import {useEffect} from "react";
 
-ReactGA.initialize(process.env.GA_CODE);
-console.log(process.env.GA_CODE)
+const TRACKING_ID = 'UA-252828610-1'
+ReactGA.initialize(TRACKING_ID);
 
 export default function Home() {
     useEffect(() => {
