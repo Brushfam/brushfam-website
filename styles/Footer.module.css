@@ -183,8 +183,8 @@
   .footerLastText {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    width: 100%;
+    align-items: center;
+    width: auto;
     margin-top: 40px;
   }
 }
