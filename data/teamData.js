@@ -54,12 +54,6 @@ export const teamData = [
         social: "https://www.linkedin.com/in/kaplaty/"
     },
     {
-        src: "/team/Fedor.png",
-        name: "Fedor Lebed",
-        role: "Head of Operations",
-        social: "https://www.linkedin.com/in/fedor-lebed-b8520b1a8/"
-    },
-    {
         src: "/team/Maria.png",
         name: "Maria Nevska",
         role: "PR&Marketing Specialist",
