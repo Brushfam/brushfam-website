@@ -27,7 +27,7 @@ const Footer = () => {
             <a href={"https://discord.gg/EARg6RCThP"}>
               <img src={"icons/discord.svg"} />
             </a>
-            <a href={"https://medium.com/727-ventures"}>
+            <a href={"https://medium.com/brushfam"}>
               <img src={"icons/medium.svg"} />
             </a>
             <a href={"mailto:contact@727.ventures"}>
