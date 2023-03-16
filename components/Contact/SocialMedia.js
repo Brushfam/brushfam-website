@@ -21,7 +21,7 @@ export const SocialButtons = () => {
           <img src={"/icons/contact-form/element-contact.svg"} />
           <p>Element</p>
       </Link>
-        <Link href={"https://medium.com/727-ventures"} className={styles.socialButton} style={{marginRight: 0}}>
+        <Link href={"https://medium.com/brushfam"} className={styles.socialButton} style={{marginRight: 0}}>
             <img src={"/icons/contact-form/medium-contact.svg"} />
             <p>Medium</p>
         </Link>
