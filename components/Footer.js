@@ -12,9 +12,6 @@ const Footer = () => {
             src={"logos/brushfam-logo.svg"}
           />
           <div className={styles.socialDiv}>
-            <a href={"https://www.linkedin.com/company/727-ventures-vs/"}>
-              <img src={"icons/in.svg"} />
-            </a>
             <a href={"https://instagram.com/727_ventures?igshid=ZmVmZTY5ZGE="}>
               <img src={"icons/inst.svg"} />
             </a>
