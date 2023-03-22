@@ -51,6 +51,6 @@ export const learnData = [
     },
     {
         label: "Docs",
-        link: "https://docs.openbrush.io/"
+        link: "https://727-ventures.github.io/openbrush-contracts/"
     }
 ]

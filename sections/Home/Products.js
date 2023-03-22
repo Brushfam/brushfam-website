@@ -32,7 +32,7 @@ export default function Products() {
                                             Site
                                         </div>
                                     </Link>
-                                    <Link href={"https://docs.openbrush.io/"} target="_blank">
+                                    <Link href={"https://727-ventures.github.io/openbrush-contracts/"} target="_blank">
                                         <div className={styles.docsLink}>
                                             Docs
                                         </div>
