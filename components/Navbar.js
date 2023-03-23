@@ -191,7 +191,7 @@ const Navbar = () => {
                     className={navStyles.dropdownContent}
                     style={{ width: 253 }}
                   >
-                    <Link href={"https://discord.gg/EARg6RCThP"}>
+                    <Link href={"https://discord.gg/9FRETSPmp9"}>
                       <div className={navStyles.dropDownLastItem}>
                         <div className={navStyles.borderBlock2}></div>
                         <div className={navStyles.dropDownItemHeader}>
