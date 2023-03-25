@@ -6,7 +6,6 @@ import Services from "@/sections/Home/Services";
 import LetsBuild from "@/sections/Home/LetsBuild";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact/Contact";
-import Blog from "@/sections/Home/Blog";
 import Navbar from "@/components/Navbar";
 import {MobileNavbar} from "@/components/MobileNavbar";
 import styles from "@/styles/bg-styles/bg.module.css"
