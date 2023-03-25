@@ -8,7 +8,7 @@ export const SocialButtons = () => {
           <img src={"/icons/contact-form/twitter-contact.svg"} />
           <p>Twitter</p>
       </Link>
-        <Link href={"https://discord.gg/EARg6RCThP"} className={styles.socialButton}>
+        <Link href={"https://discord.gg/9FRETSPmp9"} className={styles.socialButton}>
             <img src={"/icons/contact-form/discord-contact.svg"} />
             <p>Discord</p>
         </Link>
@@ -40,7 +40,7 @@ export const SocialButtonsMobile = () => {
                 </Link>
             </div>
             <div className={styles.socialBlock}>
-                <Link href={"https://discord.gg/EARg6RCThP"} className={styles.socialButton}>
+                <Link href={"https://discord.gg/9FRETSPmp9"} className={styles.socialButton}>
                     <img src={"/icons/contact-form/discord-contact.svg"} style={{width: 24, height: 17, marginLeft: 6}}/>
                     <p>Discord</p>
                 </Link>

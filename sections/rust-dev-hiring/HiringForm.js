@@ -2,6 +2,9 @@ import styles from "@/styles/rust-dev-hiring/HiringForm.module.css";
 import { useState } from "react";
 import { useDropzone } from "react-dropzone";
 
+const isSocialLink = (link) =>
+    /^(https:\/\/)?(www\.)?((linkedin.com\/in)|(github\.com))\/\S+$/i.test(link);
+
 let acceptedFile;
 
 const Dropzone = () => {
@@ -58,7 +61,7 @@ export default function HiringForm() {
       e.preventDefault();
       setClicked(true);
 
-      if (!name || !lastname || !country || !ln || (!message && !acceptedFile)) {
+      if (!name || !lastname || !country || (!ln || !isSocialLink(ln)) || (!message && !acceptedFile)) {
         document.getElementById(formName).scrollIntoView();
         return;
       }
@@ -221,9 +224,9 @@ export default function HiringForm() {
               <label
                 htmlFor={"ln"}
                 className={styles.label}
-                style={clicked && !submitted && !ln ? { color: "#CD0C0C" } : {}}
+                style={clicked && !submitted && (!ln || !isSocialLink(ln)) ? { color: "#CD0C0C" } : {}}
               >
-                LinkedIn
+                LinkedIn or GitHub
               </label>
               <input
                 type={"text"}
@@ -236,7 +239,7 @@ export default function HiringForm() {
                 autoCorrect={"off"}
                 spellCheck={"false"}
                 className={
-                  clicked && !submitted && !ln
+                  clicked && !submitted && (!ln || !isSocialLink(ln))
                     ? styles.inputError
                     : styles.input
                 }

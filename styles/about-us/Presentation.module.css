@@ -69,6 +69,7 @@
 .commentBlock li img {
     height: 17px;
     margin-right: 6px;
+    margin-top: 3px;
 }
 
 .mockBlock {
@@ -133,6 +134,11 @@
     .commentBlock li {
         /*max-width: 89%;*/
         margin-bottom: 20px;
+    }
+
+    .commentBlock li img {
+        margin-top: 0px;
+        height: 14px;
     }
 
     .presentationBlock {

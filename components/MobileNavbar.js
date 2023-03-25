@@ -217,7 +217,7 @@ export const MobileNavbar = () => {
               <ul>
                 <li>
                   <Link
-                    href={"https://discord.gg/EARg6RCThP"}
+                    href={"https://discord.gg/9FRETSPmp9"}
                     className={styles.link}
                     onClick={toggleBody}
                     style={{marginBottom: 0}}
