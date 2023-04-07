@@ -16,7 +16,6 @@
 }
 
 .titleText {
-    /*margin-top: 40px;*/
     font-weight: 700;
     font-size: 14px;
     background-color: #1945E1 ;
@@ -29,23 +28,23 @@
 .ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-content: center;
     align-items: center;
     list-style: none;
     margin-top: 35px;
-    width: 900px;
-    padding-right: 40px;
 }
 
 .ul li {
-    margin-right: 40px;
+    margin-right: 80px;
+}
+
+.ul li:last-child {
+    margin-right: 0;
 }
 
 .portfolio {
     display: flex;
     flex-direction: row;
-    /*justify-content: space-between;*/
     align-content: center;
     align-items: center;
     margin-top: 34px;
@@ -65,71 +64,58 @@
 .venturesMiniLogo {
 }
 
-@media (max-width: 1100px) {
-    .ul {
-        justify-content: space-evenly;
-        /*padding-right: 20px;*/
-    }
-}
-
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .section {
         height: 510px;
     }
 
     .ul {
-        padding-left: 10%;
+        padding-left: 6%;
         display: grid;
-        justify-items: center;
-        grid-template-columns: repeat(24, 1fr);
-        row-gap: 32px;
-        width: 96%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 80px;
+        grid-row-gap: 32px;
     }
+
+    .ul li {
+        margin-right: 0;
+    }
+
     .ul li:nth-child(1) {
         grid-row: 1;
-        grid-column-start: 5;
-        grid-column-end: 11;
+        grid-column-start: 2;
     }
     .ul li:nth-child(2) {
-        grid-row: 1;
-        grid-column-start: 15;
-        grid-column-end: 21;
+        grid-row: 2;
+        grid-column-start: 1;
     }
     .ul li:nth-child(3) {
-        grid-row: 2;
-        grid-column-start: 10;
-        grid-column-end: 16;
+        grid-row: 1;
+        grid-column-start: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ul li {
+
     }
 }
 
 @media (max-width: 700px) {
-    .ul img {
-        transform: scale(0.8);
-    }
     .ul {
-        margin-left: 40px;
-        row-gap: 14px;
-        column-gap: 20px;
+        padding-left: 5%;
+        row-gap: 18px;
+        grid-column-gap: 40px;
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 540px) {
     .section {
         height: 330px;
         padding-top: 40px;
         padding-bottom: 38px;
     }
 
-    .ul img {
-        transform: scale(0.6);
-    }
-    .ul {
-        padding-left: 16%;
-    }
-    .ul {
-        row-gap: 20px;
-        column-gap: 15px;
-    }
     .portfolio p {
         margin-left: 7px;
         margin-right: 1px;
@@ -139,15 +125,34 @@
         transform: scale(0.9);
     }
 
+    .ul {
+        grid-column-gap: 32px;
+    }
+
+    .ul li img {
+        width: 100%;
+    }
+
+    .ul li:nth-child(1) a {
+        width: 110px;
+    }
+    .ul li:nth-child(2) a {
+        width: 150px;
+    }
+    .ul li:nth-child(3) a {
+        width: 100px;
+    }
+    .ul li:nth-child(4) a {
+        width: 99px;
+    }
+
     .brushfamMiniLogo {
         width: 92px;
         height: 16px;
     }
 
-    .ul li:nth-child(3) {
-        grid-row: 2;
-        grid-column-start: 9;
-        grid-column-end: 15;
+    .portfolio {
+        margin-top: 30px;
     }
 }
 
