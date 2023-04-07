@@ -27,7 +27,6 @@ export default function Web3Projects() {
                 <img alt={"brushfam mini logo"} src={"logos/brushfam-mini-logo.svg"} className={styles.brushfamMiniLogo}/>
                 <p style={{color: "#FFFFFF"}}>is a portfolio company of</p>
                 <Link href="https://727.ventures/">
-                    {/*<p style={{color: "white", fontSize: 14, fontWeight: 600}}>727 Ventures</p>*/}
                     <img src={"logos/727-logo.svg"} alt={"727 logo"} style={{width: 113}} className={styles.venturesMiniLogo}/>
                 </Link>
             </div>
