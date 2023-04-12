@@ -1,4 +1,4 @@
-export const navbarData = [
+const navbarData = [
     {
         label: "Products",
         items: [
