@@ -8,8 +8,14 @@ import Process from "@/sections/security-audits/Process";
 import {MobileNavbar} from "@/components/MobileNavbar";
 import styles from "@/styles/bg-styles/bg.module.css"
 import Head from "next/head";
+import {useEffect} from "react";
+import ReactGA from "react-ga";
 
-export default function securityAudits() {
+export default function SecurityAudits() {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }, [])
+
     return(
         <div className={styles.securityProperty}>
             <Head>

@@ -6,8 +6,13 @@ import {MobileNavbar} from "@/components/MobileNavbar";
 import styles from "@/styles/bg-styles/bg.module.css"
 import Head from "next/head";
 import Web3 from "@/sections/onboard-to-web3/Web3";
+import {useEffect} from "react";
+import ReactGA from "react-ga";
 
-export default function onboardToWeb3() {
+export default function OnboardToWeb3() {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }, [])
     return(
         <div className={styles.onboardProperty}>
             <Head>
