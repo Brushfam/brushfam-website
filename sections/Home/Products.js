@@ -32,7 +32,7 @@ export default function Products() {
                                             Site
                                         </div>
                                     </Link>
-                                    <Link href={"https://727-ventures.github.io/openbrush-contracts/"} target="_blank">
+                                    <Link href={"https://brushfam.github.io/openbrush-contracts/"} target="_blank">
                                         <div className={styles.docsLink}>
                                             Docs
                                         </div>
@@ -49,7 +49,7 @@ export default function Products() {
                         <div className={styles.productLinkPart}>
                             <img src={"logos/sol2Ink-logo.svg"}/>
                             <div className={styles.productButtonPart}>
-                                <Link href={"https://github.com/727-Ventures/sol2ink"} target="_blank">
+                                <Link href={"https://github.com/Brushfam/sol2ink"} target="_blank">
                                     <div className={styles.docsLink}>
                                         Docs
                                     </div>
@@ -66,7 +66,7 @@ export default function Products() {
                         <div className={styles.productLinkPart}>
                             <img src={"logos/typechain-logo.svg"}/>
                             <div className={styles.productButtonPart}>
-                                <Link href={"https://github.com/727-Ventures/typechain-polkadot"} target="_blank">
+                                <Link href={"https://github.com/Brushfam/typechain-polkadot"} target="_blank">
                                     <div className={styles.docsLink}>
                                         Docs
                                     </div>

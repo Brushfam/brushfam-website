@@ -1,4 +1,3 @@
-import { navbarData } from "@/data/navbarData";
 import navStyles from "@/styles/Navbar.module.css";
 import Link from "next/link";
 
@@ -49,7 +48,7 @@ const Navbar = () => {
                         </p>
                       </div>
                     </Link>
-                    <Link href={"https://github.com/727-Ventures/sol2ink"}>
+                    <Link href={"https://github.com/Brushfam/sol2ink"}>
                       <div className={navStyles.dropDownItem}>
                         <div className={navStyles.dropDownItemHeader}>
                           <img src="/nav-icons/nav-sol2Ink.svg" />
@@ -65,7 +64,7 @@ const Navbar = () => {
                     </Link>
                     <Link
                       href={
-                        "https://github.com/727-Ventures/typechain-polkadot"
+                        "https://github.com/Brushfam/typechain-polkadot"
                       }
                     >
                       <div className={navStyles.dropDownLastItem}>

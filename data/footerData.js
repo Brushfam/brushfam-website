@@ -5,11 +5,11 @@ export const productsData = [
     },
     {
         label: "Sol2ink",
-        link: "https://github.com/727-Ventures/sol2ink"
+        link: "https://github.com/Brushfam/sol2ink"
     },
     {
         label: "Typechain",
-        link: "https://github.com/727-Ventures/typechain-polkadot"
+        link: "https://github.com/Brushfam/typechain-polkadot"
     }
 ]
 
@@ -49,8 +49,4 @@ export const learnData = [
         label: "Community Medium",
         link: "https://medium.com/727-ventures"
     },
-    {
-        label: "Docs",
-        link: "https://727-ventures.github.io/openbrush-contracts/"
-    }
 ]

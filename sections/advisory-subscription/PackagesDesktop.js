@@ -46,8 +46,11 @@ export default function PackagesDesktop() {
       border: "1px solid rgba(255, 255, 255, 0.2)",
       backdropFilter: "blur(5px)",
       borderRadius: "6px",
-        maxWidth: "178px",
-        padding: "12px"
+        maxWidth: "180px",
+        padding: "12px",
+        fontFamily: "'Poppins', sans-serif",
+        fontWeight: "400",
+        fontSize: "10px"
     },
   }));
 

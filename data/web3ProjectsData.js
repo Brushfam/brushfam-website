@@ -9,11 +9,6 @@ export const web3ProjectsData = [
         src: "logos/alephzero-logo.svg",
         link: "https://alephzero.org/"
     },
-    // {
-    //     alt: "artzero",
-    //     src: "logos/artzero-logo.svg",
-    //     link: "https://artzero.io/"
-    // },
     {
         alt: "web3foundation",
         src: "logos/w3f-logo.svg",

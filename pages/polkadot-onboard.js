@@ -8,8 +8,14 @@ import TitleSection from "@/sections/polkadot-onboard/TitleSection";
 import PolkadotAdvantages from "@/sections/polkadot-onboard/PolkadotAdvantages";
 import OurTeam from "@/sections/polkadot-onboard/OurTeam";
 import OurGoal from "@/sections/polkadot-onboard/OurGoal";
+import {useEffect} from "react";
+import ReactGA from "react-ga";
 
-export default function polkadotOnboard() {
+export default function PolkadotOnboard() {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }, [])
+
     return(
         <div className={styles.polkadotOnboardProperty}>
             <Head>
