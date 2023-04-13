@@ -48,7 +48,7 @@ export default function Products() {
           muted
           className={styles.videoContainer}
         >
-          <source src="video/openbrush.mp4" type="video/mp4" />
+          <source src="video/tools.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className={styles.productsDiv}>
