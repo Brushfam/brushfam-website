@@ -44,6 +44,7 @@
     flex-direction: row;
     justify-content: center;
     justify-items: center;
+    margin-top: 64px;
 }
 
 .codeDiv {
@@ -58,10 +59,9 @@
 }
 
 .productsDiv {
-    width: 400px;
+    width: 300px;
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
 }
 
 .codeImg {
@@ -69,27 +69,30 @@
     margin-left: 58px;
 }
 
-.videoContainer {
-    margin-right: 60px;
+.videoWrapper {
+    position: relative;
+    margin-right: 40px;
+}
+
+.videoContainer, .videoContainer2 {
     border-radius: 6px;
     pointer-events: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .product {
-    height: 120px;
-    margin-bottom: 68px;
+    padding: 20px;
 }
 
 .productLinkPart {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .productButtonPart {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    margin-top: 20px;
 }
 
 .siteLink {
@@ -97,9 +100,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /*padding: 8px 24px;*/
 
-    width: 74px;
+    width: 75px;
     height: 37px;
 
     background: #0C42CD;
@@ -122,7 +124,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /*padding: 8px 24px;*/
 
     width: 84px;
     height: 37px;
@@ -141,15 +142,48 @@
     filter: brightness(170%);
 }
 
+.product p {
+    margin-top: 20px;
+    font-size: 10px;
+}
+
 @media (max-width: 1380px) {
     .codeDiv {
         display: none;
     }
 }
 
+@media (max-width: 1299px) {
+    .videoWrapper {
+        display: none;
+    }
+
+    .productsDiv {
+        width: 400px;
+    }
+
+    .productLinkPart {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .productButtonPart {
+        margin-top: 0;
+    }
+
+    .product p {
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 460px) {
     .section {
-        height: 910px;
+        height: auto;
+    }
+
+    .product {
+        padding: 0;
+        margin-bottom: 44px;
     }
 
     .productsDiv {

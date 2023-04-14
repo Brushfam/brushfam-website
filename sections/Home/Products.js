@@ -1,28 +1,53 @@
 import styles from "@/styles/Home/Products.module.css";
 import Link from "next/link";
-import {useEffect} from "react";
 
 export default function Products() {
   // let count = 1;
   //
-  // useEffect(() => {
-  //   const toolVideo = document.getElementById("tool-video")
-  //   toolVideo.addEventListener("ended", switchToolVideo, false)
-  // })
+  // const switchToolVideo = () => {
+  //   console.log("+")
   //
-  //   function switchToolVideo(event) {
-  //     const toolVideo = document.getElementById("tool-video")
-  //     if (count %2 === 0) {
-  //       toolVideo.setAttribute('src', 'video/openbrush.mp4')
-  //       count = 1
-  //     } else {
-  //       toolVideo.setAttribute('src', 'video/sol2ink.mp4')
-  //       count++;
-  //     }
+  //   if (typeof document !== 'undefined') {
+  //       const toolVideo = document.getElementById("tool-video")
+  //       const toolVideo2 = document.getElementById("tool-video2")
   //
-  //     toolVideo.load()
+  //       if (count %2 === 0) {
+  //         toolVideo2.currentTime = 0
+  //         toolVideo.style.zIndex = "1"
+  //         toolVideo2.style.zIndex = "0"
+  //         toolVideo.play()
+  //       }  else {
+  //         toolVideo.currentTime = 0
+  //         toolVideo2.style.zIndex = "1"
+  //         toolVideo.style.zIndex = "0"
+  //         toolVideo2.play()
+  //       }
+  //
+  //       count++
   //   }
+  // }
 
+  const VideoWindow = () => {
+    if (typeof window === "undefined" || window.screen.width < 1300) {
+        return {}
+    }
+
+    return(
+        <div className={styles.videoWrapper}>
+          <video
+              id="tool-video"
+              width="900"
+              autoPlay
+              muted
+              loop
+              className={styles.videoContainer}
+          >
+            <source src="video/tools.mp4" type="video/mp4"/>
+            Your browser does not support the video tag.
+          </video>
+        </div>
+    )
+  }
 
   return (
     <section className={styles.section} id={"products"}>
@@ -40,25 +65,15 @@ export default function Products() {
         </p>
       </div>
       <div className={styles.centeredRowDiv}>
-        <video
-            id="tool-video"
-          width="900"
-          autoPlay
-          loop
-          muted
-          className={styles.videoContainer}
-        >
-          <source src="video/tools.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <VideoWindow/>
         <div className={styles.productsDiv}>
           <div className={styles.product}>
             <div className={styles.productLinkPart}>
-              <img src={"logos/openbrush-logo.svg"} />
+              <img src={"logos/openbrush-logo.svg"} style={{width: 150}}/>
               <div className={styles.productButtonPart}>
                 <Link
                   href={"https://openbrush.io/"}
-                  style={{ marginRight: 12 }}
+                  style={{ marginRight: 10 }}
                   target="_blank"
                 >
                   <div className={styles.siteLink}>Site</div>
@@ -71,7 +86,7 @@ export default function Products() {
                 </Link>
               </div>
             </div>
-            <p style={{ marginTop: 16 }}>
+            <p>
               OpenBrush is a library for smart contract development on ink!. It
               provides standard contracts (based on PSP), as well as useful
               contracts and macros to help you build ink! smart contracts.
@@ -79,7 +94,7 @@ export default function Products() {
           </div>
           <div className={styles.product}>
             <div className={styles.productLinkPart}>
-              <img src={"logos/sol2Ink-logo.svg"} />
+              <img src={"logos/sol2Ink-logo.svg"} style={{width: 148}}/>
               <div className={styles.productButtonPart}>
                 <Link
                   href={"https://github.com/Brushfam/sol2ink"}
@@ -89,15 +104,15 @@ export default function Products() {
                 </Link>
               </div>
             </div>
-            <p style={{ marginTop: 16 }}>
+            <p>
               Is a tool for easy migration from Solidity to ink! and Rust, helps
               projects and teams migrate their smart contracts from popular
               Solidity to Polkadot`s ink!.
             </p>
           </div>
-          <div className={styles.product}>
+          <div className={styles.product} style={{marginBottom: 0}}>
             <div className={styles.productLinkPart}>
-              <img src={"logos/typechain-logo.svg"} />
+              <img src={"logos/typechain-logo.svg"} style={{width: 182}}/>
               <div className={styles.productButtonPart}>
                 <Link
                   href={"https://github.com/Brushfam/typechain-polkadot"}
@@ -107,7 +122,7 @@ export default function Products() {
                 </Link>
               </div>
             </div>
-            <p style={{ marginTop: 16 }}>
+            <p>
               Was created to improve developers’ experience with deployment &
               integration testing of ink! smart contracts.
             </p>
