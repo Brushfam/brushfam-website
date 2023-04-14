@@ -1,5 +1,7 @@
 import styles from "@/styles/Home/Products.module.css";
 import Link from "next/link";
+import {useEffect, useState} from "react";
+import {useWindowSize} from "rooks";
 
 export default function Products() {
   // let count = 1;
@@ -27,26 +29,41 @@ export default function Products() {
   //   }
   // }
 
-  const VideoWindow = () => {
-    if (typeof window === "undefined" || window.screen.width < 1300) {
-        return {}
-    }
+  function useWindowWidth() {
+    const [windowWidth, setWindowWidth] = useState({
+      width: undefined
+    });
 
-    return(
-        <div className={styles.videoWrapper}>
-          <video
-              id="tool-video"
-              width="900"
-              autoPlay
-              muted
-              loop
-              className={styles.videoContainer}
-          >
-            <source src="video/tools.mp4" type="video/mp4"/>
-            Your browser does not support the video tag.
-          </video>
-        </div>
-    )
+    useEffect(() => {
+      function handleResize() {
+        setWindowWidth({ width: window.innerWidth });
+      }
+
+      window.addEventListener("resize", handleResize);
+      handleResize();
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    return windowWidth;
+  }
+
+  const VideoWindow = () => {
+      return(
+          useWindowWidth() < 1300 ? {} : <div className={styles.videoWrapper}>
+            <video
+                id="tool-video"
+                width="900"
+                autoPlay
+                muted
+                loop
+                className={styles.videoContainer}
+            >
+              <source src="video/tools.mp4" type="video/mp4"/>
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      )
+
   }
 
   return (
