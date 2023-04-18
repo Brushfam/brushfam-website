@@ -1,7 +1,7 @@
 import styles from "@/styles/Home/Products.module.css";
 import Link from "next/link";
 import {useEffect, useState} from "react";
-import {useWindowSize} from "rooks";
+import $ from "jquery";
 
 export default function Products() {
   // let count = 1;
@@ -48,6 +48,16 @@ export default function Products() {
   }
 
   const VideoWindow = () => {
+    useEffect(() => {
+      $('tool-video').each(function(){
+        if ($(this).is(":in-viewport")) {
+          $(this)[0].play();
+        } else {
+          $(this)[0].pause();
+        }
+      })
+    })
+
       return(
           useWindowWidth() < 1300 ? {} : <div className={styles.videoWrapper}>
             <video
