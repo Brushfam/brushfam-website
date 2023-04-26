@@ -220,23 +220,22 @@ export const MobileNavbar = () => {
                     href={"https://discord.gg/9FRETSPmp9"}
                     className={styles.link}
                     onClick={toggleBody}
-                    style={{marginBottom: 0}}
                   >
                     <img src="/nav-icons/nav-discord.svg" />
                     <p>Community Discord</p>
                   </Link>
                 </li>
-                {/*<li>*/}
-                {/*  <Link*/}
-                {/*    href={"https://docs.openbrush.io/"}*/}
-                {/*    className={styles.link}*/}
-                {/*    style={{marginBottom: 0}}*/}
-                {/*    onClick={toggleBody}*/}
-                {/*  >*/}
-                {/*    <img src="/nav-icons/nav-docs.svg" style={{paddingLeft: 5, paddingRight: 4}}/>*/}
-                {/*    <p>Docs</p>*/}
-                {/*  </Link>*/}
-                {/*</li>*/}
+                <li>
+                  <Link
+                    href={"https://learn.brushfam.io/"}
+                    className={styles.link}
+                    style={{marginBottom: 0}}
+                    onClick={toggleBody}
+                  >
+                    <img src="/nav-icons/nav-docs.svg" style={{paddingLeft: 5, paddingRight: 4}}/>
+                    <p>Docs</p>
+                  </Link>
+                </li>
               </ul>
             ) : (
               <></>

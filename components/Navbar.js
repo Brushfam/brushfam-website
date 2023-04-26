@@ -182,7 +182,7 @@ const Navbar = () => {
                   <div className={navStyles.dropdownContentHeader}>
                     <div
                       className={navStyles.borderBlock3}
-                      style={{ height: 135 }}
+                      style={{ height: 195 }}
                     ></div>
                     <div className={navStyles.borderBlock1}></div>
                   </div>
@@ -191,7 +191,7 @@ const Navbar = () => {
                     style={{ width: 253 }}
                   >
                     <Link href={"https://discord.gg/9FRETSPmp9"}>
-                      <div className={navStyles.dropDownLastItem}>
+                      <div className={navStyles.dropDownItem}>
                         <div className={navStyles.borderBlock2}></div>
                         <div className={navStyles.dropDownItemHeader}>
                           <img src="/nav-icons/nav-discord.svg" />
@@ -201,14 +201,14 @@ const Navbar = () => {
                         </div>
                       </div>
                     </Link>
-                    {/*<Link href={"https://docs.openbrush.io/"}>*/}
-                    {/*  <div className={navStyles.dropDownLastItem}>*/}
-                    {/*    <div className={navStyles.dropDownItemHeader}>*/}
-                    {/*      <img src="/nav-icons/nav-docs.svg" style={{paddingLeft: 4, paddingRight: 4}}/>*/}
-                    {/*      <p className={navStyles.dropdownTitle}>Docs</p>*/}
-                    {/*    </div>*/}
-                    {/*  </div>*/}
-                    {/*</Link>*/}
+                    <Link href={"https://learn.brushfam.io/"}>
+                      <div className={navStyles.dropDownLastItem}>
+                        <div className={navStyles.dropDownItemHeader}>
+                          <img src="/nav-icons/nav-docs.svg" style={{paddingLeft: 4, paddingRight: 4}}/>
+                          <p className={navStyles.dropdownTitle}>Docs</p>
+                        </div>
+                      </div>
+                    </Link>
                   </div>
                   <div
                     className={navStyles.helperBlock}
