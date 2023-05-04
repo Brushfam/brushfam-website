@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function OurReports() {
     return(
         <div className={styles.section}>
-            <p className={styles.titleText}>Our reports</p>
+            <p className={styles.titleText}>Audit reports</p>
             <p className={styles.descriptionText}>
                 Reports are published by the customers approval
             </p>
