@@ -1,0 +1,77 @@
+.section {
+    padding-top: 240px;
+    margin-bottom: 202px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleText {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.descriptionText {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.report {
+    width: 320px;
+    height: 299px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+
+.reportTop {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(110.11deg, rgba(144, 151, 170, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.reportBottom {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 24px;
+}
+
+.reportButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    width: 133px;
+    height: 37px;
+    background: #0C42CD;
+    box-shadow: 0px 5px 40px rgba(30, 68, 248, 0.4);
+    border-radius: 30px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.reportButton:hover {
+    filter: brightness(170%);
+    cursor: pointer;
+}
+
+@media (max-width: 460px) {
+    .section {
+        padding-top: 120px;
+        margin-bottom: 120px;
+    }
+}

@@ -10,6 +10,7 @@ import styles from "@/styles/bg-styles/bg.module.css"
 import Head from "next/head";
 import {useEffect} from "react";
 import ReactGA from "react-ga";
+import OurReports from "@/sections/security-audits/OurReports";
 
 export default function SecurityAudits() {
     useEffect(() => {
@@ -27,6 +28,7 @@ export default function SecurityAudits() {
             <Audit></Audit>
             <Services></Services>
             <Process></Process>
+            <OurReports></OurReports>
             <Contact></Contact>
             <Footer></Footer>
         </div>
