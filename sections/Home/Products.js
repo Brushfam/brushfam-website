@@ -106,7 +106,7 @@ export default function Products() {
                   <div className={styles.siteLink}>Site</div>
                 </Link>
                 <Link
-                  href={"https://brushfam.github.io/openbrush-contracts/"}
+                  href={"https://learn.brushfam.io/docs/openbrush"}
                   target="_blank"
                 >
                   <div className={styles.docsLink}>Docs</div>
@@ -124,7 +124,7 @@ export default function Products() {
               <img src={"logos/sol2Ink-logo.svg"} style={{width: 148}}/>
               <div className={styles.productButtonPart}>
                 <Link
-                  href={"https://github.com/Brushfam/sol2ink"}
+                  href={"https://learn.brushfam.io/docs/sol2ink"}
                   target="_blank"
                 >
                   <div className={styles.docsLink}>Docs</div>
@@ -142,7 +142,7 @@ export default function Products() {
               <img src={"logos/typechain-logo.svg"} style={{width: 182}}/>
               <div className={styles.productButtonPart}>
                 <Link
-                  href={"https://github.com/Brushfam/typechain-polkadot"}
+                  href={"https://learn.brushfam.io/docs/typechain"}
                   target="_blank"
                 >
                   <div className={styles.docsLink}>Docs</div>

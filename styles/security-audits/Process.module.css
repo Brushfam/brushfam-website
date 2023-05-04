@@ -16,7 +16,7 @@
 }
 
 .auditProcessImg {
-    margin-bottom: 230px;
+
 }
 
 .auditProcessMobileImg {
@@ -36,7 +36,6 @@
 
     .auditProcessMobileImg {
         display: block;
-        margin-bottom: 230px;
     }
 
     .headerText {
@@ -55,9 +54,5 @@
 
     .section {
         padding-top: 120px;
-    }
-
-    .auditProcessMobileImg {
-        margin-bottom: 110px;
     }
 }
