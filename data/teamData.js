@@ -36,6 +36,12 @@ export const teamData = [
         social: "https://www.linkedin.com/in/tsaruk-olexandr/"
     },
     {
+        src: "/team/Ivan.png",
+        name: "Ivan Leshchenko",
+        role: "Blockchain Developer",
+        social: "https://github.com/ivan770"
+    },
+    {
         src: "/team/Olesia.png",
         name: "Olesia Arkhipova",
         role: "CSO",
@@ -76,5 +82,11 @@ export const teamData = [
         name: "Volodymyr Bondar",
         role: "General Counsel",
         social: "https://twitter.com/BVondar1"
+    },
+    {
+        src: "/team/Matviy.png",
+        name: "Matviy Matsipura",
+        role: "Designer",
+        social: "https://twitter.com/MatviyMatsipura"
     },
 ]
