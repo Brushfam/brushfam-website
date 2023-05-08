@@ -124,6 +124,13 @@ export default function Products() {
               <img src={"logos/sol2Ink-logo.svg"} style={{width: 148}}/>
               <div className={styles.productButtonPart}>
                 <Link
+                    href={"https://github.com/Brushfam/sol2ink"}
+                    style={{ marginRight: 10 }}
+                    target="_blank"
+                >
+                  <div className={styles.siteLink}>Site</div>
+                </Link>
+                <Link
                   href={"https://learn.brushfam.io/docs/sol2ink"}
                   target="_blank"
                 >
@@ -142,6 +149,13 @@ export default function Products() {
               <img src={"logos/typechain-logo.svg"} style={{width: 182}}/>
               <div className={styles.productButtonPart}>
                 <Link
+                    href={"https://github.com/Brushfam/typechain-polkadot"}
+                    style={{ marginRight: 10 }}
+                    target="_blank"
+                >
+                  <div className={styles.siteLink}>Site</div>
+                </Link>
+                <Link
                   href={"https://learn.brushfam.io/docs/typechain"}
                   target="_blank"
                 >
@@ -150,8 +164,8 @@ export default function Products() {
               </div>
             </div>
             <p>
-              Was created to improve developers’ experience with deployment &
-              integration testing of ink! smart contracts.
+              Is a tool that generates type-safe TypeScript interfaces for
+              ink! smart contracts to improve blockchain and front-end development.
             </p>
           </div>
         </div>
