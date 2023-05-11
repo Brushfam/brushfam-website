@@ -201,7 +201,7 @@ const Navbar = () => {
                         </div>
                       </div>
                     </Link>
-                    <Link href={"https://learn.brushfam.io/"}>
+                    <Link href={"https://learn.brushfam.io/"} target="_blank">
                       <div className={navStyles.dropDownLastItem}>
                         <div className={navStyles.dropDownItemHeader}>
                           <img src="/nav-icons/nav-docs.svg" style={{paddingLeft: 4, paddingRight: 4}}/>
