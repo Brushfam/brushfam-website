@@ -228,6 +228,7 @@ export const MobileNavbar = () => {
                 <li>
                   <Link
                     href={"https://learn.brushfam.io/"}
+                    target="_blank"
                     className={styles.link}
                     style={{marginBottom: 0}}
                     onClick={toggleBody}
