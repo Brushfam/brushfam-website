@@ -45,25 +45,25 @@
     grid-column: span 4
 }
 
-/*@media (min-width: 1201px) {*/
-/*    .teamList li:nth-last-child(3){*/
-/*        grid-row-start: 3;*/
-/*        grid-column-start: 5;*/
-/*        grid-column-end: 9;*/
-/*    }*/
+@media (min-width: 1201px) {
+    /*.teamList li:nth-last-child(3){*/
+    /*    grid-row-start: 3;*/
+    /*    grid-column-start: 5;*/
+    /*    grid-column-end: 9;*/
+    /*}*/
 
-/*    .teamList li:nth-last-child(2){*/
-/*        grid-row-start: 3;*/
-/*        grid-column-start: 9;*/
-/*        grid-column-end: 13;*/
-/*    }*/
+    /*.teamList li:nth-last-child(2){*/
+    /*    grid-row-start: 3;*/
+    /*    grid-column-start: 9;*/
+    /*    grid-column-end: 13;*/
+    /*}*/
 
-/*    .teamList li:nth-last-child(1){*/
-/*        grid-row-start: 3;*/
-/*        grid-column-start: 13;*/
-/*        grid-column-end: 17;*/
-/*    }*/
-/*}*/
+    /*.teamList li:nth-last-child(1){*/
+    /*    grid-row-start: 4;*/
+    /*    grid-column-start: 1;*/
+    /*    grid-column-end: 5;*/
+    /*}*/
+}
 
 .teamList img {
     height: 120px;

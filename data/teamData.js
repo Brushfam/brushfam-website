@@ -89,4 +89,10 @@ export const teamData = [
         role: "Designer",
         social: "https://twitter.com/MatviyMatsipura"
     },
+    {
+        src: "/team/Illya.png",
+        name: "Illya Ovcharenko",
+        role: "Head of Sales",
+        social: "https://twitter.com/IllyaOv4"
+    },
 ]
