@@ -93,7 +93,7 @@ const Navbar = () => {
                   <div className={navStyles.dropdownContentHeader}>
                     <div
                       className={navStyles.borderBlock3}
-                      style={{ height: 384 }}
+                      style={{ height: 258 }}
                     ></div>
                     <div className={navStyles.borderBlock1}></div>
                   </div>
@@ -131,38 +131,12 @@ const Navbar = () => {
 
                     <Link href={"/onboard-to-web3"}>
                       <div
-                        className={navStyles.dropDownItem}
+                        className={navStyles.dropDownLastItem}
                       >
                         <div className={navStyles.dropDownItemHeader}>
                           <img src="/nav-icons/nav-web3.svg" style={{width: 18, marginRight: 7}}/>
                           <p className={navStyles.dropdownTitle}>
                             Web3 onboard
-                          </p>
-                        </div>
-                      </div>
-                    </Link>
-
-                    <Link href={"/polkadot-onboard"}>
-                      <div
-                        className={navStyles.dropDownItem}
-                      >
-                        <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-polkadot.svg" style={{width: 15}}/>
-                          <p className={navStyles.dropdownTitle}>
-                            Polkadot onboard
-                          </p>
-                        </div>
-                      </div>
-                    </Link>
-
-                    <Link href={"/investment-diligence"}>
-                      <div
-                        className={navStyles.dropDownLastItem}
-                      >
-                        <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-investment.svg" style={{width: 15}}/>
-                          <p className={navStyles.dropdownTitle}>
-                            Investment Diligence
                           </p>
                         </div>
                       </div>
