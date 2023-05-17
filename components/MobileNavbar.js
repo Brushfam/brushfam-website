@@ -185,21 +185,9 @@ export const MobileNavbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/onboard-to-web3"} className={styles.link} onClick={toggleBody}>
+                  <Link href={"/onboard-to-web3"} className={styles.link} onClick={toggleBody} style={{marginBottom: 0}}>
                     <img src="/nav-icons/nav-web3.svg" style={{width: 18, marginRight: 7}}/>
                     <p>Web3 onboard</p>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={"/polkadot-onboard"} className={styles.link} onClick={toggleBody}>
-                    <img src="/nav-icons/nav-polkadot.svg" style={{width: 15}}/>
-                    <p>Polkadot onboard</p>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={"/investment-diligence"} className={styles.link} onClick={toggleBody} style={{marginBottom: 0}}>
-                    <img src="/nav-icons/nav-investment.svg" style={{width: 15}}/>
-                    <p>Investment Diligence</p>
                   </Link>
                 </li>
               </ul>

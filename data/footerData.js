@@ -26,14 +26,6 @@ export const servicesData = [
         label: "Security audits",
         link: "/security-audits"
     },
-    {
-        label: "Polkadot onboard",
-        link: "/polkadot-onboard"
-    },
-    {
-        label: "Investment Diligence",
-        link: "/investment-diligence"
-    },
 ]
 
 export const learnData = [

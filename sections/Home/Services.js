@@ -44,28 +44,8 @@ export default function Services() {
 
         <p className={styles.serviceTitle}>For Polkadot native companies:</p>
         <div className={styles.twoServices}>
-          <div className={styles.wrapper} id={"security-audits"}>
-            <div className={styles.block2}>
-              <div className={styles.serviceHeader}>
-                <img src={"icons/services/security-audits.svg"} />
-                <p>Security audits</p>
-              </div>
-              <p className={styles.serviceText} style={{ marginBottom: 24 }}>
-                An ink! smart contract audit performed by our specialists
-                provides the independent estimation of the code generated to
-                implement the smart contract’s terms.
-              </p>
-              <Link
-                  href={"/security-audits"}
-                type="button"
-                className={styles.button}
-              >
-                Read more
-              </Link>
-            </div>
-          </div>
           <div className={styles.wrapper} id={"ink-advisory"}>
-            <div className={styles.block3}>
+            <div className={styles.block2}>
               <div className={styles.serviceHeader}>
                 <img src={"icons/services/advisory-subscription.svg"} />
                 <p>Advisory subscription</p>
@@ -80,62 +60,28 @@ export default function Services() {
               </p>
               <Link
                   href={"/advisory-subscription"}
-                type="button"
-                className={styles.button}
-              >
-                Read more
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.twoServices}>
-          <div className={styles.wrapper} style={{ marginBottom: 40 }}>
-            <p className={styles.serviceTitle4}>For VC/angel investors:</p>
-            <div className={styles.block4} id={"investment-diligence"}>
-              <div className={styles.serviceHeader}>
-                <img src={"icons/services/investment-diligence.svg"} />
-                <p>Investment diligence</p>
-              </div>
-              <p className={styles.serviceText} style={{ marginBottom: 24 }}>
-                Not every business idea results in successful company.
-                With Brushfam we want to make sure the ideas you are investing
-                your money in, are possible to be implemented and the startup’s
-                team knows how to do it. We will analyze startup’s documents,
-                code, talk to engineers responsible gathering all needed
-                information. All of this combined with the wide-range experience
-                our team has, will give us enough data to come up with a
-                conclusion on the technical possibility of the idea and our
-                impression of the team’s ability to have it implemented.
-              </p>
-              <Link
-                  href={"/investment-diligence"}
-                type="button"
-                className={styles.button}
-              >
-                Read more
-              </Link>
-            </div>
-          </div>
-          <div className={styles.wrapper}>
-            <p className={styles.serviceTitle5}>
-              For those onboarding from Ethereum:
-            </p>
-            <div className={styles.block5} id={"onboard-in-polkadot"}>
-              <div className={styles.serviceHeader}>
-                <img src={"icons/services/polkadot-onboard.svg"} />
-                <h3>Polkadot onboard</h3>
-              </div>
-              <p className={styles.serviceText} style={{ marginBottom: 24 }}>
-                Looking to grow your total addressable market or upgrade your
-                tech? With Sol2ink, being the automatic transpiler tool, the
-                process of code transforming from solidity to ink! is just one
-                click away.
-              </p>
-              <Link
-                  href={"/polkadot-onboard"}
                   type="button"
                   className={styles.button}
+              >
+                Read more
+              </Link>
+            </div>
+          </div>
+          <div className={styles.wrapper} id={"security-audits"}>
+            <div className={styles.block3}>
+              <div className={styles.serviceHeader}>
+                <img src={"icons/services/security-audits.svg"} />
+                <p>Security audits</p>
+              </div>
+              <p className={styles.serviceText} style={{ marginBottom: 24 }}>
+                An ink! smart contract audit performed by our specialists
+                provides the independent estimation of the code generated to
+                implement the smart contract’s terms.
+              </p>
+              <Link
+                  href={"/security-audits"}
+                type="button"
+                className={styles.button}
               >
                 Read more
               </Link>

@@ -65,33 +65,28 @@
 }
 
 .block1 {
-    /*height: 209px;*/
     height: 250px;
     width: 1000px;
 }
 
 .block2 {
-    /*height: 205px;*/
     height: 246px;
-    width: 354px;
+    width: 622px;
     margin-right: 24px;
 }
 
 .block3 {
-    /*height: 205px;*/
     height: 246px;
-    width: 622px;
+    width: 354px;
 }
 
 .block4 {
-    /*height: 241px;*/
     height: 282px;
     width: 681px;
     margin-right: 24px;
 }
 
 .block5 {
-    /*height: 241px;*/
     height: 282px;
     width: 295px;
     padding: 40px;
@@ -149,7 +144,6 @@
 .twoServices {
     display: flex;
     flex-direction: row;
-    margin-bottom: 40px;
 }
 
 .serviceBlock {
@@ -178,13 +172,12 @@
 
     .block2 {
         height: auto;
-        width: 319px;
-        margin-right: 24px;
+        width: 560px;
     }
 
     .block3 {
         height: auto;
-        width: 560px;
+        width: 319px;
     }
 
     .block4 {
