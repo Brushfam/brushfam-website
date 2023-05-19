@@ -92,7 +92,7 @@ export const teamData = [
     {
         src: "/team/Illya.png",
         name: "Illya Ovcharenko",
-        role: "Head of Sales",
-        social: "https://twitter.com/IllyaOv4"
+        role: "Head of BD",
+        social: "https://www.linkedin.com/company/brushfam"
     },
 ]
