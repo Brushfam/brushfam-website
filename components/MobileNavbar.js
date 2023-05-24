@@ -268,7 +268,7 @@ export const MobileNavbar = () => {
             <Link href={"https://twitter.com/Brushfam_io"} style={{marginRight: 38}}>
               <img src={"/icons/twitter-mobile.svg"}/>
             </Link>
-            <Link href={"mailto:contact@727.ventures"} >
+            <Link href={"mailto:info@brushfam.io"} >
               <img src={"/icons/mail-mobile.svg"}/>
             </Link>
           </div>

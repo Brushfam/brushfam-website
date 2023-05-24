@@ -27,7 +27,7 @@ const Footer = () => {
             <a href={"https://medium.com/brushfam"}>
               <img src={"icons/medium.svg"} />
             </a>
-            <a href={"mailto:contact@727.ventures"}>
+            <a href={"mailto:info@brushfam.io"}>
               <img src={"icons/mail.svg"} />
             </a>
           </div>
@@ -38,7 +38,7 @@ const Footer = () => {
             <a href={"https://twitter.com/Brushfam_io"}>
               <img src={"icons/twitter-mobile.svg"} />
             </a>
-            <a href={"mailto:contact@727.ventures"}>
+            <a href={"mailto:info@brushfam.io"}>
               <img src={"icons/mail-mobile.svg"} />
             </a>
           </div>
@@ -99,7 +99,7 @@ const Footer = () => {
           {/*</div>*/}
           <div className={styles.itemsColumnLast}>
             <p className={styles.itemsTitle}>Contact us</p>
-            <p className={styles.item}>contact@727.ventures</p>
+            <p className={styles.item}>info@brushfam</p>
           </div>
         </div>
       </div>
