@@ -62,7 +62,7 @@ export const teamData = [
     {
         src: "/team/Maria.png",
         name: "Maria Nevska",
-        role: "PR&Marketing Specialist",
+        role: "Marketing & Growth Manager",
         social: "https://www.linkedin.com/in/mariia-nevska-8aab181b1/"
     },
     {
@@ -87,12 +87,18 @@ export const teamData = [
         src: "/team/Matviy.png",
         name: "Matviy Matsipura",
         role: "Designer",
-        social: "https://twitter.com/MatviyMatsipura"
+        social: "https://twitter.com/matt_matsipura"
     },
     {
         src: "/team/Illya.png",
         name: "Illya Ovcharenko",
         role: "Head of BD",
+        social: "https://www.linkedin.com/company/brushfam"
+    },
+    {
+        src: "/team/Ira.png",
+        name: "Iryna Ruzhylova",
+        role: "Executive assistant",
         social: "https://www.linkedin.com/company/brushfam"
     },
 ]
