@@ -131,7 +131,7 @@ export const MobileNavbar = () => {
             {ProductsIsOpened ? (
               <ul>
                 <li>
-                  <Link href={"https://openbrush.io/"} className={styles.link}>
+                  <Link href={"https://openbrush.brushfam.io/"} className={styles.link}>
                     <img src="/nav-icons/nav-openbrush.svg" />
                     <p>OpenBrush</p>
                   </Link>
