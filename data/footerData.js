@@ -1,7 +1,7 @@
 export const productsData = [
     {
         label: "OpenBrush",
-        link: "https://openbrush.io/"
+        link: "https://openbrush.brushfam.io/"
     },
     {
         label: "Sol2ink",

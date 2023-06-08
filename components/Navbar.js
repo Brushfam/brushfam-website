@@ -32,7 +32,7 @@ const Navbar = () => {
                     className={navStyles.dropdownContent}
                     style={{ width: 400 }}
                   >
-                    <Link href={"https://openbrush.io/"}>
+                    <Link href={"https://openbrush.brushfam.io/"}>
                       <div className={navStyles.dropDownItem}>
                         <div className={navStyles.borderBlock2}></div>
 

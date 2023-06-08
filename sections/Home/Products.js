@@ -99,7 +99,7 @@ export default function Products() {
               <img src={"logos/openbrush-logo.svg"} style={{width: 150}}/>
               <div className={styles.productButtonPart}>
                 <Link
-                  href={"https://openbrush.io/"}
+                  href={"https://openbrush.brushfam.io/"}
                   style={{ marginRight: 10 }}
                   target="_blank"
                 >
