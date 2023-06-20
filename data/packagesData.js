@@ -1,12 +1,12 @@
 export const desktopPackagesData = [
   {
-    cell1: "Daily total involvement of 1 person",
+    cell1: "Daily total involvement",
     cell2: "1 hour",
     cell3: "2 hours",
     cell4: "Unlimited",
     cell5: "Unlimited",
     tooltip:
-      "One technical expert from our team will work with your team on daily basis to ensure the correct implementation of all the advice.",
+      "Our team will work with your team on daily basis to ensure the correct implementation of all the advice.",
   },
   {
     cell1: "Daily Tech guidance",
@@ -57,7 +57,7 @@ export const desktopPackagesData = [
 
 export const firstPackageData = [
   {
-    cell1: "Daily total involvement of 1 person",
+    cell1: "Daily total involvement",
     cell2: "1 hour"
   },
   {
@@ -84,7 +84,7 @@ export const firstPackageData = [
 
 export const secondPackageData = [
   {
-    cell1: "Daily total involvement of 1 person",
+    cell1: "Daily total involvement",
     cell2: "2 hours"
   },
   {
@@ -111,7 +111,7 @@ export const secondPackageData = [
 
 export const unlimitedPackageData = [
   {
-    cell1: "Daily total involvement of 1 person",
+    cell1: "Daily total involvement",
     cell2: "Unlimited"
   },
   {
@@ -138,7 +138,7 @@ export const unlimitedPackageData = [
 
 export const unlimitedPlusPackageData = [
   {
-    cell1: "Daily total involvement of 1 person",
+    cell1: "Daily total involvement",
     cell2: "Unlimited"
   },
   {
