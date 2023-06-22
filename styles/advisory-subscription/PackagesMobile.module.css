@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: flex-start;
     width: 380px;
-    height: 311px;
+    height: auto;
     padding: 24px 16px 0 16px;
     margin-top: 24px;
     background: linear-gradient(110.11deg, rgba(144, 151, 170, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);

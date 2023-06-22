@@ -3,8 +3,7 @@
     padding-top: 16px;
     padding-right: 16px;
     margin-top: 64px;
-    /*width: 1200px;*/
-    height: 479px;
+    height: auto;
     background: linear-gradient(110.11deg, rgba(144, 151, 170, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 6px;

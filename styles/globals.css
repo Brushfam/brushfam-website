@@ -40,14 +40,10 @@ button {
   color: #FFFFFF;
 }
 
-li {
-  /*margin-right: 40px;*/
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
-
-/*@media (min-width: 1160px) {*/
-/*  body {*/
-/*    overflow-y: visible !important;*/
-/*    !*overflow-x: hidden;*!*/
-/*    position: static !important;*/
-/*  }*/
-/*}*/
