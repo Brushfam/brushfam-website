@@ -45,6 +45,15 @@ export const desktopPackagesData = [
       "We will help you on brainstorming and choose the best architecture decision personalized for your product and its goals.",
   },
   {
+    cell1: "Technical interviews",
+    cell2: "+",
+    cell3: "+",
+    cell4: "+",
+    cell5: "+",
+    tooltip:
+        "By leveraging our extensive industry knowledge and technical expertise, we help you identify and assess top-notch developers who possess the skills and experience necessary to drive your business forward.",
+  },
+  {
     cell1: "Operational involvement",
     cell2: "-",
     cell3: "Up to 1 hour",
@@ -77,6 +86,10 @@ export const firstPackageData = [
     cell2: "+",
   },
   {
+    cell1: "Technical interviews",
+    cell2: "+",
+  },
+  {
     cell1: "Operational involvement",
     cell2: "-",
   }
@@ -101,6 +114,10 @@ export const secondPackageData = [
   },
   {
     cell1: "Architecture decisions",
+    cell2: "+",
+  },
+  {
+    cell1: "Technical interviews",
     cell2: "+",
   },
   {
@@ -131,6 +148,10 @@ export const unlimitedPackageData = [
     cell2: "+",
   },
   {
+    cell1: "Technical interviews",
+    cell2: "+",
+  },
+  {
     cell1: "Operational involvement",
     cell2: "Up to 2 hour",
   }
@@ -155,6 +176,10 @@ export const unlimitedPlusPackageData = [
   },
   {
     cell1: "Architecture decisions",
+    cell2: "+",
+  },
+  {
+    cell1: "Technical interviews",
     cell2: "+",
   },
   {
