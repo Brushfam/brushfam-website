@@ -38,7 +38,7 @@ export const learnData = [
         link: "https://matrix.to/#/!utTuYglskDvqRRMQta:matrix.org?via=matrix.org&via=t2bot.io&via=web3.foundation"
     },
     {
-        label: "Community Medium",
-        link: "https://medium.com/727-ventures"
+        label: "Docs",
+        link: "https://learn.brushfam.io/"
     },
 ]
