@@ -13,12 +13,6 @@
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.socialDiv a {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .footerSocial {
   display: flex;
   flex-direction: column;
@@ -27,19 +21,28 @@
   float: left;
 }
 
+.socialDiv a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .socialDiv {
   display: flex;
   flex-direction: row;
   align-items: center;
-  align-content: center;
-  justify-content: center;
-  justify-items: center;
   margin-top: 38px;
   column-gap: 30px;
 }
 
 .socialDivMobile {
   display: none;
+}
+
+.socialDivMobile a, .socialDiv a {
+  display: flex;
+  justify-content: center;
 }
 
 .footerLastText {
@@ -127,7 +130,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    column-gap: 64px;
   }
 
   .footerDiv {

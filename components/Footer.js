@@ -30,8 +30,11 @@ const Footer = () => {
             <a href={"mailto:info@brushfam.io"}>
               <img src={"icons/mail.svg"} />
             </a>
+            <a href={"https://www.youtube.com/@brushfam_io"}>
+              <img src={"icons/youtube.svg"} style={{width: 18}}/>
+            </a>
           </div>
-          <div className={styles.socialDivMobile} style={{marginBottom: 37}}>
+          <div className={styles.socialDivMobile} style={{marginBottom: 37, columnGap: 40}}>
             <a href={"https://discord.gg/9FRETSPmp9"}>
               <img src={"icons/discord-mobile.svg"} />
             </a>
@@ -42,19 +45,24 @@ const Footer = () => {
               <img src={"icons/mail-mobile.svg"} />
             </a>
           </div>
-          <div className={styles.socialDivMobile}>
+          <div className={styles.socialDivMobile} style={{marginBottom: 37, columnGap: 50}}>
             <a href={"https://medium.com/727-ventures"}>
               <img src={"icons/medium-mobile.svg"} />
             </a>
             <a href={"https://t.me/openbrush"}>
               <img src={"icons/telegram-mobile.svg"} />
             </a>
+          </div>
+          <div className={styles.socialDivMobile} style={{columnGap: 50}}>
             <a
                 href={
                   "https://matrix.to/#/!utTuYglskDvqRRMQta:matrix.org?via=matrix.org&via=t2bot.io&via=web3.foundation"
                 }
             >
               <img src={"icons/element-mobile.svg"} />
+            </a>
+            <a href={"https://www.youtube.com/@brushfam_io"}>
+              <img src={"icons/youtube.svg"}/>
             </a>
           </div>
         </div>
@@ -92,11 +100,6 @@ const Footer = () => {
                   </p>;
                 })}
           </div>
-          {/*<div className={styles.itemsColumn}>*/}
-          {/*  <p className={styles.itemsTitle}>Company</p>*/}
-          {/*  <p className={styles.item}>About us</p>*/}
-          {/*  <p className={styles.item}>Hiring</p>*/}
-          {/*</div>*/}
           <div className={styles.itemsColumnLast}>
             <p className={styles.itemsTitle}>Contact us</p>
             <p className={styles.item}>info@brushfam</p>
