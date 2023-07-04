@@ -12,23 +12,27 @@ const Footer = () => {
             src={"logos/brushfam-logo.svg"}
           />
           <div className={styles.socialDiv}>
-            <a href={"https://instagram.com/727_ventures?igshid=ZmVmZTY5ZGE="}>
-              <img src={"icons/inst.svg"} />
+            <a
+                href={
+                  "https://matrix.to/#/!utTuYglskDvqRRMQta:matrix.org?via=matrix.org&via=t2bot.io&via=web3.foundation"
+                }
+            >
+              <img src={"icons/element.svg"} style={{width: 16}}/>
             </a>
             <a href={"https://twitter.com/Brushfam_io"}>
-              <img src={"icons/twitter.svg"} />
+              <img src={"icons/twitter.svg"} style={{width: 16}}/>
             </a>
             <a href={"https://t.me/openbrush"}>
-              <img src={"icons/telegram.svg"} />
+              <img src={"icons/telegram.svg"} style={{width: 17}}/>
             </a>
             <a href={"https://discord.gg/9FRETSPmp9"}>
-              <img src={"icons/discord.svg"} />
+              <img src={"icons/discord.svg"} style={{width: 16}}/>
             </a>
             <a href={"https://medium.com/brushfam"}>
-              <img src={"icons/medium.svg"} />
+              <img src={"icons/medium.svg"} style={{width: 17}}/>
             </a>
             <a href={"mailto:info@brushfam.io"}>
-              <img src={"icons/mail.svg"} />
+              <img src={"icons/mail.svg"} style={{width: 18}}/>
             </a>
             <a href={"https://www.youtube.com/@brushfam_io"}>
               <img src={"icons/youtube.svg"} style={{width: 18}}/>
@@ -36,21 +40,21 @@ const Footer = () => {
           </div>
           <div className={styles.socialDivMobile} style={{marginBottom: 37, columnGap: 40}}>
             <a href={"https://discord.gg/9FRETSPmp9"}>
-              <img src={"icons/discord-mobile.svg"} />
+              <img src={"icons/discord.svg"} />
             </a>
             <a href={"https://twitter.com/Brushfam_io"}>
-              <img src={"icons/twitter-mobile.svg"} />
+              <img src={"icons/twitter.svg"} />
             </a>
             <a href={"mailto:info@brushfam.io"}>
-              <img src={"icons/mail-mobile.svg"} />
+              <img src={"icons/mail.svg"} />
             </a>
           </div>
           <div className={styles.socialDivMobile} style={{marginBottom: 37, columnGap: 50}}>
             <a href={"https://medium.com/727-ventures"}>
-              <img src={"icons/medium-mobile.svg"} />
+              <img src={"icons/medium.svg"} />
             </a>
             <a href={"https://t.me/openbrush"}>
-              <img src={"icons/telegram-mobile.svg"} />
+              <img src={"icons/telegram.svg"} />
             </a>
           </div>
           <div className={styles.socialDivMobile} style={{columnGap: 50}}>
@@ -59,10 +63,10 @@ const Footer = () => {
                   "https://matrix.to/#/!utTuYglskDvqRRMQta:matrix.org?via=matrix.org&via=t2bot.io&via=web3.foundation"
                 }
             >
-              <img src={"icons/element-mobile.svg"} />
+              <img src={"icons/element.svg"} />
             </a>
             <a href={"https://www.youtube.com/@brushfam_io"}>
-              <img src={"icons/youtube.svg"}/>
+              <img src={"icons/youtube.svg"} style={{width: 48}}/>
             </a>
           </div>
         </div>
