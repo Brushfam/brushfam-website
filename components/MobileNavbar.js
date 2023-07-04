@@ -260,16 +260,16 @@ export const MobileNavbar = () => {
 
           <div className={styles.social}>
             <Link href={"https://t.me/openbrush"} style={{marginRight: 38}}>
-              <img src={"/icons/telegram-mobile.svg"}/>
+              <img src={"/icons/telegram.svg"} style={{width: 22}}/>
             </Link>
             <Link href={"https://instagram.com/727_ventures?igshid=ZmVmZTY5ZGE="} style={{marginRight: 38}}>
               <img src={"/icons/inst-mobile.svg"}/>
             </Link>
             <Link href={"https://twitter.com/Brushfam_io"} style={{marginRight: 38}}>
-              <img src={"/icons/twitter-mobile.svg"}/>
+              <img src={"/icons/twitter.svg"} style={{width: 21}}/>
             </Link>
             <Link href={"mailto:info@brushfam.io"} >
-              <img src={"/icons/mail-mobile.svg"}/>
+              <img src={"/icons/mail.svg"} style={{width: 24}}/>
             </Link>
           </div>
         </div>
