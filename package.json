@@ -29,5 +29,8 @@
   },
   "devDependencies": {
     "prettier": "2.8.3"
+  },
+  "prettier": {
+    "tabWidth": 4
   }
 }
