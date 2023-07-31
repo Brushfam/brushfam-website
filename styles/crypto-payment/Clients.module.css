@@ -1,0 +1,107 @@
+.titleText {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 44px;
+    line-height: 100%;
+}
+
+.descriptionText {
+    margin-top: 16px;
+    line-height: 100%;
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 44px;
+    font-size: 14px;
+}
+
+.firstClients, .lastClients {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.twoClients {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.clientsBlock, .clientsBlockMarket {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    column-gap: 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: linear-gradient(135deg, rgba(144, 151, 170, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
+    color: #FFFFFF;
+
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+    line-height: 100%;
+}
+
+@media (max-width: 1060px) {
+    .firstClients, .lastClients {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .lastClients {
+        width: 431px;
+    }
+
+    .clientsBlockMarket {
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .descriptionText {
+        max-width: 88.8%;
+    }
+}
+
+@media (max-width: 500px) {
+    .titleText {
+        width: 88.8%;
+    }
+
+    .descriptionText {
+        max-width: 88.8%;
+        margin-bottom: 44px;
+    }
+
+    .titleText, .descriptionText {
+        text-align: left;
+    }
+
+    .clientsBlock, .clientsBlockMarket {
+        padding: 15px;
+        font-weight: 500;
+        font-size: 12px;
+        column-gap: 8px;
+    }
+
+    .lastClients {
+        width: auto;
+        justify-content: normal;
+        row-gap: 16px;
+    }
+
+    .firstClients, .lastClients {
+        width: 88.8%;
+        align-items: flex-start;
+    }
+
+    .twoClients {
+        column-gap: 16px;
+    }
+}

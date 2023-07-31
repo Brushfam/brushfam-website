@@ -5,26 +5,14 @@ import { useState } from "react";
 export const MobileNavbar = () => {
   const [isOpened, setIsOpened] = useState(false);
 
-  function toggleBody() {
-    // if (isOpened) {
-    //   document.body.style.overflowY = "visible";
-    //   document.body.style.position = "static";
-    // } else {
-    //   document.body.style.overflowY = "hidden";
-    //   document.body.style.position = "fixed";
-    // }
-  }
-
   function toggle() {
     setIsOpened(!isOpened);
 
     const icon = document.getElementById("navbar-bottom");
     if (isOpened) {
       icon.style.visibility = "visible";
-      toggleBody()
     } else {
       icon.style.visibility = "hidden";
-      toggleBody()
     }
   }
 
@@ -173,19 +161,19 @@ export const MobileNavbar = () => {
             {ServicesIsOpened ? (
               <ul>
                 <li>
-                  <Link href={"/advisory-subscription"} className={styles.link} onClick={toggleBody}>
+                  <Link href={"/advisory-subscription"} className={styles.link}>
                     <img src="/nav-icons/nav-advisory.svg" style={{width: 15}}/>
                     <p>Advisory subscription</p>
                   </Link>
                 </li>
                 <li>
-                  <Link href={"security-audits"} className={styles.link} onClick={toggleBody}>
+                  <Link href={"security-audits"} className={styles.link}>
                     <img src="/nav-icons/nav-audit.svg" style={{width: 15}}/>
                     <p>Security audits</p>
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/onboard-to-web3"} className={styles.link} onClick={toggleBody} style={{marginBottom: 0}}>
+                  <Link href={"/onboard-to-web3"} className={styles.link} style={{marginBottom: 0}}>
                     <img src="/nav-icons/nav-web3.svg" style={{width: 18, marginRight: 7}}/>
                     <p>Web3 onboard</p>
                   </Link>
@@ -207,7 +195,6 @@ export const MobileNavbar = () => {
                   <Link
                     href={"https://discord.gg/9FRETSPmp9"}
                     className={styles.link}
-                    onClick={toggleBody}
                   >
                     <img src="/nav-icons/nav-discord.svg" />
                     <p>Community Discord</p>
@@ -219,7 +206,6 @@ export const MobileNavbar = () => {
                     target="_blank"
                     className={styles.link}
                     style={{marginBottom: 0}}
-                    onClick={toggleBody}
                   >
                     <img src="/nav-icons/nav-docs.svg" style={{paddingLeft: 5, paddingRight: 4}}/>
                     <p>Docs</p>
@@ -243,12 +229,12 @@ export const MobileNavbar = () => {
             {CompanyIsOpened ? (
               <ul>
                 <li>
-                  <Link href={"/about-us"} className={styles.link} onClick={toggleBody}>
+                  <Link href={"/about-us"} className={styles.link}>
                     <p>About us</p>
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/hiring"} className={styles.link} onClick={toggleBody} style={{marginBottom: 0}}>
+                  <Link href={"/hiring"} className={styles.link} style={{marginBottom: 0}}>
                     <p>Hiring</p>
                   </Link>
                 </li>
