@@ -14,10 +14,13 @@ export function Consultation() {
                         Отримати безкоштовну консультацію
                     </p>
                     <p style={{ fontSize: 14 }}>
-                        Lorem ipsum dolor sit amet consectetur. Neque felis nunc
-                        condimentum egestas augue risus adipiscing amet vitae.
-                        Faucibus amet tortor magna aliquet nibh. Vivamus
-                        volutpat feugiat volutpat eget amet.
+                        Технології Web3 — майбутнє, яке вже настає. Наша команда
+                        із задоволенням інвестує свій час і досвід, щоб
+                        допомогти вам знайті рішення, які вже зараз надаватимуть
+                        вашій компанії переваги перед конкурентами. Ви можете
+                        звертатися до нас з будь-якими запитами — і наша команда
+                        надасть висновок про те, який вплив може мати Web3 на
+                        ваші бізнесові результати.
                     </p>
                 </div>
                 <div className={styles.contactsBlock}>
