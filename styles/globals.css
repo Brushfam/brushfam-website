@@ -40,6 +40,11 @@ button {
   color: #FFFFFF;
 }
 
+button:hover {
+  cursor: pointer;
+  filter: brightness(140%);
+}
+
 img {
   -webkit-user-drag: none;
   user-select: none;
