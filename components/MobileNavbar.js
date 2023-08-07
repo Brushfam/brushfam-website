@@ -173,13 +173,13 @@ export const MobileNavbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/onboard-to-web3"} className={styles.link} style={{marginBottom: 0}}>
+                  <Link href={"/onboard-to-web3"} className={styles.link}>
                     <img src="/nav-icons/nav-web3.svg" style={{width: 18, marginRight: 7}}/>
                     <p>Web3 onboard</p>
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/crypto-payment"} className={styles.link} onClick={toggleBody} style={{marginBottom: 0}}>
+                  <Link href={"/crypto-payment"} className={styles.link} style={{marginBottom: 0}}>
                     <img src="/nav-icons/nav-payment.svg" style={{width: 14}}/>
                     <p>Crypto Payment</p>
                   </Link>

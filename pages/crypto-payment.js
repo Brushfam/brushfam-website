@@ -10,7 +10,7 @@ import {AboutUs} from "@/sections/crypto-payment/AboutUs";
 import {Partners} from "@/sections/crypto-payment/Partners";
 import {Consultation} from "@/sections/crypto-payment/Consultation";
 
-export default function CryptoPaymentDraft() {
+export default function CryptoPayment() {
 
     return(
         <div className={styles.onboardProperty}>
