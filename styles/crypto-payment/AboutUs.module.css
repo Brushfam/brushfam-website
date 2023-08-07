@@ -1,0 +1,118 @@
+.sectionContent {
+    display: flex;
+    flex-direction: row;
+    column-gap: 64px;
+}
+
+.textBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.textBlock p {
+    max-width: 436px;
+    line-height: 150%;
+    font-size: 14px;
+}
+
+.titleText {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 44px;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.achievementColumn {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.twoAchievements {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.achievementColumn p {
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.a0Block, .obBlock, .webSummitBlock, .integrationBlock {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px;
+
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: linear-gradient(135deg, rgba(144, 151, 170, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
+}
+
+.a0Block {
+    max-width: 234px;
+}
+
+.obBlock {
+    max-width: 250px;
+}
+
+.webSummitBlock {
+    max-width: 274px;
+}
+
+.integrationBlock {
+    max-width: 210px;
+}
+
+.iconBorder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    padding: 10px;
+}
+
+@media (max-width: 1100px) {
+    .sectionContent {
+        flex-direction: column;
+        row-gap: 64px;
+    }
+
+    .textBlock p {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 560px) {
+    .sectionContent {
+        align-items: center;
+        width: 88.8%;
+    }
+
+    .textBlock p, .titleText {
+        width: 100%;
+    }
+
+    .titleText {
+        font-size: 40px;
+    }
+
+    .achievementColumn, .twoAchievements {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        row-gap: 20px;
+    }
+
+    .a0Block, .obBlock, .webSummitBlock, .integrationBlock {
+        max-width: 100%;
+    }
+}

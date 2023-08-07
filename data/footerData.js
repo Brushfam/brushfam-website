@@ -15,16 +15,20 @@ export const productsData = [
 
 export const servicesData = [
     {
-        label: "Web3 onboard",
-        link: "/onboard-to-web3"
-    },
-    {
         label: "Advisory subscription",
         link: "/advisory-subscription"
     },
     {
         label: "Security audits",
         link: "/security-audits"
+    },
+    {
+        label: "Web3 onboard",
+        link: "/onboard-to-web3"
+    },
+    {
+        label: "Crypto payment",
+        link: "/crypto-payment"
     },
 ]
 

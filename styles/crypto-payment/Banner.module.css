@@ -1,0 +1,137 @@
+.sectionBlock {
+    padding-top: 160px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gilroy', sans-serif;
+}
+
+.sectionBlock p {
+    font-family: 'Gilroy', sans-serif;
+}
+
+.sectionBlock button {
+    border-radius: 30px;
+    background: #0C42CD;
+    box-shadow: 0 5px 40px 0 rgba(30, 68, 248, 0.40);
+    border: 0;
+    padding: 12px 40px;
+
+    color: #FFF;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    line-height: 150%;
+
+    font-size: 16px;
+}
+
+.TextBlock {
+    max-width: 566px;
+    margin-right: 48px;
+}
+
+.titleText {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.descriptionText {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 100%;
+    margin-bottom: 60px;
+    color: #FFFFFF;
+}
+
+.bannerImage {
+
+}
+
+@media (max-width: 1260px) {
+    .TextBlock {
+        max-width: 500px;
+        margin-right: 40px;
+    }
+
+    .titleText {
+        font-size: 50px;
+    }
+
+    .descriptionText {
+        font-size: 26px;
+    }
+
+    .bannerImage {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .bannerImage {
+        display: none;
+    }
+
+    .TextBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 630px;
+        background-image: url("/crypto-payment/iphone-transparent.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        margin-right: 0;
+    }
+
+    .TextBlock p {
+        text-align: center;
+    }
+
+    .sectionBlock {
+        padding-top: 120px;
+    }
+
+    .sectionBlock button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 560px) {
+    .TextBlock {
+        height: 430px;
+        width: 88.8%;
+        justify-content: normal;
+    }
+
+    .titleText {
+        font-size: 40px;
+    }
+
+    .descriptionText {
+        font-size: 20px;
+    }
+
+    .sectionBlock {
+        padding-top: 220px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 360px) {
+    .titleText {
+        font-size: 32px;
+    }
+
+    .sectionBlock button {
+        font-size: 12px;
+    }
+}

@@ -93,7 +93,7 @@ const Navbar = () => {
                   <div className={navStyles.dropdownContentHeader}>
                     <div
                       className={navStyles.borderBlock3}
-                      style={{ height: 258 }}
+                      style={{ height: 320 }}
                     ></div>
                     <div className={navStyles.borderBlock1}></div>
                   </div>
@@ -131,12 +131,25 @@ const Navbar = () => {
 
                     <Link href={"/onboard-to-web3"}>
                       <div
-                        className={navStyles.dropDownLastItem}
+                        className={navStyles.dropDownItem}
                       >
                         <div className={navStyles.dropDownItemHeader}>
                           <img src="/nav-icons/nav-web3.svg" style={{width: 18, marginRight: 7}}/>
                           <p className={navStyles.dropdownTitle}>
                             Web3 onboard
+                          </p>
+                        </div>
+                      </div>
+                    </Link>
+
+                    <Link href={"/crypto-payment"}>
+                      <div
+                          className={navStyles.dropDownLastItem}
+                      >
+                        <div className={navStyles.dropDownItemHeader}>
+                          <img src="/nav-icons/nav-payment.svg" style={{width: 14}}/>
+                          <p className={navStyles.dropdownTitle}>
+                            Crypto payment
                           </p>
                         </div>
                       </div>
