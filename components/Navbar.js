@@ -149,7 +149,7 @@ const Navbar = () => {
                         <div className={navStyles.dropDownItemHeader}>
                           <img src="/nav-icons/nav-payment.svg" style={{width: 14}}/>
                           <p className={navStyles.dropdownTitle}>
-                            Crypto Payment
+                            Crypto payment
                           </p>
                         </div>
                       </div>

@@ -27,7 +27,7 @@ export const servicesData = [
         link: "/onboard-to-web3"
     },
     {
-        label: "Crypto Payment",
+        label: "Crypto payment",
         link: "/crypto-payment"
     },
 ]

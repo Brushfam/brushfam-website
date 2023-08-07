@@ -181,7 +181,7 @@ export const MobileNavbar = () => {
                 <li>
                   <Link href={"/crypto-payment"} className={styles.link} style={{marginBottom: 0}}>
                     <img src="/nav-icons/nav-payment.svg" style={{width: 14}}/>
-                    <p>Crypto Payment</p>
+                    <p>Crypto payment</p>
                   </Link>
                 </li>
               </ul>
