@@ -7,10 +7,12 @@ export function Partners() {
             <div className={styles.partnersBlock}>
                 <p className={styles.partnersTitle}>Наші партнери</p>
                 <div className={styles.partnersRow}>
-                    <div className={styles.partnersPart}>
-                        <a href={"https://alephzero.org/"} className={styles.mobile}>
-                            <img src={"crypto-payment/logos/aleph-zero.svg"} />
-                        </a>
+                    <div className={styles.mobile}>
+                        <div className={styles.partnersPart}>
+                            <a href={"https://alephzero.org/"}>
+                                <img src={"crypto-payment/logos/aleph-zero.svg"} />
+                            </a>
+                        </div>
                     </div>
                     <div className={styles.partnersPart}>
                         <a href={"https://astar.network/"}>
