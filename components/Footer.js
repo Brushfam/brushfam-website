@@ -106,7 +106,7 @@ const Footer = () => {
           </div>
           <div className={styles.itemsColumnLast}>
             <p className={styles.itemsTitle}>Contact us</p>
-            <p className={styles.item}>info@brushfam</p>
+            <p className={styles.item}>info@brushfam.io</p>
           </div>
         </div>
       </div>
