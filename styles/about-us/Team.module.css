@@ -45,24 +45,30 @@
     grid-column: span 4
 }
 
-@media (min-width: 1201px) {
-    /*.teamList li:nth-last-child(3){*/
-    /*    grid-row-start: 3;*/
-    /*    grid-column-start: 5;*/
-    /*    grid-column-end: 9;*/
-    /*}*/
+@media (min-width: 1261px) {
+    .teamList li:nth-last-child(4){
+        grid-row-start: 3;
+        grid-column-start: 3;
+        grid-column-end: 6;
+    }
 
-    /*.teamList li:nth-last-child(2){*/
-    /*    grid-row-start: 3;*/
-    /*    grid-column-start: 9;*/
-    /*    grid-column-end: 13;*/
-    /*}*/
+    .teamList li:nth-last-child(3){
+        grid-row-start: 3;
+        grid-column-start: 7;
+        grid-column-end: 10;
+    }
 
-    /*.teamList li:nth-last-child(1){*/
-    /*    grid-row-start: 4;*/
-    /*    grid-column-start: 1;*/
-    /*    grid-column-end: 5;*/
-    /*}*/
+    .teamList li:nth-last-child(2){
+        grid-row-start: 3;
+        grid-column-start: 11;
+        grid-column-end: 14;
+    }
+
+    .teamList li:nth-last-child(1){
+        grid-row-start: 3;
+        grid-column-start: 15;
+        grid-column-end: 18;
+    }
 }
 
 .teamList img {
@@ -99,27 +105,25 @@
     background-clip: text;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1560px) {
+    .teamList {
+        grid-column-gap: 30px;
+    }
+}
+
+@media (max-width: 1260px) {
     .teamList {
         grid-template-columns: repeat(12, 1fr);
     }
-
-    /*.teamList li:nth-last-child(1){*/
-    /*    grid-row-start: 5;*/
-    /*    grid-column-start: 5;*/
-    /*    grid-column-end: 9;*/
-    /*}*/
 }
 
 @media (max-width: 740px) {
     .teamList {
         max-width: 89%;
-        grid-column-gap: 16px;
-        grid-row-gap: 28px;
     }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 580px) {
     .teamItem {
         width: auto;
     }
