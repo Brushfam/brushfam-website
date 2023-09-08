@@ -24,12 +24,6 @@ export const teamData = [
         social: "https://www.linkedin.com/in/artem-fomiuk-31249b226/"
     },
     {
-        src: "/team/Bogdan.png",
-        name: "Bohdan Ohorodnii",
-        role: "Blockchain Developer",
-        social: "https://www.linkedin.com/in/bogdan-ogorodniy/"
-    },
-    {
         src: "/team/Nameless.png",
         name: "Oleksandr Tsaruk",
         role: "Blockchain Developer",
@@ -68,7 +62,7 @@ export const teamData = [
     {
         src: "/team/Alina.png",
         name: "Alina Antropova",
-        role: "Business Developer",
+        role: "Growth Manager",
         social: "https://www.linkedin.com/in/alina-antropova/"
     },
     {
@@ -80,7 +74,7 @@ export const teamData = [
     {
         src: "/team/Matviy.png",
         name: "Matviy Matsipura",
-        role: "Designer",
+        role: "UI/UX Designer",
         social: "https://twitter.com/matt_matsipura"
     },
     {
