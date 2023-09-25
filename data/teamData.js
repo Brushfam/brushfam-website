@@ -12,6 +12,12 @@ export const teamData = [
         social: "https://www.linkedin.com/in/dominik-krizo/"
     },
     {
+        src: "/team/Yurii.png",
+        name: "Yurii Yazupol",
+        role: "Product Lead",
+        social: "https://twitter.com/Brushfam_io"
+    },
+    {
         src: "/team/Green.png",
         name: "Anatolii Osetsymskyi",
         role: "Senior Engineer",
