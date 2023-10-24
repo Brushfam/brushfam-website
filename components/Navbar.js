@@ -20,22 +20,13 @@ const Navbar = () => {
             <div className={navStyles.menu}>
               <div className={navStyles.dropdown}>
                 <div className={navStyles.navTitle}>
-                  <p className={navStyles.navTitleText}>Products</p>
-                  <div className={navStyles.dropdownContentHeader}>
-                    <div
-                      className={navStyles.borderBlock3}
-                      style={{ height: 404 }}
-                    ></div>
-                    <div className={navStyles.borderBlock1}></div>
-                  </div>
+                  <p className={navStyles.navTitleText} style={{width: "100%", height: "100%"}}>Products</p>
                   <div
                     className={navStyles.dropdownContent}
                     style={{ width: 400 }}
                   >
                     <Link href={"https://openbrush.brushfam.io/"}>
                       <div className={navStyles.dropDownItem}>
-                        <div className={navStyles.borderBlock2}></div>
-
                         <div className={navStyles.dropDownItemHeader}>
                           <img src="/nav-icons/nav-openbrush.svg"/>
                           <p className={navStyles.dropdownTitle}>OpenBrush</p>
@@ -80,33 +71,20 @@ const Navbar = () => {
                       </div>
                     </Link>
                   </div>
-                  <div
-                    className={navStyles.helperBlock}
-                    style={{ width: 292 }}
-                  ></div>
                 </div>
               </div>
 
               <div className={navStyles.dropdown}>
                 <div className={navStyles.navTitle}>
                   <p className={navStyles.navTitleText}>Services & Solutions</p>
-                  <div className={navStyles.dropdownContentHeader}>
-                    <div
-                      className={navStyles.borderBlock3}
-                      style={{ height: 320 }}
-                    ></div>
-                    <div className={navStyles.borderBlock1}></div>
-                  </div>
                   <div
                     className={navStyles.dropdownContent}
                     style={{ width: 262 }}
                   >
-
                     <Link href={"/advisory-subscription"}>
                       <div
                           className={navStyles.dropDownItem}
                       >
-                        <div className={navStyles.borderBlock2}></div>
                         <div className={navStyles.dropDownItemHeader}>
                           <img src="/nav-icons/nav-advisory.svg" style={{width: 15}}/>
                           <p className={navStyles.dropdownTitle}>
@@ -156,30 +134,18 @@ const Navbar = () => {
                     </Link>
 
                   </div>
-                  <div
-                    className={navStyles.helperBlock}
-                    style={{ width: 74 }}
-                  ></div>
                 </div>
               </div>
 
               <div className={navStyles.dropdown}>
                 <div className={navStyles.navTitle}>
                   <p className={navStyles.navTitleText}>Learn</p>
-                  <div className={navStyles.dropdownContentHeader}>
-                    <div
-                      className={navStyles.borderBlock3}
-                      style={{ height: 195 }}
-                    ></div>
-                    <div className={navStyles.borderBlock1}></div>
-                  </div>
                   <div
                     className={navStyles.dropdownContent}
                     style={{ width: 253 }}
                   >
                     <Link href={"https://discord.gg/9FRETSPmp9"}>
                       <div className={navStyles.dropDownItem}>
-                        <div className={navStyles.borderBlock2}></div>
                         <div className={navStyles.dropDownItemHeader}>
                           <img src="/nav-icons/nav-discord.svg" />
                           <p className={navStyles.dropdownTitle}>
@@ -197,30 +163,18 @@ const Navbar = () => {
                       </div>
                     </Link>
                   </div>
-                  <div
-                    className={navStyles.helperBlock}
-                    style={{ width: 169 }}
-                  ></div>
                 </div>
               </div>
 
               <div className={navStyles.dropdown}>
                 <div className={navStyles.navTitle}>
                   <p className={navStyles.navTitleText}>Company</p>
-                  <div className={navStyles.dropdownContentHeader}>
-                    <div
-                      className={navStyles.borderBlock3}
-                      style={{ height: 288 }}
-                    ></div>
-                    <div className={navStyles.borderBlock1}></div>
-                  </div>
                   <div
                     className={navStyles.dropdownContent}
                     style={{ width: 367 }}
                   >
                     <Link href={"/about-us"}>
                       <div className={navStyles.dropDownItem}>
-                        <div className={navStyles.borderBlock2}></div>
                         <div className={navStyles.dropDownItemHeader}>
                           <p className={navStyles.dropdownTitle}>About us</p>
                         </div>
@@ -242,10 +196,6 @@ const Navbar = () => {
                     </div>
                     </Link>
                   </div>
-                  <div
-                    className={navStyles.helperBlock}
-                    style={{ width: 250 }}
-                  ></div>
                 </div>
               </div>
             </div>
