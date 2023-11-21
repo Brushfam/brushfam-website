@@ -1,57 +1,57 @@
 .mainProperty {
-    background-image: url("main-page-bg.jpg");
+    background-image: url("https://i.imgur.com/hwcLpqZ.jpg");
 }
 
 .aboutUsProperty {
-    background-image: url("about-us-bg.jpg");
+    background-image: url("https://i.imgur.com/rXhSTPl.jpg");
 }
 
 .advisoryProperty {
-    background-image: url("advisory-subscription-bg.jpg");
+    background-image: url("https://i.imgur.com/NkFQWOS.jpg");
 }
 
 .investmentProperty {
-    background-image: url("advisory-subscription-bg.jpg");
+    background-image: url("https://i.imgur.com/NkFQWOS.jpg");
 }
 
 .onboardProperty {
-    background-image: url("advisory-subscription-bg.jpg");
+    background-image: url("https://i.imgur.com/NkFQWOS.jpg");
 }
 
 .polkadotOnboardProperty {
-    background-image: url("advisory-subscription-bg.jpg");
+    background-image: url("https://i.imgur.com/NkFQWOS.jpg");
 }
 
 .securityProperty {
-    background-image: url("advisory-subscription-bg.jpg");
+    background-image: url("https://i.imgur.com/NkFQWOS.jpg");
 }
 
 @media (max-width: 460px) {
     .mainProperty {
-        background-image: url("main-mobile-bg.jpg");
+        background-image: url("https://i.imgur.com/8uCoG9j.jpg");
     }
 
     .aboutUsProperty {
-        background-image: url("about-us-mobile-bg.jpg");
+        background-image: url("https://i.imgur.com/JShUs6T.jpg");
     }
 
     .advisoryProperty {
-        background-image: url("advisory-mobile-bg.jpg");
+        background-image: url("https://i.imgur.com/9U73Kdu.jpg");
     }
 
     .investmentProperty {
-        background-image: url("advisory-mobile-bg.jpg");
+        background-image: url("https://i.imgur.com/9U73Kdu.jpg");
     }
 
     .onboardProperty {
-        background-image: url("web3-mobile-bg.jpg");
+        background-image: url("https://i.imgur.com/JZviiWG.jpg");
     }
 
     .polkadotOnboardProperty {
-        background-image: url("web3-mobile-bg.jpg");
+        background-image: url("https://i.imgur.com/JZviiWG.jpg");
     }
 
     .securityProperty {
-        background-image: url("security-mobile-bg.jpg");
+        background-image: url("https://i.imgur.com/0iFzhfh.jpg");
     }
 }
