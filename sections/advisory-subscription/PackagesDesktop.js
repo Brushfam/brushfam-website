@@ -75,7 +75,7 @@ export default function PackagesDesktop() {
                         followCursor
                       >
                         <img
-                          src={"/tip.svg"}
+                          src={"tip.svg"}
                           className={desktopStyles.tipImg}
                         />
                       </PackagesTooltip>

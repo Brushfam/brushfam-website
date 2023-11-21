@@ -4,31 +4,6 @@ import {useEffect, useState} from "react";
 import $ from "jquery";
 
 export default function Products() {
-  // let count = 1;
-  //
-  // const switchToolVideo = () => {
-  //   console.log("+")
-  //
-  //   if (typeof document !== 'undefined') {
-  //       const toolVideo = document.getElementById("tool-video")
-  //       const toolVideo2 = document.getElementById("tool-video2")
-  //
-  //       if (count %2 === 0) {
-  //         toolVideo2.currentTime = 0
-  //         toolVideo.style.zIndex = "1"
-  //         toolVideo2.style.zIndex = "0"
-  //         toolVideo.play()
-  //       }  else {
-  //         toolVideo.currentTime = 0
-  //         toolVideo2.style.zIndex = "1"
-  //         toolVideo.style.zIndex = "0"
-  //         toolVideo2.play()
-  //       }
-  //
-  //       count++
-  //   }
-  // }
-
   function useWindowWidth() {
     const [windowWidth, setWindowWidth] = useState({
       width: undefined

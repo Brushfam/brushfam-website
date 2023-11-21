@@ -28,7 +28,7 @@ const Navbar = () => {
                     <Link href={"https://openbrush.brushfam.io/"}>
                       <div className={navStyles.dropDownItem}>
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-openbrush.svg"/>
+                          <img src="nav-icons/nav-openbrush.svg"/>
                           <p className={navStyles.dropdownTitle}>OpenBrush</p>
                         </div>
                         <p className={navStyles.description}>
@@ -42,7 +42,7 @@ const Navbar = () => {
                     <Link href={"https://github.com/Brushfam/sol2ink"}>
                       <div className={navStyles.dropDownItem}>
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-sol2Ink.svg" />
+                          <img src="nav-icons/nav-sol2Ink.svg" />
                           <p className={navStyles.dropdownTitle}>Sol2ink</p>
                         </div>
                         <p className={navStyles.description}>
@@ -60,7 +60,7 @@ const Navbar = () => {
                     >
                       <div className={navStyles.dropDownLastItem}>
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-typechain.svg" />
+                          <img src="nav-icons/nav-typechain.svg" />
                           <p className={navStyles.dropdownTitle}>Typechain</p>
                         </div>
                         <p className={navStyles.description}>
@@ -86,7 +86,7 @@ const Navbar = () => {
                           className={navStyles.dropDownItem}
                       >
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-advisory.svg" style={{width: 15}}/>
+                          <img src="nav-icons/nav-advisory.svg" style={{width: 15}}/>
                           <p className={navStyles.dropdownTitle}>
                             Advisory subscription
                           </p>
@@ -99,7 +99,7 @@ const Navbar = () => {
                           className={navStyles.dropDownItem}
                       >
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-audit.svg" style={{width: 15}}/>
+                          <img src="nav-icons/nav-audit.svg" style={{width: 15}}/>
                           <p className={navStyles.dropdownTitle}>
                             Security audits
                           </p>
@@ -112,7 +112,7 @@ const Navbar = () => {
                         className={navStyles.dropDownItem}
                       >
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-web3.svg" style={{width: 18, marginRight: 7}}/>
+                          <img src="nav-icons/nav-web3.svg" style={{width: 18, marginRight: 7}}/>
                           <p className={navStyles.dropdownTitle}>
                             Web3 onboard
                           </p>
@@ -125,7 +125,7 @@ const Navbar = () => {
                           className={navStyles.dropDownLastItem}
                       >
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-payment.svg" style={{width: 14}}/>
+                          <img src="nav-icons/nav-payment.svg" style={{width: 14}}/>
                           <p className={navStyles.dropdownTitle}>
                             Crypto payment
                           </p>
@@ -147,7 +147,7 @@ const Navbar = () => {
                     <Link href={"https://discord.gg/9FRETSPmp9"}>
                       <div className={navStyles.dropDownItem}>
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-discord.svg" />
+                          <img src="nav-icons/nav-discord.svg" />
                           <p className={navStyles.dropdownTitle}>
                             Community Discord
                           </p>
@@ -157,7 +157,7 @@ const Navbar = () => {
                     <Link href={"https://learn.brushfam.io/"} target="_blank">
                       <div className={navStyles.dropDownLastItem}>
                         <div className={navStyles.dropDownItemHeader}>
-                          <img src="/nav-icons/nav-docs.svg" style={{paddingLeft: 4, paddingRight: 4}}/>
+                          <img src="nav-icons/nav-docs.svg" style={{paddingLeft: 4, paddingRight: 4}}/>
                           <p className={navStyles.dropdownTitle}>Docs</p>
                         </div>
                       </div>
