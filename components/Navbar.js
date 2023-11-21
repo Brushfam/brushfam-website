@@ -199,13 +199,9 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <button
-              type="button"
-              onClick={handleClick}
-              className={navStyles.button}
-            >
+            <a href={"mailto:info@brushfam.io"} className={navStyles.getInTouchButton}>
               Get in touch
-            </button>
+            </a>
           </div>
         </div>
     </div>

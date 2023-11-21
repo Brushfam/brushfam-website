@@ -33,7 +33,7 @@
 }
 
 .teamList {
-    margin-bottom: 240px;
+    margin-bottom: 120px;
     margin-left: 10px;
     display: grid;
     grid-column-gap: 60px;
@@ -164,6 +164,6 @@
     }
 
     .teamList {
-        margin-bottom: 120px;
+        margin-bottom: 80px;
     }
 }

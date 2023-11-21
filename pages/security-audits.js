@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer";
 import TitleSection from "@/sections/security-audits/TitleSection"
 import Audit from "@/sections/security-audits/Audit"
@@ -29,7 +28,6 @@ export default function SecurityAudits() {
             <Services></Services>
             <Process></Process>
             <OurReports></OurReports>
-            <Contact></Contact>
             <Footer></Footer>
         </div>
     )

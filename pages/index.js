@@ -5,7 +5,6 @@ import Products from "@/sections/Home/Products";
 import Services from "@/sections/Home/Services";
 import LetsBuild from "@/sections/Home/LetsBuild";
 import Footer from "@/components/Footer";
-import Contact from "@/components/Contact/Contact";
 import Navbar from "@/components/Navbar";
 import {MobileNavbar} from "@/components/MobileNavbar";
 import styles from "@/styles/bg-styles/bg.module.css"
@@ -33,8 +32,6 @@ export default function Home() {
             <Products></Products>
             <Services></Services>
             <LetsBuild></LetsBuild>
-            <Contact></Contact>
-            {/*<Blog></Blog>*/}
             <Footer></Footer>
         </div>
     </>
