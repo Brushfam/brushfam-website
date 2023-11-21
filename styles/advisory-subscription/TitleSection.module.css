@@ -33,6 +33,16 @@
 }
 
 .button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #FFFFFF;
+    font-size: 14px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     width: 259px;
     height: 45px;
 

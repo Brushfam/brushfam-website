@@ -4,19 +4,15 @@ import styles from "@/styles/advisory-subscription/Packages.module.css";
 import Link from "next/link";
 
 export default function Packages() {
-    const handleClick = () => {
-        document.getElementById('get-in-touch').scrollIntoView()
-    };
-
     return(
         <section className={styles.section}>
             <h1 className={styles.headerText}>
                 Advisory packages
             </h1>
             <div className={styles.buttonWrapper}>
-                <button type="button" onClick={handleClick} className={styles.firstButton}>
+                <Link className={styles.firstButton} href={"mailto:info@brushfam.io?subject=Advisory consultation"}>
                     Get started
-                </button>
+                </Link>
                 <Link href={"mailto:info@brushfam.io?subject=Advisory consultation"}>
                     <div className={styles.secondButton}>
                         Consultation

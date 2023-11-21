@@ -1,10 +1,7 @@
 import styles from "@/styles/advisory-subscription/TitleSection.module.css";
+import Link from "next/link";
 
 export default function TitleSection() {
-    const handleClick = () => {
-        document.getElementById('get-in-touch').scrollIntoView()
-    };
-
     return(
         <section className={styles.section}>
             <p className={styles.titleText}>Services & Solutions</p>
@@ -16,7 +13,9 @@ export default function TitleSection() {
                 constant mentorship, reviewing PRs, and helping hire new team
                 members you will avoid architecture mistakes, time lost and
                 sometimes fatal vulnerabilities. </p>
-            <button type="button" className={styles.button} onClick={handleClick}>Connect with our experts</button>
+            <Link className={styles.button} href={"mailto:info@brushfam.io?subject=Advisory consultation"}>
+                Connect with our experts
+            </Link>
         </section>
     )
 }
