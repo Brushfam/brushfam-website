@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 240px;
-    margin-bottom: 240px;
+    margin-bottom: 120px;
 }
 
 .headerText {
@@ -55,7 +55,7 @@
 @media (max-width: 460px) {
     .section {
         padding-top: 110px;
-        margin-bottom: 120px;
+        margin-bottom: 80px;
     }
     .headerText {
         margin-bottom: 24px;

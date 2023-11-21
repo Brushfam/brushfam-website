@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer";
 import Presentation from "@/sections/about-us/Presentation";
 import Team from "@/sections/about-us/Team";
@@ -23,7 +22,6 @@ export default function AboutUs() {
             <MobileNavbar></MobileNavbar>
             <Presentation></Presentation>
             <Team></Team>
-            <Contact></Contact>
             <Footer></Footer>
         </div>
     )
