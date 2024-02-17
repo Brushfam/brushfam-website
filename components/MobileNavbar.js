@@ -199,7 +199,7 @@ export const MobileNavbar = () => {
               <ul>
                 <li>
                   <Link
-                    href={"https://discord.gg/9FRETSPmp9"}
+                    href={"https://discord.gg/xkg8YQhSF6"}
                     className={styles.link}
                   >
                     <img src="nav-icons/nav-discord.svg" />
