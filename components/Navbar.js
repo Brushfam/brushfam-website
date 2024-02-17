@@ -144,7 +144,7 @@ const Navbar = () => {
                     className={navStyles.dropdownContent}
                     style={{ width: 253 }}
                   >
-                    <Link href={"https://discord.gg/9FRETSPmp9"}>
+                    <Link href={"https://discord.gg/xkg8YQhSF6"}>
                       <div className={navStyles.dropDownItem}>
                         <div className={navStyles.dropDownItemHeader}>
                           <img src="nav-icons/nav-discord.svg" />

@@ -35,7 +35,7 @@ export const servicesData = [
 export const learnData = [
     {
         label: "Community Discord",
-        link: "https://discord.gg/9FRETSPmp9"
+        link: "https://discord.gg/xkg8YQhSF6"
     },
     {
         label: "Community Element",

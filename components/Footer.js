@@ -25,7 +25,7 @@ const Footer = () => {
             <a href={"https://t.me/openbrush"}>
               <img src={"icons/telegram.svg"} style={{width: 17}}/>
             </a>
-            <a href={"https://discord.gg/9FRETSPmp9"}>
+            <a href={"https://discord.gg/xkg8YQhSF6"}>
               <img src={"icons/discord.svg"} style={{width: 16}}/>
             </a>
             <a href={"https://medium.com/brushfam"}>
@@ -39,7 +39,7 @@ const Footer = () => {
             </a>
           </div>
           <div className={styles.socialDivMobile} style={{marginBottom: 37, columnGap: 40}}>
-            <a href={"https://discord.gg/9FRETSPmp9"}>
+            <a href={"https://discord.gg/xkg8YQhSF6"}>
               <img src={"icons/discord.svg"} />
             </a>
             <a href={"https://twitter.com/Brushfam_io"}>
