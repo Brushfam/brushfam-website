@@ -1,6 +1,3 @@
-import nodemailer from "nodemailer";
-import { promises as fs } from 'fs';
-
 export default async function (req, res) {
     require("dotenv").config();
     let nodemailer = require("nodemailer");

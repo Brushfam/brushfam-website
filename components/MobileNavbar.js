@@ -87,10 +87,11 @@ export const MobileNavbar = () => {
     <div>
       <div className={styles.navbarMobile} id={"navbar-bottom"}>
         <Link href={"/"}>
-          <img src={"logos/brushfam-mobile-logo.svg"} />
+          <img src={"logos/brushfam-mobile-logo.svg"} alt={"brushfam mobile logo"} />
         </Link>
         <img
           src={"mobile-navbar-button.svg"}
+          alt={"mobile navbar button"}
           className={styles.navbarMenuButton}
           onClick={toggle}
         />
@@ -100,11 +101,12 @@ export const MobileNavbar = () => {
         <div className={styles.navbarContainer}>
           <img
             src={"exit-button.svg"}
+            alt={"exit button"}
             className={styles.exitButton}
             onClick={toggle}
           />
           <Link href={"/"} style={{ marginLeft: 16, marginBottom: 43 }}>
-            <img src={"logos/brushfam-logo.svg"} style={{ maxWidth: 230 }} />
+            <img src={"logos/brushfam-logo.svg"} alt={"brushfam logo"} style={{ maxWidth: 230 }} />
           </Link>
           <div className={styles.item}>
             <button
@@ -114,13 +116,13 @@ export const MobileNavbar = () => {
               onClick={setProducts}
             >
               Products
-              <img id={"arrow1"} src={"arrow.svg"} className={styles.arrow} />
+              <img id={"arrow1"} src={"arrow.svg"} alt={"arrow"} className={styles.arrow} />
             </button>
             {ProductsIsOpened ? (
               <ul>
                 <li>
                   <Link href={"https://openbrush.brushfam.io/"} className={styles.link}>
-                    <img src="nav-icons/nav-openbrush.svg" />
+                    <img src="nav-icons/nav-openbrush.svg" alt={"openbrush"} />
                     <p>OpenBrush</p>
                   </Link>
                 </li>
@@ -129,7 +131,7 @@ export const MobileNavbar = () => {
                     href={"https://github.com/727-Ventures/sol2ink"}
                     className={styles.link}
                   >
-                    <img src="nav-icons/nav-sol2Ink.svg" />
+                    <img src="nav-icons/nav-sol2Ink.svg" alt={"sol2Ink"} />
                     <p>Sol2ink</p>
                   </Link>
                 </li>
@@ -139,7 +141,7 @@ export const MobileNavbar = () => {
                     className={styles.link}
                     style={{marginBottom: 0}}
                   >
-                    <img src="nav-icons/nav-typechain.svg" />
+                    <img src="nav-icons/nav-typechain.svg" alt={"typechain"} />
                     <p>Typechain</p>
                   </Link>
                 </li>
@@ -156,31 +158,31 @@ export const MobileNavbar = () => {
               onClick={setServices}
             >
               Services & Solutions
-              <img id={"arrow2"} src={"arrow.svg"} className={styles.arrow} />
+              <img id={"arrow2"} src={"arrow.svg"} alt={"arrow"} className={styles.arrow} />
             </button>
             {ServicesIsOpened ? (
               <ul>
                 <li>
                   <Link href={"/advisory-subscription"} className={styles.link}>
-                    <img src="nav-icons/nav-advisory.svg" style={{width: 15}}/>
+                    <img src="nav-icons/nav-advisory.svg" alt={"advisory"} style={{width: 15}}/>
                     <p>Advisory subscription</p>
                   </Link>
                 </li>
                 <li>
                   <Link href={"security-audits"} className={styles.link}>
-                    <img src="nav-icons/nav-audit.svg" style={{width: 15}}/>
+                    <img src="nav-icons/nav-audit.svg" alt={"audit"} style={{width: 15}}/>
                     <p>Security audits</p>
                   </Link>
                 </li>
                 <li>
                   <Link href={"/onboard-to-web3"} className={styles.link}>
-                    <img src="nav-icons/nav-web3.svg" style={{width: 18, marginRight: 7}}/>
+                    <img src="nav-icons/nav-web3.svg" alt={"web3"} style={{width: 18, marginRight: 7}}/>
                     <p>Web3 onboard</p>
                   </Link>
                 </li>
                 <li>
                   <Link href={"/crypto-payment"} className={styles.link} style={{marginBottom: 0}}>
-                    <img src="nav-icons/nav-payment.svg" style={{width: 14}}/>
+                    <img src="nav-icons/nav-payment.svg" alt={"payment"} style={{width: 14}}/>
                     <p>Crypto payment</p>
                   </Link>
                 </li>
@@ -193,7 +195,7 @@ export const MobileNavbar = () => {
           <div className={styles.item}>
             <button type="button" className={styles.button} onClick={setLearn}>
               Learn
-              <img id={"arrow3"} src={"arrow.svg"} className={styles.arrow} />
+              <img id={"arrow3"} src={"arrow.svg"} alt={"arrow"} className={styles.arrow} />
             </button>
             {LearnIsOpened ? (
               <ul>
@@ -202,7 +204,7 @@ export const MobileNavbar = () => {
                     href={"https://discord.gg/xkg8YQhSF6"}
                     className={styles.link}
                   >
-                    <img src="nav-icons/nav-discord.svg" />
+                    <img src="nav-icons/nav-discord.svg" alt={"discord"} />
                     <p>Community Discord</p>
                   </Link>
                 </li>
@@ -213,7 +215,7 @@ export const MobileNavbar = () => {
                     className={styles.link}
                     style={{marginBottom: 0}}
                   >
-                    <img src="nav-icons/nav-docs.svg" style={{paddingLeft: 5, paddingRight: 4}}/>
+                    <img src="nav-icons/nav-docs.svg" alt={"docs"} style={{paddingLeft: 5, paddingRight: 4}}/>
                     <p>Docs</p>
                   </Link>
                 </li>
@@ -230,7 +232,7 @@ export const MobileNavbar = () => {
               onClick={setCompany}
             >
               Company
-              <img id={"arrow4"} src={"arrow.svg"} className={styles.arrow} />
+              <img id={"arrow4"} src={"arrow.svg"} alt={"arrow"} className={styles.arrow} />
             </button>
             {CompanyIsOpened ? (
               <ul>
@@ -252,16 +254,16 @@ export const MobileNavbar = () => {
 
           <div className={styles.social}>
             <Link href={"https://t.me/openbrush"} style={{marginRight: 38}}>
-              <img src={"icons/telegram.svg"} style={{width: 22}}/>
+              <img src={"icons/telegram.svg"} alt={"telegram"} style={{width: 22}}/>
             </Link>
             <Link href={"https://instagram.com/727_ventures?igshid=ZmVmZTY5ZGE="} style={{marginRight: 38}}>
-              <img src={"icons/inst-mobile.svg"}/>
+              <img src={"icons/inst-mobile.svg"} alt={"instagram"} />
             </Link>
             <Link href={"https://twitter.com/Brushfam_io"} style={{marginRight: 38}}>
-              <img src={"icons/twitter.svg"} style={{width: 21}}/>
+              <img src={"icons/twitter.svg"} alt={"twitter"} style={{width: 21}}/>
             </Link>
             <Link href={"mailto:info@brushfam.io"} >
-              <img src={"icons/mail.svg"} style={{width: 24}}/>
+              <img src={"icons/mail.svg"} alt={"mail"} style={{width: 24}}/>
             </Link>
           </div>
         </div>
