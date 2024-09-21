@@ -1,5 +1,5 @@
-import TitleSection from "sections/advisory-subscription/TitleSection"
-import Challenges from "sections/advisory-subscription/Challenges"
+import TitleSection from "@/sections/advisory-subscription/TitleSection"
+import Challenges from "@/sections/advisory-subscription/Challenges"
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Packages from "@/sections/advisory-subscription/Packages";
