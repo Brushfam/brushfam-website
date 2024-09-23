@@ -22,15 +22,24 @@ export default function Web3Projects() {
             })}
         </ul>
       </div>
-        <div className={styles.centeredDiv}>
-            <div className={styles.portfolio}>
-                <img alt={"brushfam mini logo"} src={"logos/brushfam-mini-logo.svg"} className={styles.brushfamMiniLogo}/>
-                <p style={{color: "#FFFFFF"}}>is a portfolio company of</p>
-                <Link href="https://727.ventures/">
-                    <img src={"logos/727-logo.svg"} alt={"727 logo"} style={{width: 113}} className={styles.venturesMiniLogo}/>
-                </Link>
-            </div>
+      <div className={styles.centeredDiv}>
+        <div className={styles.portfolio}>
+          <img
+            alt={"brushfam mini logo"}
+            src={"logos/brushfam-mini-logo.svg"}
+            className={styles.brushfamMiniLogo}
+          />
+          <p style={{ color: "#FFFFFF" }}>is a portfolio company of</p>
+          <Link href="https://727.ventures/">
+            <img
+              src={"logos/727-logo.svg"}
+              alt={"727 logo"}
+              style={{ width: 113 }}
+              className={styles.venturesMiniLogo}
+            />
+          </Link>
         </div>
+      </div>
     </section>
   );
 }

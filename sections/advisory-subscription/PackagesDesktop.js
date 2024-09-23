@@ -5,33 +5,30 @@ import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 import Fade from "@mui/material/Fade";
 
 export default function PackagesDesktop() {
+  const TitleRowDiv = ({ name, price }) => {
+    return (
+      <div className={desktopStyles.titleRowDiv}>
+        <p className={desktopStyles.titleName}>{name}</p>
+        <p className={desktopStyles.titlePrice}>{price}</p>
+      </div>
+    );
+  };
+
   const TitleRow = () => {
     return (
-      <tr className={desktopStyles.titleRow}>
+      <tr className={desktopStyles.titleRow} style={{}}>
         <th className={desktopStyles.cell1}></th>
         <th className={desktopStyles.cell2}>
-          <div className={desktopStyles.titleRowDiv}>
-            <p className={desktopStyles.titleName}>1h package</p>
-            <p className={desktopStyles.titlePrice}>5.000$</p>
-          </div>
+          <TitleRowDiv name={"1h package"} price={"5.000$"} />
         </th>
         <th className={desktopStyles.cell3}>
-          <div className={desktopStyles.titleRowDiv}>
-            <p className={desktopStyles.titleName}>2h package</p>
-            <p className={desktopStyles.titlePrice}>8.500$</p>
-          </div>
+          <TitleRowDiv name={"2h package"} price={"8.500$"} />
         </th>
         <th className={desktopStyles.cell4}>
-          <div className={desktopStyles.titleRowDiv}>
-            <p className={desktopStyles.titleName}>Unlimited package</p>
-            <p className={desktopStyles.titlePrice}>20.000$</p>
-          </div>
+          <TitleRowDiv name={"Unlimited package"} price={"20.000$"} />
         </th>
         <th className={desktopStyles.cell5}>
-          <div className={desktopStyles.titleRowDiv}>
-            <p className={desktopStyles.titleName}>Unlimited+ package</p>
-            <p className={desktopStyles.titlePrice}>Negotiated</p>
-          </div>
+          <TitleRowDiv name={"Unlimited+ package"} price={"Negotiated"} />
         </th>
       </tr>
     );
@@ -39,18 +36,18 @@ export default function PackagesDesktop() {
 
   const PackagesTooltip = styled(({ className, ...props }) => (
     <Tooltip {...props} classes={{ popper: className }} />
-  ))(({ }) => ({
+  ))(({}) => ({
     [`& .${tooltipClasses.tooltip}`]: {
       background:
         "linear-gradient(139.23deg, rgba(144, 151, 170, 0.15) 0.14%, rgba(0, 0, 0, 0.15) 47.32%), rgba(29, 34, 48, 0.5)",
       border: "1px solid rgba(255, 255, 255, 0.2)",
       backdropFilter: "blur(5px)",
       borderRadius: "6px",
-        maxWidth: "180px",
-        padding: "12px",
-        fontFamily: "'Poppins', sans-serif",
-        fontWeight: "400",
-        fontSize: "10px"
+      maxWidth: "180px",
+      padding: "12px",
+      fontFamily: "'Poppins', sans-serif",
+      fontWeight: "400",
+      fontSize: "10px",
     },
   }));
 
@@ -60,13 +57,10 @@ export default function PackagesDesktop() {
         <tbody>
           <TitleRow></TitleRow>
           {desktopPackagesData &&
-              desktopPackagesData.map((rowData, i) => {
+            desktopPackagesData.map((rowData, i) => {
               return (
                 <tr key={i.toString()} className={desktopStyles.row}>
-                  <th
-                    className={desktopStyles.cell1}
-                    style={{ borderTop: "1px solid rgba(255, 255, 255, 0.2)" }}
-                  >
+                  <th className={desktopStyles.cell1}>
                     <div className={desktopStyles.cell1Wrapper}>
                       <PackagesTooltip
                         title={rowData.tooltip}
@@ -74,37 +68,21 @@ export default function PackagesDesktop() {
                         TransitionProps={{ timeout: 600 }}
                         followCursor
                       >
-                        <img
-                          src={"tip.svg"}
-                          className={desktopStyles.tipImg}
-                        />
+                        <img src={"tip.svg"} className={desktopStyles.tipImg} />
                       </PackagesTooltip>
-
                       <p style={{ height: 13 }}>{rowData.cell1}</p>
                     </div>
                   </th>
-                  <th
-                    className={desktopStyles.cell2}
-                    style={{ borderTop: "1px solid rgba(255, 255, 255, 0.2)" }}
-                  >
+                  <th className={desktopStyles.cell2}>
                     <p className={desktopStyles.cellWrapper}>{rowData.cell2}</p>
                   </th>
-                  <th
-                    className={desktopStyles.cell3}
-                    style={{ borderTop: "1px solid rgba(255, 255, 255, 0.2)" }}
-                  >
+                  <th className={desktopStyles.cell3}>
                     <p className={desktopStyles.cellWrapper}>{rowData.cell3}</p>
                   </th>
-                  <th
-                    className={desktopStyles.cell4}
-                    style={{ borderTop: "1px solid rgba(255, 255, 255, 0.2)" }}
-                  >
+                  <th className={desktopStyles.cell4}>
                     <p className={desktopStyles.cellWrapper}>{rowData.cell4}</p>
                   </th>
-                  <th
-                    className={desktopStyles.cell5}
-                    style={{ borderTop: "1px solid rgba(255, 255, 255, 0.2)" }}
-                  >
+                  <th className={desktopStyles.cell5}>
                     <p className={desktopStyles.cellWrapper}>{rowData.cell5}</p>
                   </th>
                 </tr>

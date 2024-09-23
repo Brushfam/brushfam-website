@@ -51,7 +51,7 @@ export const desktopPackagesData = [
     cell4: "+",
     cell5: "+",
     tooltip:
-        "By leveraging our extensive industry knowledge and technical expertise, we help you identify and assess top-notch developers who possess the skills and experience necessary to drive your business forward.",
+      "By leveraging our extensive industry knowledge and technical expertise, we help you identify and assess top-notch developers who possess the skills and experience necessary to drive your business forward.",
   },
   {
     cell1: "Operational involvement",
@@ -67,7 +67,7 @@ export const desktopPackagesData = [
 export const firstPackageData = [
   {
     cell1: "Daily total involvement",
-    cell2: "1 hour"
+    cell2: "1 hour",
   },
   {
     cell1: "Daily Tech guidance",
@@ -92,13 +92,13 @@ export const firstPackageData = [
   {
     cell1: "Operational involvement",
     cell2: "-",
-  }
-]
+  },
+];
 
 export const secondPackageData = [
   {
     cell1: "Daily total involvement",
-    cell2: "2 hours"
+    cell2: "2 hours",
   },
   {
     cell1: "Daily Tech guidance",
@@ -123,13 +123,13 @@ export const secondPackageData = [
   {
     cell1: "Operational involvement",
     cell2: "Up to 1 hour",
-  }
-]
+  },
+];
 
 export const unlimitedPackageData = [
   {
     cell1: "Daily total involvement",
-    cell2: "Unlimited"
+    cell2: "Unlimited",
   },
   {
     cell1: "Daily Tech guidance",
@@ -154,13 +154,13 @@ export const unlimitedPackageData = [
   {
     cell1: "Operational involvement",
     cell2: "Up to 2 hour",
-  }
-]
+  },
+];
 
 export const unlimitedPlusPackageData = [
   {
     cell1: "Daily total involvement",
-    cell2: "Unlimited"
+    cell2: "Unlimited",
   },
   {
     cell1: "Daily Tech guidance",
@@ -185,5 +185,5 @@ export const unlimitedPlusPackageData = [
   {
     cell1: "Operational involvement",
     cell2: "Negotiated",
-  }
-]
+  },
+];
