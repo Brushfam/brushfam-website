@@ -45,7 +45,7 @@
   justify-content: center;
 }
 
-.footerLastText {
+.footerBottomText {
   display: flex;
   flex-direction: row;
   justify-content: right;
@@ -54,9 +54,6 @@
   width: 1200px;
   margin-top: 70px;
   margin-bottom: 32px;
-}
-
-.brushfamLogo {
 }
 
 .footerNavigation {
@@ -91,7 +88,7 @@
 
 @media (max-width: 1440px) {
   .footerDiv,
-  .footerLastText {
+  .footerBottomText {
     width: 84%;
   }
 }
@@ -182,7 +179,7 @@
     margin-bottom: 0;
   }
 
-  .footerLastText {
+  .footerBottomText {
     display: flex;
     flex-direction: column;
     align-items: center;

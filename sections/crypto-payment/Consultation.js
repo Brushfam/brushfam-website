@@ -3,7 +3,7 @@ import sectionStyles from "@/styles/crypto-payment/CryptoPayment.module.css";
 
 export function Consultation() {
     return (
-        <div
+        <section
             className={sectionStyles.sectionBlock}
             id={"get-in-touch"}
             style={{ paddingBottom: 0 }}
@@ -72,6 +72,6 @@ export function Consultation() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

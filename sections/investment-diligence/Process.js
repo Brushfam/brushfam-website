@@ -15,8 +15,8 @@ export default function Process() {
                     We will analyze startup’s documents, code, talk to engineers responsible gathering all needed information. All of this combined with the wide-range experience our team has, will give us enough data to come up with a conclusion on the technical possibility of the idea and our impression of the team’s ability to have it implemented.
                 </p>
             </div>
-            <img src={"/investment-process.svg"} className={styles.auditProcessImg}/>
-            <img src={"/investment-process-mobile.svg"} className={styles.auditProcessMobileImg}/>
+            <img src={"/investment-process.svg"} alt={"investment process"} className={styles.auditProcessImg}/>
+            <img src={"/investment-process-mobile.svg"} alt={"investment process"} className={styles.auditProcessMobileImg}/>
         </section>
     )
 }

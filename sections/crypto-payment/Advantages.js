@@ -3,7 +3,7 @@ import sectionStyles from '@/styles/crypto-payment/CryptoPayment.module.css'
 
 export function Advantages() {
     return (
-        <div className={sectionStyles.sectionBlock}>
+        <section className={sectionStyles.sectionBlock}>
             <p className={styles.titleText}>Переваги</p>
             <div className={styles.advantagesRow}>
                 <div className={styles.twoBlocks}>
@@ -63,6 +63,6 @@ export function Advantages() {
                 </div>
             </div>
             <button type={"button"} onClick={() => {window.open('https://t.me/zxc322', '_blank')}}>Порадитися з експертом про переваги</button>
-        </div>
+        </section>
     )
 }

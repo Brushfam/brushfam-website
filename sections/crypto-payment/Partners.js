@@ -3,7 +3,7 @@ import sectionStyles from '@/styles/crypto-payment/CryptoPayment.module.css'
 
 export function Partners() {
     return (
-        <div className={sectionStyles.sectionBlock}>
+        <section className={sectionStyles.sectionBlock}>
             <div className={styles.partnersBlock}>
                 <p className={styles.partnersTitle}>Наші партнери</p>
                 <div className={styles.partnersRow}>
@@ -48,6 +48,6 @@ export function Partners() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

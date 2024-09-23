@@ -3,7 +3,7 @@ import sectionStyles from "@/styles/crypto-payment/CryptoPayment.module.css";
 
 export function Clients() {
     return (
-        <div className={sectionStyles.sectionBlock}>
+        <section className={sectionStyles.sectionBlock}>
             <p className={styles.titleText}>Для кого?</p>
             <p className={styles.descriptionText}>
                 Для всіх бізнесів, які бажають розширити можливості своїх
@@ -50,6 +50,6 @@ export function Clients() {
                     Продаж нерухомості
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

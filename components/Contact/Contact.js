@@ -1,9 +1,8 @@
 import styles from "@/styles/Contact/Contact.module.css";
 import { useState } from "react";
-import {SocialButtons, SocialButtonsMobile} from "@/components/Contact/SocialMedia";
+import { SocialButtons, SocialButtonsMobile } from "@/components/Contact/SocialMedia";
 
-const isEmail = (email) =>
-    /^[A-Z0-9.!#$%&'*+\-/=?^_`{|}~]+@[A-Z0-9.-]+\.[A-Z0-9]+$/i.test(email);
+const isEmail = (email) => /^[A-Z0-9.!#$%&'*+\-/=?^_`{|}~]+@[A-Z0-9.-]+\.[A-Z0-9]+$/i.test(email);
 
 export default function Contact() {
   const [email, setEmail] = useState("");
@@ -48,88 +47,88 @@ export default function Contact() {
           setMessage("");
         }
       });
-    }
+    };
 
     const DefaultSubmitButton = () => {
       return (
-          <button
-              type="submit"
-              onClick={(e) => {
-                handleSubmit(e);
-              }}
-              className={styles.button}
-          >
-            Apply
-          </button>
+        <button
+          type="submit"
+          onClick={(e) => {
+            handleSubmit(e);
+          }}
+          className={styles.button}
+        >
+          Apply
+        </button>
       );
     };
 
-    // TODO: refactoring
-    return sent ? (submitted ? (
+    const SentText = () => {
+      return submitted ? (
         <p className={styles.submittedText}>Submitted!</p>
-    ) : (
-          <p className={styles.submittedText}>Submitting...</p>
-    )) :
-        (
-            <DefaultSubmitButton />
-        )
-  }
+      ) : (
+        <p className={styles.submittedText}>Submitting...</p>
+      );
+    };
+
+    return sent ? <SentText /> : <DefaultSubmitButton />;
+  };
 
   return (
     <section className={styles.section} id={"get-in-touch"}>
       <div className={styles.contactDiv}>
         <div className={styles.topDiv}>
           <p className={styles.headerText}>Get in touch</p>
-          <p className={styles.descriptionText}>
-            Work with tech experts to win the battle
-          </p>
-          <SocialButtons></SocialButtons>
+          <p className={styles.descriptionText}>Work with tech experts to win the battle</p>
+          <SocialButtons/>
         </div>
         <form method="post" id={"form"} className={styles.formDiv}>
-          <label htmlFor={"email"} className={styles.label} style={clicked && !submitted && !(email && isEmail(email)) ? { color: "#CD0C0C" } : {}}>
+          <label
+            htmlFor={"email"}
+            className={styles.label}
+            style={clicked && !submitted && !(email && isEmail(email)) ? { color: "#CD0C0C" } : {}}
+          >
             Email
           </label>
           <input
-              type={"text"}
-              name={"email"}
-              placeholder={"johnsmith@gmail.com"}
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
-              autoComplete="off"
-              autoCorrect={"off"}
-              spellCheck={"false"}
-              className={
-                clicked && !submitted && !email && !isEmail(email)
-                    ? styles.inputError
-                    : styles.input
-              }
+            type={"text"}
+            name={"email"}
+            placeholder={"johnsmith@gmail.com"}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+            autoComplete="off"
+            autoCorrect={"off"}
+            spellCheck={"false"}
+            className={
+              clicked && !submitted && !email && !isEmail(email) ? styles.inputError : styles.input
+            }
           />
-          <label htmlFor={"message"} className={styles.label} style={clicked && !submitted && !message ? { color: "#CD0C0C" } : {}}>
+          <label
+            htmlFor={"message"}
+            className={styles.label}
+            style={clicked && !submitted && !message ? { color: "#CD0C0C" } : {}}
+          >
             Your Message
           </label>
           <input
-              type={"text"}
-              name={"message"}
-              placeholder={"What do you wanna say to us"}
-              onChange={(e) => {
-                setMessage(e.target.value);
-              }}
-              autoComplete="off"
-              autoCorrect={"off"}
-              spellCheck={"false"}
-              className={
-                clicked && !submitted && !message
-                    ? styles.inputError
-                    : styles.input
-              }
-            />
+            type={"text"}
+            name={"message"}
+            placeholder={"What do you wanna say to us"}
+            onChange={(e) => {
+              setMessage(e.target.value);
+            }}
+            autoComplete="off"
+            autoCorrect={"off"}
+            spellCheck={"false"}
+            className={clicked && !submitted && !message ? styles.inputError : styles.input}
+          />
           <div className={styles.buttonWrapper}>
-            <SubmitButton></SubmitButton>
+            <SubmitButton/>
           </div>
-          </form>
-        <SocialButtonsMobile></SocialButtonsMobile>
-        </div>
+        </form>
+        <SocialButtonsMobile/>
+      </div>
     </section>
   );
 }
