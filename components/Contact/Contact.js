@@ -80,7 +80,7 @@ export default function Contact() {
         <div className={styles.topDiv}>
           <p className={styles.headerText}>Get in touch</p>
           <p className={styles.descriptionText}>Work with tech experts to win the battle</p>
-          <SocialButtons/>
+          <SocialButtons />
         </div>
         <form method="post" id={"form"} className={styles.formDiv}>
           <label
@@ -124,10 +124,10 @@ export default function Contact() {
             className={clicked && !submitted && !message ? styles.inputError : styles.input}
           />
           <div className={styles.buttonWrapper}>
-            <SubmitButton/>
+            <SubmitButton />
           </div>
         </form>
-        <SocialButtonsMobile/>
+        <SocialButtonsMobile />
       </div>
     </section>
   );

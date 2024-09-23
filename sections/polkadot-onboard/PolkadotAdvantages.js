@@ -19,14 +19,10 @@ export default function PolkadotAdvantages() {
           <p className={styles.commonText}>Best security</p>
         </div>
         <div className={styles.block4}>
-          <p className={styles.commonText}>
-            Cost-effective solutions for your transactions
-          </p>
+          <p className={styles.commonText}>Cost-effective solutions for your transactions</p>
         </div>
       </div>
-      <p className={styles.polkadotText}>
-        Then Polkadot might just be the perfect choice for you
-      </p>
+      <p className={styles.polkadotText}>Then Polkadot might just be the perfect choice for you</p>
     </section>
   );
 }
