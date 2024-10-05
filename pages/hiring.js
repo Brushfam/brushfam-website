@@ -11,10 +11,10 @@ export default function Hiring() {
       <Head>
         <title>Hiring</title>
       </Head>
-      <Navbar></Navbar>
-      <MobileNavbar></MobileNavbar>
-      <HiringSection></HiringSection>
-      <Footer></Footer>
+      <Navbar />
+      <MobileNavbar />
+      <HiringSection />
+      <Footer />
     </div>
   );
 }

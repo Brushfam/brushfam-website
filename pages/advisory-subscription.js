@@ -19,12 +19,12 @@ export default function AdvisorySubscription() {
       <Head>
         <title>Advisory subscription</title>
       </Head>
-      <Navbar></Navbar>
-      <MobileNavbar></MobileNavbar>
-      <TitleSection></TitleSection>
-      <Challenges></Challenges>
-      <Packages></Packages>
-      <Footer></Footer>
+      <Navbar />
+      <MobileNavbar />
+      <TitleSection />
+      <Challenges />
+      <Packages />
+      <Footer />
     </div>
   );
 }

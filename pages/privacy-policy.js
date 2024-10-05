@@ -13,12 +13,12 @@ export default function PrivacyPolicy() {
       <Head>
         <title>Privacy Policy</title>
       </Head>
-      <Navbar></Navbar>
-      <MobileNavbar></MobileNavbar>
-      <TitleSection></TitleSection>
-      <Navigation></Navigation>
-      <Content></Content>
-      <Footer></Footer>
+      <Navbar />
+      <MobileNavbar />
+      <TitleSection />
+      <Navigation />
+      <Content />
+      <Footer />
     </div>
   );
 }

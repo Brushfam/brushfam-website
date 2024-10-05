@@ -21,14 +21,14 @@ export default function SecurityAudits() {
       <Head>
         <title>Security audits</title>
       </Head>
-      <Navbar></Navbar>
-      <MobileNavbar></MobileNavbar>
-      <TitleSection></TitleSection>
-      <Audit></Audit>
-      <Services></Services>
-      <Process></Process>
-      <OurReports></OurReports>
-      <Footer></Footer>
+      <Navbar />
+      <MobileNavbar />
+      <TitleSection />
+      <Audit />
+      <Services />
+      <Process />
+      <OurReports />
+      <Footer />
     </div>
   );
 }

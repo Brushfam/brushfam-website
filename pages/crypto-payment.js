@@ -16,15 +16,15 @@ export default function CryptoPayment() {
       <Head>
         <title>Crypto Payment</title>
       </Head>
-      <Navbar></Navbar>
-      <MobileNavbar></MobileNavbar>
+      <Navbar />
+      <MobileNavbar />
       <Banner />
       <Clients />
       <Advantages />
       <AboutUs />
       <Partners />
       <Consultation />
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 }

@@ -18,11 +18,11 @@ export default function AboutUs() {
       <Head>
         <title>About us</title>
       </Head>
-      <Navbar></Navbar>
-      <MobileNavbar></MobileNavbar>
-      <Presentation></Presentation>
-      <Team></Team>
-      <Footer></Footer>
+      <Navbar />
+      <MobileNavbar />
+      <Presentation />
+      <Team />
+      <Footer />
     </div>
   );
 }

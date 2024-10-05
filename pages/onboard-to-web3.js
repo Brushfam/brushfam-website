@@ -17,11 +17,11 @@ export default function OnboardToWeb3() {
       <Head>
         <title>Onboard your business to web3</title>
       </Head>
-      <Navbar></Navbar>
-      <MobileNavbar></MobileNavbar>
-      <TitleSection></TitleSection>
-      <Web3></Web3>
-      <Footer></Footer>
+      <Navbar />
+      <MobileNavbar />
+      <TitleSection />
+      <Web3 />
+      <Footer />
     </div>
   );
 }

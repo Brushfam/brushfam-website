@@ -25,14 +25,14 @@ export default function Home() {
         <Head>
           <title>Brushfam</title>
         </Head>
-        <Navbar></Navbar>
-        <MobileNavbar></MobileNavbar>
-        <Banner></Banner>
-        <Web3Projects></Web3Projects>
-        <Products></Products>
-        <Services></Services>
-        <LetsBuild></LetsBuild>
-        <Footer></Footer>
+        <Navbar />
+        <MobileNavbar />
+        <Banner />
+        <Web3Projects />
+        <Products />
+        <Services />
+        <LetsBuild />
+        <Footer />
       </div>
     </>
   );
