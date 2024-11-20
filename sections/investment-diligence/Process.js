@@ -18,12 +18,12 @@ export default function Process() {
         </p>
       </div>
       <img
-        src={"/investment-process.svg"}
+        src={"investment-process/investment-process.svg"}
         alt={"investment process"}
         className={styles.auditProcessImg}
       />
       <img
-        src={"/investment-process-mobile.svg"}
+        src={"investment-process/investment-process-mobile.svg"}
         alt={"investment process"}
         className={styles.auditProcessMobileImg}
       />

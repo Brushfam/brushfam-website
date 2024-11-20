@@ -7,7 +7,7 @@ export default function Challenges() {
       <div className={styles.challengesContainer}>
         <div className={styles.challengesDiv1}>
           <div className={styles.titleDiv}>
-            <img src={"1.svg"} className={styles.numberOne} />
+            <img src={"icons/1.svg"} className={styles.numberOne} />
             <h2 className={styles.titleText1}>Architecture choice</h2>
           </div>
           <p>
@@ -17,7 +17,7 @@ export default function Challenges() {
         </div>
         <div className={styles.challengesDiv1}>
           <div className={styles.titleDiv}>
-            <img src={"2.svg"} />
+            <img src={"icons/2.svg"} />
             <h2 className={styles.titleText2}>Team performance / Delivery</h2>
           </div>
           <p>
@@ -27,7 +27,7 @@ export default function Challenges() {
         </div>
         <div className={styles.challengesDiv2}>
           <div className={styles.titleDiv}>
-            <img src={"3.svg"} />
+            <img src={"icons/3.svg"} />
             <h2 className={styles.titleText3} style={{ maxWidth: 120 }}>
               Code security
             </h2>

@@ -55,7 +55,6 @@
 }
 
 .commentBlock ul {
-    /*list-style-image: url('/list-dot.svg');*/
     list-style: none;
 }
 
@@ -116,10 +115,6 @@
     .galleryBlockMobile {
         display: flex;
         flex-direction: column;
-    }
-
-    .galleryBlockMobile img {
-        /*max-width: 100%;*/
     }
 
     .commentBlock{

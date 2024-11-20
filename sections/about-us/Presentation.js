@@ -66,7 +66,7 @@ export default function Presentation() {
             {presentationData.map((text, i) => {
               return (
                 <li key={i.toString()}>
-                  <img src={"list-dot.svg"} />
+                  <img src={"icons/list-dot.svg"} />
                   <p>{text}</p>
                 </li>
               );

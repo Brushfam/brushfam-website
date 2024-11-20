@@ -43,7 +43,7 @@ export const point0 = [
 const ListText = (text) => {
   return (
     <div className={styles.listDiv}>
-      <img alt={"list-dot"} src={"list-dot.svg"} />
+      <img src={"icons/list-dot.svg"} alt={"list-dot"} />
       <p style={{ textIndent: 0 }}>{text}</p>
     </div>
   );

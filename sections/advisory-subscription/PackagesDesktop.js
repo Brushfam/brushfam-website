@@ -68,7 +68,7 @@ export default function PackagesDesktop() {
                         TransitionProps={{ timeout: 600 }}
                         followCursor
                       >
-                        <img src={"tip.svg"} className={desktopStyles.tipImg} />
+                        <img src={"icons/tip.svg"} className={desktopStyles.tipImg} />
                       </PackagesTooltip>
                       <p style={{ height: 13 }}>{rowData.cell1}</p>
                     </div>

@@ -5,7 +5,7 @@ import { learnData, productsData, servicesData } from "@/data/footerData";
 const SocialDivLink = ({ link, name, width }) => {
   return (
     <a href={link}>
-      <img src={"icons/" + name + ".svg"} alt={name} style={{ width: width }} />
+      <img src={"icons/socials/" + name + ".svg"} alt={name} style={{ width: width }} />
     </a>
   );
 };
@@ -37,21 +37,21 @@ const FooterSocial = () => {
       <SocialDiv />
       <div className={styles.socialDivMobile} style={{ marginBottom: 37, columnGap: 40 }}>
         <a href={"https://discord.gg/xkg8YQhSF6"}>
-          <img src={"icons/discord.svg"} alt={"discord"} />
+          <img src={"icons/socials/discord.svg"} alt={"discord"} />
         </a>
         <a href={"https://twitter.com/Brushfam_io"}>
-          <img src={"icons/twitter.svg"} alt={"twitter"} />
+          <img src={"icons/socials/twitter.svg"} alt={"twitter"} />
         </a>
         <a href={"mailto:info@brushfam.io"}>
-          <img src={"icons/mail.svg"} alt={"mail"} />
+          <img src={"icons/socials/mail.svg"} alt={"mail"} />
         </a>
       </div>
       <div className={styles.socialDivMobile} style={{ marginBottom: 37, columnGap: 50 }}>
         <a href={"https://medium.com/727-ventures"}>
-          <img src={"icons/medium.svg"} alt={"medium"} />
+          <img src={"icons/socials/medium.svg"} alt={"medium"} />
         </a>
         <a href={"https://t.me/openbrush"}>
-          <img src={"icons/telegram.svg"} alt={"telegram"} />
+          <img src={"icons/socials/telegram.svg"} alt={"telegram"} />
         </a>
       </div>
       <div className={styles.socialDivMobile} style={{ columnGap: 50 }}>
@@ -60,10 +60,10 @@ const FooterSocial = () => {
             "https://matrix.to/#/!utTuYglskDvqRRMQta:matrix.org?via=matrix.org&via=t2bot.io&via=web3.foundation"
           }
         >
-          <img src={"icons/element.svg"} alt={"element"} />
+          <img src={"icons/socials/element.svg"} alt={"element"} />
         </a>
         <a href={"https://www.youtube.com/@brushfam_io"}>
-          <img src={"icons/youtube.svg"} alt={"youtube"} style={{ width: 48 }} />
+          <img src={"icons/socials/youtube.svg"} alt={"youtube"} style={{ width: 48 }} />
         </a>
       </div>
     </div>
