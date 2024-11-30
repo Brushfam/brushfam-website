@@ -129,85 +129,82 @@ const SocialBlock = () => {
   );
 };
 
+const NavbarItem = ({ name, arrow, toggleSection, children }) => {
+  return (
+    <div className={styles.item}>
+      <button
+        type="button"
+        className={styles.button}
+        onClick={() => {
+          toggleSection(name, arrow);
+        }}
+      >
+        {name}
+        <img id={arrow} src={"icons/arrow.svg"} alt={"arrow"} className={styles.arrow} />
+      </button>
+      {children}
+    </div>
+  );
+};
+
 export const MobileNavbar = () => {
   const [isOpened, setIsOpened] = useState(false);
 
   function toggle() {
     setIsOpened(!isOpened);
-
     const icon = document.getElementById("navbar-bottom");
-    if (isOpened) {
-      icon.style.visibility = "visible";
-    } else {
-      icon.style.visibility = "hidden";
-    }
+    isOpened ? (icon.style.visibility = "visible") : (icon.style.visibility = "hidden");
   }
 
   const [arrowOpen, setArrowOpen] = useState(false);
   const [prevArrowId, setPrevArrowId] = useState("");
-  const [ProductsIsOpened, setProductsIsOpened] = useState(false);
-  const [ServicesIsOpened, setServicesIsOpened] = useState(false);
-  const [LearnIsOpened, setLearnIsOpened] = useState(false);
-  const [CompanyIsOpened, setCompanyIsOpened] = useState(false);
+  const [isOpen, setIsOpen] = useState({
+    Products: false,
+    Services: false,
+    Learn: false,
+    Company: false,
+  });
+
+  function toggleSection(section, arrowId) {
+    setIsOpen((prevState) => ({
+      Products: section === "Products" ? !prevState.Products : false,
+      Services: section === "Services" ? !prevState.Services : false,
+      Learn: section === "Learn" ? !prevState.Learn : false,
+      Company: section === "Company" ? !prevState.Company : false,
+    }));
+    rotateArrow(arrowId);
+  }
 
   function rotateArrow(element) {
     const icon = document.getElementById(element);
+    console.log(icon);
     const prevIcon = document.getElementById(prevArrowId);
+    const rotate0 = "rotate(0deg)";
+    const rotate180 = "rotate(180deg)";
+    const transformLinear = "transform 0.2s linear";
 
     if (prevArrowId === element) {
       if (arrowOpen) {
-        icon.style.transform = "rotate(0deg)";
-        icon.style.transition = "transform 0.2s linear";
+        icon.style.transform = rotate0;
+        icon.style.transition = transformLinear;
         setArrowOpen(!arrowOpen);
       } else {
-        icon.style.transform = "rotate(180deg)";
-        icon.style.transition = "transform 0.2s linear";
+        icon.style.transform = rotate180;
+        icon.style.transition = transformLinear;
         setArrowOpen(!arrowOpen);
       }
     } else if (arrowOpen) {
-      prevIcon.style.transform = "rotate(0deg)";
-      prevIcon.style.transition = "transform 0.2s linear";
-      icon.style.transform = "rotate(180deg)";
-      icon.style.transition = "transform 0.2s linear";
+      prevIcon.style.transform = rotate0;
+      prevIcon.style.transition = transformLinear;
+      icon.style.transform = rotate180;
+      icon.style.transition = transformLinear;
     } else {
-      icon.style.transform = "rotate(180deg)";
-      icon.style.transition = "transform 0.2s linear";
+      icon.style.transform = rotate180;
+      icon.style.transition = transformLinear;
       setArrowOpen(!arrowOpen);
     }
 
     setPrevArrowId(element);
-  }
-
-  function setProducts() {
-    setProductsIsOpened(!ProductsIsOpened);
-    setServicesIsOpened(false);
-    setLearnIsOpened(false);
-    setCompanyIsOpened(false);
-    rotateArrow("arrow1");
-  }
-
-  function setServices() {
-    setProductsIsOpened(false);
-    setServicesIsOpened(!ServicesIsOpened);
-    setLearnIsOpened(false);
-    setCompanyIsOpened(false);
-    rotateArrow("arrow2");
-  }
-
-  function setLearn() {
-    setProductsIsOpened(false);
-    setServicesIsOpened(false);
-    setLearnIsOpened(!LearnIsOpened);
-    setCompanyIsOpened(false);
-    rotateArrow("arrow3");
-  }
-
-  function setCompany() {
-    setProductsIsOpened(false);
-    setServicesIsOpened(false);
-    setLearnIsOpened(false);
-    setCompanyIsOpened(!CompanyIsOpened);
-    rotateArrow("arrow4");
   }
 
   return (
@@ -235,37 +232,19 @@ export const MobileNavbar = () => {
           <Link href={"/"} style={{ marginLeft: 16, marginBottom: 43 }}>
             <img src={"logos/brushfam-logo.svg"} alt={"brushfam logo"} style={{ maxWidth: 230 }} />
           </Link>
-          <div className={styles.item}>
-            <button type="button" className={styles.button} onClick={setProducts}>
-              Products
-              <img id={"arrow1"} src={"icons/arrow.svg"} alt={"arrow"} className={styles.arrow} />
-            </button>
-            {ProductsIsOpened ? <ProductsList /> : null}
-          </div>
 
-          <div className={styles.item}>
-            <button type="button" className={styles.button} onClick={setServices}>
-              Services & Solutions
-              <img id={"arrow2"} src={"icons/arrow.svg"} alt={"arrow"} className={styles.arrow} />
-            </button>
-            {ServicesIsOpened ? <ServicesList /> : null}
-          </div>
-
-          <div className={styles.item}>
-            <button type="button" className={styles.button} onClick={setLearn}>
-              Learn
-              <img id={"arrow3"} src={"icons/arrow.svg"} alt={"arrow"} className={styles.arrow} />
-            </button>
-            {LearnIsOpened ? <LearnList /> : null}
-          </div>
-
-          <div className={styles.item}>
-            <button type="button" className={styles.button} onClick={setCompany}>
-              Company
-              <img id={"arrow4"} src={"icons/arrow.svg"} alt={"arrow"} className={styles.arrow} />
-            </button>
-            {CompanyIsOpened ? <CompanyList /> : null}
-          </div>
+          <NavbarItem name={"Products"} arrow={"arrow1"} toggleSection={toggleSection}>
+            {isOpen.Products ? <ProductsList /> : null}
+          </NavbarItem>
+          <NavbarItem name={"Services"} arrow={"arrow2"} toggleSection={toggleSection}>
+            {isOpen.Services ? <ServicesList /> : null}
+          </NavbarItem>
+          <NavbarItem name={"Learn"} arrow={"arrow3"} toggleSection={toggleSection}>
+            {isOpen.Learn ? <LearnList /> : null}
+          </NavbarItem>
+          <NavbarItem name={"Company"} arrow={"arrow4"} toggleSection={toggleSection}>
+            {isOpen.Company ? <CompanyList /> : null}
+          </NavbarItem>
 
           <SocialBlock />
         </div>
