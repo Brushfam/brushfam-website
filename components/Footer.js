@@ -1,4 +1,4 @@
-import styles from "@/styles/Footer.module.css";
+import styles from "@/styles/components/Footer.module.css";
 import Link from "next/link";
 import { learnData, productsData, servicesData } from "@/data/footerData";
 

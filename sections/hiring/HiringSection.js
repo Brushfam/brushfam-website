@@ -1,4 +1,4 @@
-import styles from "@/styles/Hiring.module.css";
+import styles from "@/styles/hiring/Hiring.module.css";
 
 export default function HiringSection() {
   return (

@@ -1,4 +1,4 @@
-import navStyles from "@/styles/Navbar.module.css";
+import navStyles from "@/styles/components/Navbar.module.css";
 import Link from "next/link";
 
 const Products = () => {
